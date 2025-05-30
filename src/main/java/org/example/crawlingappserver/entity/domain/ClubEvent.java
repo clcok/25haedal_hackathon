@@ -1,4 +1,4 @@
-package org.example.crawlingappserver.entity;
+package org.example.crawlingappserver.entity.domain;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;
@@ -7,15 +7,16 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
+/* 동아리 이벤트 */
 @Entity
-@Table(name = "Event")
+@Table(name = "ClubEvent")
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class Event {
+public class ClubEvent {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
 
     @Column(name = "title", nullable = false)
     private String title;
@@ -35,7 +36,6 @@ public class Event {
     @Column(name = "duration", nullable = false)
     private LocalDateTime duration;
 
-    /* --------------------------------- */
-    /* ----------- Functions ----------- */
-    /* --------------------------------- */
+    @Column(name = "notice", nullable = false)
+    private String notice;
 }
