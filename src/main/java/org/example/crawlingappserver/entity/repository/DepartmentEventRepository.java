@@ -1,6 +1,7 @@
 package org.example.crawlingappserver.entity.repository;
 
 import org.example.crawlingappserver.entity.domain.DepartmentEvent;
+import org.example.crawlingappserver.entity.domain.OfficialEvent;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Date;
@@ -14,4 +15,12 @@ public interface DepartmentEventRepository extends JpaRepository<DepartmentEvent
 
     List<DepartmentEvent> findByCollegeAndDepartmentAndCategoryAndDurationAfterOrderByDurationAsc(
             String college, String department, String category, Date now);
+
+    List<OfficialEvent> findTop5ByOrderByDurationDesc();
+
+    List<DepartmentEvent> findTop5ByOrderByDurationAsc();
+
+    List<DepartmentEvent> findByCollegeAndDepartmentAndCategoryOrderByDurationAsc(
+            String college, String department, String category);
+
 }

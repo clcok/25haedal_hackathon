@@ -18,15 +18,15 @@ public class ClubEvent {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "postUrl", nullable = false)
+    private String postUrl;
+
     @Column(name = "title", nullable = false)
     private String title;
 
     @Column(name = "target", nullable = false)
     private String target;
-
-    @Column(name = "benefit", nullable = false)
-    private String benefit;
-
+    
     @Column(name = "imagePath", nullable = false)
     private String imagePath;
 

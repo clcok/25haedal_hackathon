@@ -8,10 +8,9 @@ import org.example.crawlingappserver.entity.repository.DepartmentEventRepository
 import org.example.crawlingappserver.entity.repository.OfficialEventRepository;
 import org.springframework.stereotype.Service;
 
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 @Service
@@ -25,39 +24,24 @@ public class FavoriteService {
     private final ClubEventRepository clubEventRepository;
     private final ImageService imageService;
 
-    private String getFirstImageBase64(String imagePath) {
-        File dir = new File(imagePath);
-        if (!dir.exists() || !dir.isDirectory()) return null;
-        File[] files = dir.listFiles();
-        if (files == null) return null;
-
-        Optional<File> firstImage = Arrays.stream(files)
-                .filter(file -> {
-                    String name = file.getName().toLowerCase();
-                    return SUPPORTED_EXTENSIONS.stream().anyMatch(name::endsWith);
-                })
-                .findFirst();
-
-        if (firstImage.isEmpty()) return null;
-
-        try {
-            byte[] imageBytes = Files.readAllBytes(firstImage.get().toPath());
-            return Base64.getEncoder().encodeToString(imageBytes);
-        } catch (IOException e) {
-            return null;
-        }
-    }
-
     public List<FavoriteWholeResponseDTO> getFavoritesInfo(List<FavoritesWholeRequestDTO> favorites) {
+        if (favorites == null || favorites.isEmpty()) {
+            return List.of();
+        }
+
         return favorites.stream()
                 .map(fav -> {
-                    return switch (fav.domain()) {
+                    if (fav == null || fav.domain() == null || fav.id() == null) {
+                        return null;
+                    }
+
+                    return switch (fav.domain().toLowerCase()) {
                         case "official" -> officialEventRepository.findById(fav.id())
                                 .map(e -> new FavoriteWholeResponseDTO(
                                         e.getId(),
                                         e.getTitle(),
                                         e.getCategory(),
-                                        getFirstImageBase64(e.getImagePath())
+                                        imageService.getFirstImageBase64(e.getImagePath())
                                 ))
                                 .orElse(null);
                         case "department" -> departmentEventRepository.findById(fav.id())
@@ -65,7 +49,7 @@ public class FavoriteService {
                                         e.getId(),
                                         e.getTitle(),
                                         e.getCategory(),
-                                        getFirstImageBase64(e.getImagePath())
+                                        imageService.getFirstImageBase64(e.getImagePath())
                                 ))
                                 .orElse(null);
                         case "club" -> clubEventRepository.findById(fav.id())
@@ -73,7 +57,7 @@ public class FavoriteService {
                                         e.getId(),
                                         e.getTitle(),
                                         e.getCategory(),
-                                        getFirstImageBase64(e.getImagePath())
+                                        imageService.getFirstImageBase64(e.getImagePath())
                                 ))
                                 .orElse(null);
                         default -> null;

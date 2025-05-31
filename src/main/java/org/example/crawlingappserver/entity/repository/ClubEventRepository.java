@@ -11,4 +11,7 @@ public interface ClubEventRepository extends JpaRepository<ClubEvent, Long> {
     List<ClubEvent> findTop5ByDurationAfterOrderByDurationAsc(Date now);
 
     List<ClubEvent> findTop5ByCategoryAndDurationAfterOrderByDurationAsc(String category, Date now);
+
+    List<ClubEvent> findTop5ByOrderByDurationAsc();
+    
 }

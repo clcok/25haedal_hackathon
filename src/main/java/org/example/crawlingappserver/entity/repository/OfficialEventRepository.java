@@ -10,5 +10,9 @@ import java.util.List;
 public interface OfficialEventRepository extends JpaRepository<OfficialEvent, Long> {
     List<OfficialEvent> findTop5ByDurationAfterOrderByDurationAsc(Date now);
 
+    List<OfficialEvent> findTop5ByOrderByDurationDesc();
+
     List<OfficialEvent> findTop5ByCategoryAndDurationAfterOrderByDurationAsc(String category, Date now);
+
+    List<OfficialEvent> findTop5ByOrderByDurationAsc();
 }

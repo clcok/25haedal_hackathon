@@ -25,33 +25,33 @@ public class DetailService {
             case "official" -> officialEventRepository.findById(id)
                     .map(e -> new EventDetailResponseDTO(
                             e.getId(),
+                            e.getPostUrl(), // postUrl 필드 추가
                             e.getTitle(),
                             imageService.getAllImagesBase64(e.getImagePath()),
                             e.getDuration() != null ? DATE_FORMATTER.format(e.getDuration()) : null,
                             e.getTarget(),
-                            e.getBenefit(),
                             e.getNotice()
                     ))
                     .orElseThrow(() -> new NoSuchElementException("해당 id의 official 이벤트를 찾을 수 없습니다."));
             case "department" -> departmentEventRepository.findById(id)
                     .map(e -> new EventDetailResponseDTO(
                             e.getId(),
+                            e.getPostUrl(), // postUrl 필드 추가
                             e.getTitle(),
                             imageService.getAllImagesBase64(e.getImagePath()),
                             e.getDuration() != null ? DATE_FORMATTER.format(e.getDuration()) : null,
                             e.getTarget(),
-                            e.getBenefit(),
                             e.getNotice()
                     ))
                     .orElseThrow(() -> new NoSuchElementException("해당 id의 department 이벤트를 찾을 수 없습니다."));
             case "club" -> clubEventRepository.findById(id)
                     .map(e -> new EventDetailResponseDTO(
                             e.getId(),
+                            e.getPostUrl(), // postUrl 필드 추가
                             e.getTitle(),
                             imageService.getAllImagesBase64(e.getImagePath()),
                             e.getDuration() != null ? DATE_FORMATTER.format(e.getDuration()) : null,
                             e.getTarget(),
-                            e.getBenefit(),
                             e.getNotice()
                     ))
                     .orElseThrow(() -> new NoSuchElementException("해당 id의 club 이벤트를 찾을 수 없습니다."));
