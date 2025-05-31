@@ -1,0 +1,2964 @@
+2025-05-31 15:09:51.055748+09:00 jdbc[85]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-232]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:217)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:134)
+	at org.h2.Driver.connect(Driver.java:59)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:139)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:368)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:205)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:483)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:747)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:690)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 16 more
+2025-05-31 15:56:20.609182+09:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO official_event (post_url, title, target, image_path, category, duration, notice) VALUES\000d\000a('https://www.instagram.com/knuofficial/p/DIfoO83yX5X/', '✨경북대학교 웹진 280호 발간✨', '경북대학교 학생', 'images/knuofficial/DIfoO83yX5X', '기타', '2025-04-16', '경북대학교 280호 웹진이 발간되었습니다!!🎉\\n각 코너별 특색을 한층 더 살려, 유익한 정보와 흥미로운 소식들을 가득 담았습니다 :) 여러분의 많은 관심 부탁드립니다!🥰\\n웹진의 자세한 이야기는 인스타그램 링크를 통해 확인하실 수 있습니다\\n\\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DIfoIQoSsDZ/', '✨경북대학교 웹진 280호 발간✨', '경북대학교 학생', 'images/knuofficial/DIfoIQoSsDZ', '기타', '2025-04-16', '경북대학교 280호 웹진이 발간되었습니다!!🎉\\n각 코너별 특색을 한층 더 살려, 유익한 정보와 흥미로운 소식들을 가득 담았습니다 :) 여러분의 많은 관심 부탁드립니다!🥰\\n웹진의 자세한 이야기는 인스타그램 링크를 통해 확인하실 수 있습니다\\n\\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DIfoD0YyHSn/', '✨경북대학교 웹진 280호 발간✨', '경북대학교 학생', 'images/knuofficial/DIfoD0YyHSn', '기타', '2025-04-16', '경북대학교 280호 웹진이 발간되었습니다!!🎉\\n각 코너별 특색을 한층 더 살려, 유익한 정보와 흥미로운 소식들을 가득 담았습니다 :) 여러분의 많은 관심 부탁드립니다!🥰\\n웹진의 자세한 이야기는 인스타그램 링크를 통해 확인하실 수 있습니다\\n\\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DKRWR2DSZeP/', '🍀6월 학사일정 안내🍀', '경북대학교 학생', 'images/knuofficial/DKRWR2DSZeP', '기타', '2025-05-30', '어느덧 5월이 지나고, 벌써 6월이 찾아왔습니다!\\n새로운 한 달도 활기차고 즐거운 캠퍼스 생활 보내시길 바랍니다💗\\n\\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DKL5HUTyds_/', '🎉 호반우를 꾸며줘 당첨자 발표 🎉', '경북대학교 학생', 'images/knuofficial/DKL5HUTyds_', '기타', '2025-05-28', ''[*]호반우를 꾸며줘' 이벤트에 많은 관심 가져주시고, 호반우를 멋지고 개성 있게 꾸며주신 여러분께 감사드립니다.☺️\\n우수한 아이디어와 창의성이 돋보이는 디자인으로 호반우에게 새로운 매력을 더해준 당첨자를 발표합니다.🎊\\n\\n📍당첨자는 카드뉴스에서 본인의 이름, 제출한 디자인을 통해 확인 가능합니다.\\n📍기프티콘은 구글폼 작성 시 제출해 주신 전화번호를 통해 발송해 드릴 예정입니다.\\n📍호반우 굿즈 세트 당첨자분들께는 개별 연락 드릴 예정입니다.\\n\\n#경북대 #KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DKLSu5eTTsE/', '🎉 오늘은 경북대학교 개교 79주년입니다.', '경북대학교 학생', 'images/knuofficial/DKLSu5eTTsE', '기타', '2025-05-28', '79년의 전통과 자부심을 이어온 우리 학교의 특별한 날을 함께 축하해주세요!\\n더 큰 내일을 향한 여정, 지금 이 순간부터 다시 시작됩니다. 🏫✨\\n\\n#개교기념일 #79주년 #경북대학교 #KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DKGUISeS83j/', '[2025학년도 하계 및 2학기 현장실습교육과정 학생 모집 안내]', '경북대학교 학생', 'images/knuofficial/DKGUISeS83j', '기타', '2025-05-26', '6월 2일부터 여름방학과 2학기 현장실습 학생 수시모집이 시작됩니다.\\n\\n마감일은 교육과정별로 다르니 자세한 내용은 진로취업과(knujob.knu.ac.kr) 현장실습 공지사항을 참조하세요.\\n\\n현장실습 참여로 직업세계를 경험하는 유익한 기회를 갖기를 희망합니다.\\n\\n#경북대 #KNU #현장실습 #모집 #진로취업과'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DJ-7aaExk63/', '🍀새내기 전용 고민 상담소! in KNU', '경북대학교 학생', 'images/knuofficial/DJ-7aaExk63', '기타', '2025-05-23', '""네가 꺼낸 걱정, 우리가 끝까지 함께 들어줄게.""\\n\\n경북대학교 새내기들을 위해 준비한 익명 고민 상담 카드뉴스!\\n여러분이 직접 제보한 고민들을 모아, 선배 ''호반우 상담사''가 친근하고 따뜻한 말투로 하나하나 답변해드립니다.🙂\\n\\n처음이 서툰 당신을 위한\\n따뜻한 위로와 든든한 꿀팁 가득한 이 카드뉴스,\\n지금 바로 확인해보세요!😆\\n\\n#경북대#새내기#고민#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DJ0ZAmfS1y4/', '💐성년의 날을 축하합니다💐', '경북대학교 학생', 'images/knuofficial/DJ0ZAmfS1y4', '기타', '2025-05-19', '입학식 날, 설렘 가득한 눈빛으로\\n경북대학교에 첫발을 내디뎠던 25학번 여러분!\\n\\n오늘은 그날보다 한 걸음 더 성장한\\n성인이 된 여러분을 축하하는 날입니다.\\n\\n경북대학교는 여러분의 앞날을\\n언제나 응원합니다.\\n\\n성년의 날을 진심으로 축하합니다.\\n\\n#성년의날 #경북대 #KNU #KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DJqkm_iyEUe/', '🎉#경북대학교_79번째 생일#🎉', '경북대학교 학생', 'images/knuofficial/DJqkm_iyEUe', '기타', '2025-05-15', '경북대학교 학우 여러분!\\n경북대가 벌써 79주년을 맞이했습니다.\\n\\n학생리포터가 개교기념일을 맞아 이벤트를 준비했습니다.\\n\\n이번 이벤트는 학우 여러분이 직접 호반우를 꾸미거나 새로운 콘셉트를 제안하는 형식으로 진행되며, 선발 작품은 네 컷 사진의 프레임으로 제작할 예정입니다.\\n학우 여러분들의 많은 참여 부탁드립니다!\\n\\n#경북대 #KNU #KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DJqCfAkypv4/', '오늘은 ''스승의 날''입니다.', '경북대학교 학생', 'images/knuofficial/DJqCfAkypv4', '기타', '2025-05-15', '⠀\\n스승의 날은 우리에게 지식과 지혜를 전해주시고, 삶의 방향을 밝혀주신 선생님께 감사의 마음을 전하는 날입니다.\\n⠀\\n경북대학교 곳곳에서 학생들의 성장을 위해 묵묵히 헌신해주시는 교수님들과 선생님들이 계시기에, 우리는 매일 조금씩 더 나아갈 수 있었습니다.\\n⠀\\n오늘 하루만큼은 그 고마움을 떠올리며, 배움의 길을 함께 걸어주신 모든 분들께 진심을 담아 감사 인사를 전해보는 건 어떨까요?\\n\\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DJp4mK8S0dh/', '📣2025학년도 여름계절학기 수강신청 안내📣', '경북대학교 학생', 'images/knuofficial/DJp4mK8S0dh', '기타', '2025-05-15', '금일 오후 12:00부터 수강신청이 가능합니다. 여름의 무더위 속에서도 학업에 힘쓰는 여러분의 열정을 응원합니다! 수강 변경 기간은 6. 4. ~ 6. 5. 입니다.\\n\\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DJlQdGpSxdq/', '[2025년 천원의 아침밥 이벤트]', '경북대학교 학생', 'images/knuofficial/DJlQdGpSxdq', '기타', '2025-05-13', '''0원의 아침밥''으로 여러분께 특별한 선물을 전합니다. 학생들의 활기찬 20대를 응원합니다♥\\n\\n-일시: 2025. 5. 19.(월), 08:00~09:30\\n-장소: 카페테리아 첨성(복지관 1층 학생식당)\\n-대상: 학부 및 대학원 재학생\\n-식사가격: 무료(선착순 500명에 한함)\\n-이용방법: 크누피아 어플 내 QR체크인 누르고 QR코드 찍기(식권 미제출)\\n\\n※ 비대상자의 경우 해당 일자에는 아침식사가 어려우니 양해 부탁드립니다.\\n\\n#경북대 #KNU #성년의날 #재학생 #아침밥_무료'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DJipkAhScUf/', '😆5월 도서관,뭐하니?😆', '경북대학교 학생', 'images/knuofficial/DJipkAhScUf', '기타', '2025-05-12', 'KNU Library 이모저모 알아보기!\\n\\n📌Research AI\\n📌Research Boost UP\\n📌인문사회계열 학위논문주간\\n📌이공자연계열 학위논문주간\\n📌학부생을 위한 도서관 교육\\n📌온라인 도서관 전자정보박람회\\n📌KNU 문화다양성 주간 기념 도서전시회\\n\\n모두들 도서관에서 만나요🫶\\n\\n#경북대 #KNU #도서관 #행사'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DJaeDRaSmKa/', '✏️학생리포터 취재팀이 추천하는 KNU 웹진✏️', '경북대학교 학생', 'images/knuofficial/DJaeDRaSmKa', '기타', '2025-05-09', '경북대학교의 시간을 담고, 사람을 전하는 KNU 웹진! 학생리포터 취재팀이 직접 고른 ''추천 웹진 9편''을 소개합니다. \\n\\n 동문님의 진솔한 이야기부터, 우리가 몰랐던 캠퍼스 소식까지! 지금 바로 리포터들의 시선으로 담아낸 KNU웹진을 만나러 가볼까요?\\n\\n#경북대 #KNU #KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DJQbCI2SmQF/', '오늘은 ''어린이날''입니다🍀', '경북대학교 학생', 'images/knuofficial/DJQbCI2SmQF', '기타', '2025-05-05', '어린이날은 어린이들의 순수한 꿈과 희망을 응원하고 행복을 도모 하기 위해 제정된 기념일입니다.\\n\\n영원히 어린이일 것만 같았던 우리들도 어느새 어른이 되어 각자의 삶을 살아가느라 바쁜 하루하루를 보내고 있습니다.\\n호반우가 그린 어린이날 그림일기를 보며, 잠깐이나마 동심을 찾아보는 건 어떨까요?\\n\\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DJI9z8Nyow6/', 'RE:PLAY, 학생RE포터의 PLAY리스트🎶', '경북대학교 학생', 'images/knuofficial/DJI9z8Nyow6', '기타', '2025-05-02', '우리는 음악을 통해 많은 힘을 얻곤 합니다.\\n기분이 꿀꿀할 때, 혼자라고 느껴질 때, 또는 포기하고 싶어질 때 좋아하는 노래를 들으면 힘이 조금씩 생기는 신기한 경험을 할 수 있어요. \\n\\n 오늘은 여러분을 위해 24기 학생리포터가 노래 몇 곡을 준비했어요. 어울리는 상황에 따라 다양하게 감상해보세요!☺️\\n\\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DJDZDo6yLSI/', '🏡5월 학사일정🏡', '경북대학교 학생', 'images/knuofficial/DJDZDo6yLSI', '기타', '2025-04-30', '여러분, 즐겁게 학교생활하고 계신가요?\\n가정의 달인 5월이 성큼 다가왔습니다!\\n푸르른 5월과 함께 가족들과 행복한 시간을 보내시길 바랍니다💚\\n\\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DI-bb49yLSB/', '🐮경북대학교 웹진 280호 캠퍼스스토리🐮', '경북대학교 학생', 'images/knuofficial/DI-bb49yLSB', '기타', '2025-04-28', ': 경북대학교 마스코트, 호반우 이야기\\n\\n''응답하라 경북대''로 돌아온 280호 캠퍼스스토리에서는 \\n명실상부한 경북대학교의 마스코트, 호반우에 대한 이야기를 담아보았습니다.\\n더 자세한 이야기가 궁금하다면 KNU 웹진을 찾아주세요!'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DI2st9dSk9S/', '🐾 경북대학교 웹진 280호 KNU 피플 🐾', '경북대학교 학생', 'images/knuofficial/DI2st9dSk9S', '기타', '2025-04-25', ': 커다란 온기는 작은 심장을 다시 뛰게끔 한다.\\n\\n반려동물들과 함께 살아가는 우리들의 곁을 지키는, 수의과대학 수의학과 배슬기 교수를 만나보았습니다.🚑\\n\\n더 자세한 이야기가 궁금하다면, KNU 웹진을 찾아주세요!\\n\\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위')"; expected "[, ., ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"; SQL statement:
+INSERT INTO official_event (post_url, title, target, image_path, category, duration, notice) VALUES
+('https://www.instagram.com/knuofficial/p/DIfoO83yX5X/', '✨경북대학교 웹진 280호 발간✨', '경북대학교 학생', 'images/knuofficial/DIfoO83yX5X', '기타', '2025-04-16', '경북대학교 280호 웹진이 발간되었습니다!!🎉\n각 코너별 특색을 한층 더 살려, 유익한 정보와 흥미로운 소식들을 가득 담았습니다 :) 여러분의 많은 관심 부탁드립니다!🥰\n웹진의 자세한 이야기는 인스타그램 링크를 통해 확인하실 수 있습니다\n\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DIfoIQoSsDZ/', '✨경북대학교 웹진 280호 발간✨', '경북대학교 학생', 'images/knuofficial/DIfoIQoSsDZ', '기타', '2025-04-16', '경북대학교 280호 웹진이 발간되었습니다!!🎉\n각 코너별 특색을 한층 더 살려, 유익한 정보와 흥미로운 소식들을 가득 담았습니다 :) 여러분의 많은 관심 부탁드립니다!🥰\n웹진의 자세한 이야기는 인스타그램 링크를 통해 확인하실 수 있습니다\n\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DIfoD0YyHSn/', '✨경북대학교 웹진 280호 발간✨', '경북대학교 학생', 'images/knuofficial/DIfoD0YyHSn', '기타', '2025-04-16', '경북대학교 280호 웹진이 발간되었습니다!!🎉\n각 코너별 특색을 한층 더 살려, 유익한 정보와 흥미로운 소식들을 가득 담았습니다 :) 여러분의 많은 관심 부탁드립니다!🥰\n웹진의 자세한 이야기는 인스타그램 링크를 통해 확인하실 수 있습니다\n\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DKRWR2DSZeP/', '🍀6월 학사일정 안내🍀', '경북대학교 학생', 'images/knuofficial/DKRWR2DSZeP', '기타', '2025-05-30', '어느덧 5월이 지나고, 벌써 6월이 찾아왔습니다!\n새로운 한 달도 활기차고 즐거운 캠퍼스 생활 보내시길 바랍니다💗\n\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DKL5HUTyds_/', '🎉 호반우를 꾸며줘 당첨자 발표 🎉', '경북대학교 학생', 'images/knuofficial/DKL5HUTyds_', '기타', '2025-05-28', ''호반우를 꾸며줘' 이벤트에 많은 관심 가져주시고, 호반우를 멋지고 개성 있게 꾸며주신 여러분께 감사드립니다.☺️\n우수한 아이디어와 창의성이 돋보이는 디자인으로 호반우에게 새로운 매력을 더해준 당첨자를 발표합니다.🎊\n\n📍당첨자는 카드뉴스에서 본인의 이름, 제출한 디자인을 통해 확인 가능합니다.\n📍기프티콘은 구글폼 작성 시 제출해 주신 전화번호를 통해 발송해 드릴 예정입니다.\n📍호반우 굿즈 세트 당첨자분들께는 개별 연락 드릴 예정입니다.\n\n#경북대 #KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DKLSu5eTTsE/', '🎉 오늘은 경북대학교 개교 79주년입니다.', '경북대학교 학생', 'images/knuofficial/DKLSu5eTTsE', '기타', '2025-05-28', '79년의 전통과 자부심을 이어온 우리 학교의 특별한 날을 함께 축하해주세요!\n더 큰 내일을 향한 여정, 지금 이 순간부터 다시 시작됩니다. 🏫✨\n\n#개교기념일 #79주년 #경북대학교 #KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DKGUISeS83j/', '[2025학년도 하계 및 2학기 현장실습교육과정 학생 모집 안내]', '경북대학교 학생', 'images/knuofficial/DKGUISeS83j', '기타', '2025-05-26', '6월 2일부터 여름방학과 2학기 현장실습 학생 수시모집이 시작됩니다.\n\n마감일은 교육과정별로 다르니 자세한 내용은 진로취업과(knujob.knu.ac.kr) 현장실습 공지사항을 참조하세요.\n\n현장실습 참여로 직업세계를 경험하는 유익한 기회를 갖기를 희망합니다.\n\n#경북대 #KNU #현장실습 #모집 #진로취업과'),
+
+('https://www.instagram.com/knuofficial/p/DJ-7aaExk63/', '🍀새내기 전용 고민 상담소! in KNU', '경북대학교 학생', 'images/knuofficial/DJ-7aaExk63', '기타', '2025-05-23', '"네가 꺼낸 걱정, 우리가 끝까지 함께 들어줄게."\n\n경북대학교 새내기들을 위해 준비한 익명 고민 상담 카드뉴스!\n여러분이 직접 제보한 고민들을 모아, 선배 ''호반우 상담사''가 친근하고 따뜻한 말투로 하나하나 답변해드립니다.🙂\n\n처음이 서툰 당신을 위한\n따뜻한 위로와 든든한 꿀팁 가득한 이 카드뉴스,\n지금 바로 확인해보세요!😆\n\n#경북대#새내기#고민#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DJ0ZAmfS1y4/', '💐성년의 날을 축하합니다💐', '경북대학교 학생', 'images/knuofficial/DJ0ZAmfS1y4', '기타', '2025-05-19', '입학식 날, 설렘 가득한 눈빛으로\n경북대학교에 첫발을 내디뎠던 25학번 여러분!\n\n오늘은 그날보다 한 걸음 더 성장한\n성인이 된 여러분을 축하하는 날입니다.\n\n경북대학교는 여러분의 앞날을\n언제나 응원합니다.\n\n성년의 날을 진심으로 축하합니다.\n\n#성년의날 #경북대 #KNU #KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DJqkm_iyEUe/', '🎉#경북대학교_79번째 생일#🎉', '경북대학교 학생', 'images/knuofficial/DJqkm_iyEUe', '기타', '2025-05-15', '경북대학교 학우 여러분!\n경북대가 벌써 79주년을 맞이했습니다.\n\n학생리포터가 개교기념일을 맞아 이벤트를 준비했습니다.\n\n이번 이벤트는 학우 여러분이 직접 호반우를 꾸미거나 새로운 콘셉트를 제안하는 형식으로 진행되며, 선발 작품은 네 컷 사진의 프레임으로 제작할 예정입니다.\n학우 여러분들의 많은 참여 부탁드립니다!\n\n#경북대 #KNU #KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DJqCfAkypv4/', '오늘은 ''스승의 날''입니다.', '경북대학교 학생', 'images/knuofficial/DJqCfAkypv4', '기타', '2025-05-15', '⠀\n스승의 날은 우리에게 지식과 지혜를 전해주시고, 삶의 방향을 밝혀주신 선생님께 감사의 마음을 전하는 날입니다.\n⠀\n경북대학교 곳곳에서 학생들의 성장을 위해 묵묵히 헌신해주시는 교수님들과 선생님들이 계시기에, 우리는 매일 조금씩 더 나아갈 수 있었습니다.\n⠀\n오늘 하루만큼은 그 고마움을 떠올리며, 배움의 길을 함께 걸어주신 모든 분들께 진심을 담아 감사 인사를 전해보는 건 어떨까요?\n\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DJp4mK8S0dh/', '📣2025학년도 여름계절학기 수강신청 안내📣', '경북대학교 학생', 'images/knuofficial/DJp4mK8S0dh', '기타', '2025-05-15', '금일 오후 12:00부터 수강신청이 가능합니다. 여름의 무더위 속에서도 학업에 힘쓰는 여러분의 열정을 응원합니다! 수강 변경 기간은 6. 4. ~ 6. 5. 입니다.\n\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DJlQdGpSxdq/', '[2025년 천원의 아침밥 이벤트]', '경북대학교 학생', 'images/knuofficial/DJlQdGpSxdq', '기타', '2025-05-13', '''0원의 아침밥''으로 여러분께 특별한 선물을 전합니다. 학생들의 활기찬 20대를 응원합니다♥\n\n-일시: 2025. 5. 19.(월), 08:00~09:30\n-장소: 카페테리아 첨성(복지관 1층 학생식당)\n-대상: 학부 및 대학원 재학생\n-식사가격: 무료(선착순 500명에 한함)\n-이용방법: 크누피아 어플 내 QR체크인 누르고 QR코드 찍기(식권 미제출)\n\n※ 비대상자의 경우 해당 일자에는 아침식사가 어려우니 양해 부탁드립니다.\n\n#경북대 #KNU #성년의날 #재학생 #아침밥_무료'),
+
+('https://www.instagram.com/knuofficial/p/DJipkAhScUf/', '😆5월 도서관,뭐하니?😆', '경북대학교 학생', 'images/knuofficial/DJipkAhScUf', '기타', '2025-05-12', 'KNU Library 이모저모 알아보기!\n\n📌Research AI\n📌Research Boost UP\n📌인문사회계열 학위논문주간\n📌이공자연계열 학위논문주간\n📌학부생을 위한 도서관 교육\n📌온라인 도서관 전자정보박람회\n📌KNU 문화다양성 주간 기념 도서전시회\n\n모두들 도서관에서 만나요🫶\n\n#경북대 #KNU #도서관 #행사'),
+
+('https://www.instagram.com/knuofficial/p/DJaeDRaSmKa/', '✏️학생리포터 취재팀이 추천하는 KNU 웹진✏️', '경북대학교 학생', 'images/knuofficial/DJaeDRaSmKa', '기타', '2025-05-09', '경북대학교의 시간을 담고, 사람을 전하는 KNU 웹진! 학생리포터 취재팀이 직접 고른 ''추천 웹진 9편''을 소개합니다. \n\n 동문님의 진솔한 이야기부터, 우리가 몰랐던 캠퍼스 소식까지! 지금 바로 리포터들의 시선으로 담아낸 KNU웹진을 만나러 가볼까요?\n\n#경북대 #KNU #KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DJQbCI2SmQF/', '오늘은 ''어린이날''입니다🍀', '경북대학교 학생', 'images/knuofficial/DJQbCI2SmQF', '기타', '2025-05-05', '어린이날은 어린이들의 순수한 꿈과 희망을 응원하고 행복을 도모 하기 위해 제정된 기념일입니다.\n\n영원히 어린이일 것만 같았던 우리들도 어느새 어른이 되어 각자의 삶을 살아가느라 바쁜 하루하루를 보내고 있습니다.\n호반우가 그린 어린이날 그림일기를 보며, 잠깐이나마 동심을 찾아보는 건 어떨까요?\n\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DJI9z8Nyow6/', 'RE:PLAY, 학생RE포터의 PLAY리스트🎶', '경북대학교 학생', 'images/knuofficial/DJI9z8Nyow6', '기타', '2025-05-02', '우리는 음악을 통해 많은 힘을 얻곤 합니다.\n기분이 꿀꿀할 때, 혼자라고 느껴질 때, 또는 포기하고 싶어질 때 좋아하는 노래를 들으면 힘이 조금씩 생기는 신기한 경험을 할 수 있어요. \n\n 오늘은 여러분을 위해 24기 학생리포터가 노래 몇 곡을 준비했어요. 어울리는 상황에 따라 다양하게 감상해보세요!☺️\n\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DJDZDo6yLSI/', '🏡5월 학사일정🏡', '경북대학교 학생', 'images/knuofficial/DJDZDo6yLSI', '기타', '2025-04-30', '여러분, 즐겁게 학교생활하고 계신가요?\n가정의 달인 5월이 성큼 다가왔습니다!\n푸르른 5월과 함께 가족들과 행복한 시간을 보내시길 바랍니다💚\n\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DI-bb49yLSB/', '🐮경북대학교 웹진 280호 캠퍼스스토리🐮', '경북대학교 학생', 'images/knuofficial/DI-bb49yLSB', '기타', '2025-04-28', ': 경북대학교 마스코트, 호반우 이야기\n\n''응답하라 경북대''로 돌아온 280호 캠퍼스스토리에서는 \n명실상부한 경북대학교의 마스코트, 호반우에 대한 이야기를 담아보았습니다.\n더 자세한 이야기가 궁금하다면 KNU 웹진을 찾아주세요!'),
+
+('https://www.instagram.com/knuofficial/p/DI2st9dSk9S/', '🐾 경북대학교 웹진 280호 KNU 피플 🐾', '경북대학교 학생', 'images/knuofficial/DI2st9dSk9S', '기타', '2025-04-25', ': 커다란 온기는 작은 심장을 다시 뛰게끔 한다.\n\n반려동물들과 함께 살아가는 우리들의 곁을 지키는, 수의과대학 수의학과 배슬기 교수를 만나보았습니다.🚑\n\n더 자세한 이야기가 궁금하다면, KNU 웹진을 찾아주세요!\n\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위') [42001-232]
+2025-05-31 15:56:41.404537+09:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO OFFICIAL_EVENT (post_url, title, target, image_path, category, duration, notice) VALUES\000d\000a('https://www.instagram.com/knuofficial/p/DIfoO83yX5X/', '✨경북대학교 웹진 280호 발간✨', '경북대학교 학생', 'images/knuofficial/DIfoO83yX5X', '기타', '2025-04-16', '경북대학교 280호 웹진이 발간되었습니다!!🎉\\n각 코너별 특색을 한층 더 살려, 유익한 정보와 흥미로운 소식들을 가득 담았습니다 :) 여러분의 많은 관심 부탁드립니다!🥰\\n웹진의 자세한 이야기는 인스타그램 링크를 통해 확인하실 수 있습니다\\n\\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DIfoIQoSsDZ/', '✨경북대학교 웹진 280호 발간✨', '경북대학교 학생', 'images/knuofficial/DIfoIQoSsDZ', '기타', '2025-04-16', '경북대학교 280호 웹진이 발간되었습니다!!🎉\\n각 코너별 특색을 한층 더 살려, 유익한 정보와 흥미로운 소식들을 가득 담았습니다 :) 여러분의 많은 관심 부탁드립니다!🥰\\n웹진의 자세한 이야기는 인스타그램 링크를 통해 확인하실 수 있습니다\\n\\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DIfoD0YyHSn/', '✨경북대학교 웹진 280호 발간✨', '경북대학교 학생', 'images/knuofficial/DIfoD0YyHSn', '기타', '2025-04-16', '경북대학교 280호 웹진이 발간되었습니다!!🎉\\n각 코너별 특색을 한층 더 살려, 유익한 정보와 흥미로운 소식들을 가득 담았습니다 :) 여러분의 많은 관심 부탁드립니다!🥰\\n웹진의 자세한 이야기는 인스타그램 링크를 통해 확인하실 수 있습니다\\n\\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DKRWR2DSZeP/', '🍀6월 학사일정 안내🍀', '경북대학교 학생', 'images/knuofficial/DKRWR2DSZeP', '기타', '2025-05-30', '어느덧 5월이 지나고, 벌써 6월이 찾아왔습니다!\\n새로운 한 달도 활기차고 즐거운 캠퍼스 생활 보내시길 바랍니다💗\\n\\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DKL5HUTyds_/', '🎉 호반우를 꾸며줘 당첨자 발표 🎉', '경북대학교 학생', 'images/knuofficial/DKL5HUTyds_', '기타', '2025-05-28', ''[*]호반우를 꾸며줘' 이벤트에 많은 관심 가져주시고, 호반우를 멋지고 개성 있게 꾸며주신 여러분께 감사드립니다.☺️\\n우수한 아이디어와 창의성이 돋보이는 디자인으로 호반우에게 새로운 매력을 더해준 당첨자를 발표합니다.🎊\\n\\n📍당첨자는 카드뉴스에서 본인의 이름, 제출한 디자인을 통해 확인 가능합니다.\\n📍기프티콘은 구글폼 작성 시 제출해 주신 전화번호를 통해 발송해 드릴 예정입니다.\\n📍호반우 굿즈 세트 당첨자분들께는 개별 연락 드릴 예정입니다.\\n\\n#경북대 #KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DKLSu5eTTsE/', '🎉 오늘은 경북대학교 개교 79주년입니다.', '경북대학교 학생', 'images/knuofficial/DKLSu5eTTsE', '기타', '2025-05-28', '79년의 전통과 자부심을 이어온 우리 학교의 특별한 날을 함께 축하해주세요!\\n더 큰 내일을 향한 여정, 지금 이 순간부터 다시 시작됩니다. 🏫✨\\n\\n#개교기념일 #79주년 #경북대학교 #KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DKGUISeS83j/', '[2025학년도 하계 및 2학기 현장실습교육과정 학생 모집 안내]', '경북대학교 학생', 'images/knuofficial/DKGUISeS83j', '기타', '2025-05-26', '6월 2일부터 여름방학과 2학기 현장실습 학생 수시모집이 시작됩니다.\\n\\n마감일은 교육과정별로 다르니 자세한 내용은 진로취업과(knujob.knu.ac.kr) 현장실습 공지사항을 참조하세요.\\n\\n현장실습 참여로 직업세계를 경험하는 유익한 기회를 갖기를 희망합니다.\\n\\n#경북대 #KNU #현장실습 #모집 #진로취업과'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DJ-7aaExk63/', '🍀새내기 전용 고민 상담소! in KNU', '경북대학교 학생', 'images/knuofficial/DJ-7aaExk63', '기타', '2025-05-23', '""네가 꺼낸 걱정, 우리가 끝까지 함께 들어줄게.""\\n\\n경북대학교 새내기들을 위해 준비한 익명 고민 상담 카드뉴스!\\n여러분이 직접 제보한 고민들을 모아, 선배 ''호반우 상담사''가 친근하고 따뜻한 말투로 하나하나 답변해드립니다.🙂\\n\\n처음이 서툰 당신을 위한\\n따뜻한 위로와 든든한 꿀팁 가득한 이 카드뉴스,\\n지금 바로 확인해보세요!😆\\n\\n#경북대#새내기#고민#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DJ0ZAmfS1y4/', '💐성년의 날을 축하합니다💐', '경북대학교 학생', 'images/knuofficial/DJ0ZAmfS1y4', '기타', '2025-05-19', '입학식 날, 설렘 가득한 눈빛으로\\n경북대학교에 첫발을 내디뎠던 25학번 여러분!\\n\\n오늘은 그날보다 한 걸음 더 성장한\\n성인이 된 여러분을 축하하는 날입니다.\\n\\n경북대학교는 여러분의 앞날을\\n언제나 응원합니다.\\n\\n성년의 날을 진심으로 축하합니다.\\n\\n#성년의날 #경북대 #KNU #KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DJqkm_iyEUe/', '🎉#경북대학교_79번째 생일#🎉', '경북대학교 학생', 'images/knuofficial/DJqkm_iyEUe', '기타', '2025-05-15', '경북대학교 학우 여러분!\\n경북대가 벌써 79주년을 맞이했습니다.\\n\\n학생리포터가 개교기념일을 맞아 이벤트를 준비했습니다.\\n\\n이번 이벤트는 학우 여러분이 직접 호반우를 꾸미거나 새로운 콘셉트를 제안하는 형식으로 진행되며, 선발 작품은 네 컷 사진의 프레임으로 제작할 예정입니다.\\n학우 여러분들의 많은 참여 부탁드립니다!\\n\\n#경북대 #KNU #KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DJqCfAkypv4/', '오늘은 ''스승의 날''입니다.', '경북대학교 학생', 'images/knuofficial/DJqCfAkypv4', '기타', '2025-05-15', '⠀\\n스승의 날은 우리에게 지식과 지혜를 전해주시고, 삶의 방향을 밝혀주신 선생님께 감사의 마음을 전하는 날입니다.\\n⠀\\n경북대학교 곳곳에서 학생들의 성장을 위해 묵묵히 헌신해주시는 교수님들과 선생님들이 계시기에, 우리는 매일 조금씩 더 나아갈 수 있었습니다.\\n⠀\\n오늘 하루만큼은 그 고마움을 떠올리며, 배움의 길을 함께 걸어주신 모든 분들께 진심을 담아 감사 인사를 전해보는 건 어떨까요?\\n\\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DJp4mK8S0dh/', '📣2025학년도 여름계절학기 수강신청 안내📣', '경북대학교 학생', 'images/knuofficial/DJp4mK8S0dh', '기타', '2025-05-15', '금일 오후 12:00부터 수강신청이 가능합니다. 여름의 무더위 속에서도 학업에 힘쓰는 여러분의 열정을 응원합니다! 수강 변경 기간은 6. 4. ~ 6. 5. 입니다.\\n\\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DJlQdGpSxdq/', '[2025년 천원의 아침밥 이벤트]', '경북대학교 학생', 'images/knuofficial/DJlQdGpSxdq', '기타', '2025-05-13', '''0원의 아침밥''으로 여러분께 특별한 선물을 전합니다. 학생들의 활기찬 20대를 응원합니다♥\\n\\n-일시: 2025. 5. 19.(월), 08:00~09:30\\n-장소: 카페테리아 첨성(복지관 1층 학생식당)\\n-대상: 학부 및 대학원 재학생\\n-식사가격: 무료(선착순 500명에 한함)\\n-이용방법: 크누피아 어플 내 QR체크인 누르고 QR코드 찍기(식권 미제출)\\n\\n※ 비대상자의 경우 해당 일자에는 아침식사가 어려우니 양해 부탁드립니다.\\n\\n#경북대 #KNU #성년의날 #재학생 #아침밥_무료'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DJipkAhScUf/', '😆5월 도서관,뭐하니?😆', '경북대학교 학생', 'images/knuofficial/DJipkAhScUf', '기타', '2025-05-12', 'KNU Library 이모저모 알아보기!\\n\\n📌Research AI\\n📌Research Boost UP\\n📌인문사회계열 학위논문주간\\n📌이공자연계열 학위논문주간\\n📌학부생을 위한 도서관 교육\\n📌온라인 도서관 전자정보박람회\\n📌KNU 문화다양성 주간 기념 도서전시회\\n\\n모두들 도서관에서 만나요🫶\\n\\n#경북대 #KNU #도서관 #행사'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DJaeDRaSmKa/', '✏️학생리포터 취재팀이 추천하는 KNU 웹진✏️', '경북대학교 학생', 'images/knuofficial/DJaeDRaSmKa', '기타', '2025-05-09', '경북대학교의 시간을 담고, 사람을 전하는 KNU 웹진! 학생리포터 취재팀이 직접 고른 ''추천 웹진 9편''을 소개합니다. \\n\\n 동문님의 진솔한 이야기부터, 우리가 몰랐던 캠퍼스 소식까지! 지금 바로 리포터들의 시선으로 담아낸 KNU웹진을 만나러 가볼까요?\\n\\n#경북대 #KNU #KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DJQbCI2SmQF/', '오늘은 ''어린이날''입니다🍀', '경북대학교 학생', 'images/knuofficial/DJQbCI2SmQF', '기타', '2025-05-05', '어린이날은 어린이들의 순수한 꿈과 희망을 응원하고 행복을 도모 하기 위해 제정된 기념일입니다.\\n\\n영원히 어린이일 것만 같았던 우리들도 어느새 어른이 되어 각자의 삶을 살아가느라 바쁜 하루하루를 보내고 있습니다.\\n호반우가 그린 어린이날 그림일기를 보며, 잠깐이나마 동심을 찾아보는 건 어떨까요?\\n\\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DJI9z8Nyow6/', 'RE:PLAY, 학생RE포터의 PLAY리스트🎶', '경북대학교 학생', 'images/knuofficial/DJI9z8Nyow6', '기타', '2025-05-02', '우리는 음악을 통해 많은 힘을 얻곤 합니다.\\n기분이 꿀꿀할 때, 혼자라고 느껴질 때, 또는 포기하고 싶어질 때 좋아하는 노래를 들으면 힘이 조금씩 생기는 신기한 경험을 할 수 있어요. \\n\\n 오늘은 여러분을 위해 24기 학생리포터가 노래 몇 곡을 준비했어요. 어울리는 상황에 따라 다양하게 감상해보세요!☺️\\n\\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DJDZDo6yLSI/', '🏡5월 학사일정🏡', '경북대학교 학생', 'images/knuofficial/DJDZDo6yLSI', '기타', '2025-04-30', '여러분, 즐겁게 학교생활하고 계신가요?\\n가정의 달인 5월이 성큼 다가왔습니다!\\n푸르른 5월과 함께 가족들과 행복한 시간을 보내시길 바랍니다💚\\n\\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DI-bb49yLSB/', '🐮경북대학교 웹진 280호 캠퍼스스토리🐮', '경북대학교 학생', 'images/knuofficial/DI-bb49yLSB', '기타', '2025-04-28', ': 경북대학교 마스코트, 호반우 이야기\\n\\n''응답하라 경북대''로 돌아온 280호 캠퍼스스토리에서는 \\n명실상부한 경북대학교의 마스코트, 호반우에 대한 이야기를 담아보았습니다.\\n더 자세한 이야기가 궁금하다면 KNU 웹진을 찾아주세요!'),\000d\000a\000d\000a('https://www.instagram.com/knuofficial/p/DI2st9dSk9S/', '🐾 경북대학교 웹진 280호 KNU 피플 🐾', '경북대학교 학생', 'images/knuofficial/DI2st9dSk9S', '기타', '2025-04-25', ': 커다란 온기는 작은 심장을 다시 뛰게끔 한다.\\n\\n반려동물들과 함께 살아가는 우리들의 곁을 지키는, 수의과대학 수의학과 배슬기 교수를 만나보았습니다.🚑\\n\\n더 자세한 이야기가 궁금하다면, KNU 웹진을 찾아주세요!\\n\\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위')"; expected "[, ., ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"; SQL statement:
+INSERT INTO OFFICIAL_EVENT (post_url, title, target, image_path, category, duration, notice) VALUES
+('https://www.instagram.com/knuofficial/p/DIfoO83yX5X/', '✨경북대학교 웹진 280호 발간✨', '경북대학교 학생', 'images/knuofficial/DIfoO83yX5X', '기타', '2025-04-16', '경북대학교 280호 웹진이 발간되었습니다!!🎉\n각 코너별 특색을 한층 더 살려, 유익한 정보와 흥미로운 소식들을 가득 담았습니다 :) 여러분의 많은 관심 부탁드립니다!🥰\n웹진의 자세한 이야기는 인스타그램 링크를 통해 확인하실 수 있습니다\n\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DIfoIQoSsDZ/', '✨경북대학교 웹진 280호 발간✨', '경북대학교 학생', 'images/knuofficial/DIfoIQoSsDZ', '기타', '2025-04-16', '경북대학교 280호 웹진이 발간되었습니다!!🎉\n각 코너별 특색을 한층 더 살려, 유익한 정보와 흥미로운 소식들을 가득 담았습니다 :) 여러분의 많은 관심 부탁드립니다!🥰\n웹진의 자세한 이야기는 인스타그램 링크를 통해 확인하실 수 있습니다\n\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DIfoD0YyHSn/', '✨경북대학교 웹진 280호 발간✨', '경북대학교 학생', 'images/knuofficial/DIfoD0YyHSn', '기타', '2025-04-16', '경북대학교 280호 웹진이 발간되었습니다!!🎉\n각 코너별 특색을 한층 더 살려, 유익한 정보와 흥미로운 소식들을 가득 담았습니다 :) 여러분의 많은 관심 부탁드립니다!🥰\n웹진의 자세한 이야기는 인스타그램 링크를 통해 확인하실 수 있습니다\n\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DKRWR2DSZeP/', '🍀6월 학사일정 안내🍀', '경북대학교 학생', 'images/knuofficial/DKRWR2DSZeP', '기타', '2025-05-30', '어느덧 5월이 지나고, 벌써 6월이 찾아왔습니다!\n새로운 한 달도 활기차고 즐거운 캠퍼스 생활 보내시길 바랍니다💗\n\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DKL5HUTyds_/', '🎉 호반우를 꾸며줘 당첨자 발표 🎉', '경북대학교 학생', 'images/knuofficial/DKL5HUTyds_', '기타', '2025-05-28', ''호반우를 꾸며줘' 이벤트에 많은 관심 가져주시고, 호반우를 멋지고 개성 있게 꾸며주신 여러분께 감사드립니다.☺️\n우수한 아이디어와 창의성이 돋보이는 디자인으로 호반우에게 새로운 매력을 더해준 당첨자를 발표합니다.🎊\n\n📍당첨자는 카드뉴스에서 본인의 이름, 제출한 디자인을 통해 확인 가능합니다.\n📍기프티콘은 구글폼 작성 시 제출해 주신 전화번호를 통해 발송해 드릴 예정입니다.\n📍호반우 굿즈 세트 당첨자분들께는 개별 연락 드릴 예정입니다.\n\n#경북대 #KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DKLSu5eTTsE/', '🎉 오늘은 경북대학교 개교 79주년입니다.', '경북대학교 학생', 'images/knuofficial/DKLSu5eTTsE', '기타', '2025-05-28', '79년의 전통과 자부심을 이어온 우리 학교의 특별한 날을 함께 축하해주세요!\n더 큰 내일을 향한 여정, 지금 이 순간부터 다시 시작됩니다. 🏫✨\n\n#개교기념일 #79주년 #경북대학교 #KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DKGUISeS83j/', '[2025학년도 하계 및 2학기 현장실습교육과정 학생 모집 안내]', '경북대학교 학생', 'images/knuofficial/DKGUISeS83j', '기타', '2025-05-26', '6월 2일부터 여름방학과 2학기 현장실습 학생 수시모집이 시작됩니다.\n\n마감일은 교육과정별로 다르니 자세한 내용은 진로취업과(knujob.knu.ac.kr) 현장실습 공지사항을 참조하세요.\n\n현장실습 참여로 직업세계를 경험하는 유익한 기회를 갖기를 희망합니다.\n\n#경북대 #KNU #현장실습 #모집 #진로취업과'),
+
+('https://www.instagram.com/knuofficial/p/DJ-7aaExk63/', '🍀새내기 전용 고민 상담소! in KNU', '경북대학교 학생', 'images/knuofficial/DJ-7aaExk63', '기타', '2025-05-23', '"네가 꺼낸 걱정, 우리가 끝까지 함께 들어줄게."\n\n경북대학교 새내기들을 위해 준비한 익명 고민 상담 카드뉴스!\n여러분이 직접 제보한 고민들을 모아, 선배 ''호반우 상담사''가 친근하고 따뜻한 말투로 하나하나 답변해드립니다.🙂\n\n처음이 서툰 당신을 위한\n따뜻한 위로와 든든한 꿀팁 가득한 이 카드뉴스,\n지금 바로 확인해보세요!😆\n\n#경북대#새내기#고민#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DJ0ZAmfS1y4/', '💐성년의 날을 축하합니다💐', '경북대학교 학생', 'images/knuofficial/DJ0ZAmfS1y4', '기타', '2025-05-19', '입학식 날, 설렘 가득한 눈빛으로\n경북대학교에 첫발을 내디뎠던 25학번 여러분!\n\n오늘은 그날보다 한 걸음 더 성장한\n성인이 된 여러분을 축하하는 날입니다.\n\n경북대학교는 여러분의 앞날을\n언제나 응원합니다.\n\n성년의 날을 진심으로 축하합니다.\n\n#성년의날 #경북대 #KNU #KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DJqkm_iyEUe/', '🎉#경북대학교_79번째 생일#🎉', '경북대학교 학생', 'images/knuofficial/DJqkm_iyEUe', '기타', '2025-05-15', '경북대학교 학우 여러분!\n경북대가 벌써 79주년을 맞이했습니다.\n\n학생리포터가 개교기념일을 맞아 이벤트를 준비했습니다.\n\n이번 이벤트는 학우 여러분이 직접 호반우를 꾸미거나 새로운 콘셉트를 제안하는 형식으로 진행되며, 선발 작품은 네 컷 사진의 프레임으로 제작할 예정입니다.\n학우 여러분들의 많은 참여 부탁드립니다!\n\n#경북대 #KNU #KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DJqCfAkypv4/', '오늘은 ''스승의 날''입니다.', '경북대학교 학생', 'images/knuofficial/DJqCfAkypv4', '기타', '2025-05-15', '⠀\n스승의 날은 우리에게 지식과 지혜를 전해주시고, 삶의 방향을 밝혀주신 선생님께 감사의 마음을 전하는 날입니다.\n⠀\n경북대학교 곳곳에서 학생들의 성장을 위해 묵묵히 헌신해주시는 교수님들과 선생님들이 계시기에, 우리는 매일 조금씩 더 나아갈 수 있었습니다.\n⠀\n오늘 하루만큼은 그 고마움을 떠올리며, 배움의 길을 함께 걸어주신 모든 분들께 진심을 담아 감사 인사를 전해보는 건 어떨까요?\n\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DJp4mK8S0dh/', '📣2025학년도 여름계절학기 수강신청 안내📣', '경북대학교 학생', 'images/knuofficial/DJp4mK8S0dh', '기타', '2025-05-15', '금일 오후 12:00부터 수강신청이 가능합니다. 여름의 무더위 속에서도 학업에 힘쓰는 여러분의 열정을 응원합니다! 수강 변경 기간은 6. 4. ~ 6. 5. 입니다.\n\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DJlQdGpSxdq/', '[2025년 천원의 아침밥 이벤트]', '경북대학교 학생', 'images/knuofficial/DJlQdGpSxdq', '기타', '2025-05-13', '''0원의 아침밥''으로 여러분께 특별한 선물을 전합니다. 학생들의 활기찬 20대를 응원합니다♥\n\n-일시: 2025. 5. 19.(월), 08:00~09:30\n-장소: 카페테리아 첨성(복지관 1층 학생식당)\n-대상: 학부 및 대학원 재학생\n-식사가격: 무료(선착순 500명에 한함)\n-이용방법: 크누피아 어플 내 QR체크인 누르고 QR코드 찍기(식권 미제출)\n\n※ 비대상자의 경우 해당 일자에는 아침식사가 어려우니 양해 부탁드립니다.\n\n#경북대 #KNU #성년의날 #재학생 #아침밥_무료'),
+
+('https://www.instagram.com/knuofficial/p/DJipkAhScUf/', '😆5월 도서관,뭐하니?😆', '경북대학교 학생', 'images/knuofficial/DJipkAhScUf', '기타', '2025-05-12', 'KNU Library 이모저모 알아보기!\n\n📌Research AI\n📌Research Boost UP\n📌인문사회계열 학위논문주간\n📌이공자연계열 학위논문주간\n📌학부생을 위한 도서관 교육\n📌온라인 도서관 전자정보박람회\n📌KNU 문화다양성 주간 기념 도서전시회\n\n모두들 도서관에서 만나요🫶\n\n#경북대 #KNU #도서관 #행사'),
+
+('https://www.instagram.com/knuofficial/p/DJaeDRaSmKa/', '✏️학생리포터 취재팀이 추천하는 KNU 웹진✏️', '경북대학교 학생', 'images/knuofficial/DJaeDRaSmKa', '기타', '2025-05-09', '경북대학교의 시간을 담고, 사람을 전하는 KNU 웹진! 학생리포터 취재팀이 직접 고른 ''추천 웹진 9편''을 소개합니다. \n\n 동문님의 진솔한 이야기부터, 우리가 몰랐던 캠퍼스 소식까지! 지금 바로 리포터들의 시선으로 담아낸 KNU웹진을 만나러 가볼까요?\n\n#경북대 #KNU #KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DJQbCI2SmQF/', '오늘은 ''어린이날''입니다🍀', '경북대학교 학생', 'images/knuofficial/DJQbCI2SmQF', '기타', '2025-05-05', '어린이날은 어린이들의 순수한 꿈과 희망을 응원하고 행복을 도모 하기 위해 제정된 기념일입니다.\n\n영원히 어린이일 것만 같았던 우리들도 어느새 어른이 되어 각자의 삶을 살아가느라 바쁜 하루하루를 보내고 있습니다.\n호반우가 그린 어린이날 그림일기를 보며, 잠깐이나마 동심을 찾아보는 건 어떨까요?\n\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DJI9z8Nyow6/', 'RE:PLAY, 학생RE포터의 PLAY리스트🎶', '경북대학교 학생', 'images/knuofficial/DJI9z8Nyow6', '기타', '2025-05-02', '우리는 음악을 통해 많은 힘을 얻곤 합니다.\n기분이 꿀꿀할 때, 혼자라고 느껴질 때, 또는 포기하고 싶어질 때 좋아하는 노래를 들으면 힘이 조금씩 생기는 신기한 경험을 할 수 있어요. \n\n 오늘은 여러분을 위해 24기 학생리포터가 노래 몇 곡을 준비했어요. 어울리는 상황에 따라 다양하게 감상해보세요!☺️\n\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DJDZDo6yLSI/', '🏡5월 학사일정🏡', '경북대학교 학생', 'images/knuofficial/DJDZDo6yLSI', '기타', '2025-04-30', '여러분, 즐겁게 학교생활하고 계신가요?\n가정의 달인 5월이 성큼 다가왔습니다!\n푸르른 5월과 함께 가족들과 행복한 시간을 보내시길 바랍니다💚\n\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DI-bb49yLSB/', '🐮경북대학교 웹진 280호 캠퍼스스토리🐮', '경북대학교 학생', 'images/knuofficial/DI-bb49yLSB', '기타', '2025-04-28', ': 경북대학교 마스코트, 호반우 이야기\n\n''응답하라 경북대''로 돌아온 280호 캠퍼스스토리에서는 \n명실상부한 경북대학교의 마스코트, 호반우에 대한 이야기를 담아보았습니다.\n더 자세한 이야기가 궁금하다면 KNU 웹진을 찾아주세요!'),
+
+('https://www.instagram.com/knuofficial/p/DI2st9dSk9S/', '🐾 경북대학교 웹진 280호 KNU 피플 🐾', '경북대학교 학생', 'images/knuofficial/DI2st9dSk9S', '기타', '2025-04-25', ': 커다란 온기는 작은 심장을 다시 뛰게끔 한다.\n\n반려동물들과 함께 살아가는 우리들의 곁을 지키는, 수의과대학 수의학과 배슬기 교수를 만나보았습니다.🚑\n\n더 자세한 이야기가 궁금하다면, KNU 웹진을 찾아주세요!\n\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위') [42001-232]
+2025-05-31 15:59:58.074524+09:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "NOTICE CHARACTER VARYING(255)": "U&'''\\d638\\bc18\\c6b0\\b97c \\afb8\\ba70\\c918'' \\c774\\bca4\\d2b8\\c5d0 \\b9ce\\c740 \\ad0... (352)"; SQL statement:
+INSERT INTO official_event (post_url, title, target, image_path, category, duration, notice) VALUES
+('https://www.instagram.com/knuofficial/p/DIfoO83yX5X/', '✨경북대학교 웹진 280호 발간✨', '경북대학교 학생', 'images/knuofficial/DIfoO83yX5X', '기타', '2025-04-16', '경북대학교 280호 웹진이 발간되었습니다!!🎉\n각 코너별 특색을 한층 더 살려, 유익한 정보와 흥미로운 소식들을 가득 담았습니다 :) 여러분의 많은 관심 부탁드립니다!🥰\n웹진의 자세한 이야기는 인스타그램 링크를 통해 확인하실 수 있습니다\n\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DIfoIQoSsDZ/', '✨경북대학교 웹진 280호 발간✨', '경북대학교 학생', 'images/knuofficial/DIfoIQoSsDZ', '기타', '2025-04-16', '경북대학교 280호 웹진이 발간되었습니다!!🎉\n각 코너별 특색을 한층 더 살려, 유익한 정보와 흥미로운 소식들을 가득 담았습니다 :) 여러분의 많은 관심 부탁드립니다!🥰\n웹진의 자세한 이야기는 인스타그램 링크를 통해 확인하실 수 있습니다\n\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DIfoD0YyHSn/', '✨경북대학교 웹진 280호 발간✨', '경북대학교 학생', 'images/knuofficial/DIfoD0YyHSn', '기타', '2025-04-16', '경북대학교 280호 웹진이 발간되었습니다!!🎉\n각 코너별 특색을 한층 더 살려, 유익한 정보와 흥미로운 소식들을 가득 담았습니다 :) 여러분의 많은 관심 부탁드립니다!🥰\n웹진의 자세한 이야기는 인스타그램 링크를 통해 확인하실 수 있습니다\n\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DKRWR2DSZeP/', '🍀6월 학사일정 안내🍀', '경북대학교 학생', 'images/knuofficial/DKRWR2DSZeP', '기타', '2025-05-30', '어느덧 5월이 지나고, 벌써 6월이 찾아왔습니다!\n새로운 한 달도 활기차고 즐거운 캠퍼스 생활 보내시길 바랍니다💗\n\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DKL5HUTyds_/', '🎉 호반우를 꾸며줘 당첨자 발표 🎉', '경북대학교 학생', 'images/knuofficial/DKL5HUTyds_', '기타', '2025-05-28', '''호반우를 꾸며줘'' 이벤트에 많은 관심 가져주시고, 호반우를 멋지고 개성 있게 꾸며주신 여러분께 감사드립니다.☺️\n우수한 아이디어와 창의성이 돋보이는 디자인으로 호반우에게 새로운 매력을 더해준 당첨자를 발표합니다.🎊\n\n📍당첨자는 카드뉴스에서 본인의 이름, 제출한 디자인을 통해 확인 가능합니다.\n📍기프티콘은 구글폼 작성 시 제출해 주신 전화번호를 통해 발송해 드릴 예정입니다.\n📍호반우 굿즈 세트 당첨자분들께는 개별 연락 드릴 예정입니다.\n\n#경북대 #KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DKLSu5eTTsE/', '🎉 오늘은 경북대학교 개교 79주년입니다.', '경북대학교 학생', 'images/knuofficial/DKLSu5eTTsE', '기타', '2025-05-28', '79년의 전통과 자부심을 이어온 우리 학교의 특별한 날을 함께 축하해주세요!\n더 큰 내일을 향한 여정, 지금 이 순간부터 다시 시작됩니다. 🏫✨\n\n#개교기념일 #79주년 #경북대학교 #KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DKGUISeS83j/', '[2025학년도 하계 및 2학기 현장실습교육과정 학생 모집 안내]', '경북대학교 학생', 'images/knuofficial/DKGUISeS83j', '기타', '2025-05-26', '6월 2일부터 여름방학과 2학기 현장실습 학생 수시모집이 시작됩니다.\n\n마감일은 교육과정별로 다르니 자세한 내용은 진로취업과(knujob.knu.ac.kr) 현장실습 공지사항을 참조하세요.\n\n현장실습 참여로 직업세계를 경험하는 유익한 기회를 갖기를 희망합니다.\n\n#경북대 #KNU #현장실습 #모집 #진로취업과'),
+
+('https://www.instagram.com/knuofficial/p/DJ-7aaExk63/', '🍀새내기 전용 고민 상담소! in KNU', '경북대학교 학생', 'images/knuofficial/DJ-7aaExk63', '기타', '2025-05-23', '"네가 꺼낸 걱정, 우리가 끝까지 함께 들어줄게."\n\n경북대학교 새내기들을 위해 준비한 익명 고민 상담 카드뉴스!\n여러분이 직접 제보한 고민들을 모아, 선배 ''호반우 상담사''가 친근하고 따뜻한 말투로 하나하나 답변해드립니다.🙂\n\n처음이 서툰 당신을 위한\n따뜻한 위로와 든든한 꿀팁 가득한 이 카드뉴스,\n지금 바로 확인해보세요!😆\n\n#경북대#새내기#고민#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DJ0ZAmfS1y4/', '💐성년의 날을 축하합니다💐', '경북대학교 학생', 'images/knuofficial/DJ0ZAmfS1y4', '기타', '2025-05-19', '입학식 날, 설렘 가득한 눈빛으로\n경북대학교에 첫발을 내디뎠던 25학번 여러분!\n\n오늘은 그날보다 한 걸음 더 성장한\n성인이 된 여러분을 축하하는 날입니다.\n\n경북대학교는 여러분의 앞날을\n언제나 응원합니다.\n\n성년의 날을 진심으로 축하합니다.\n\n#성년의날 #경북대 #KNU #KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DJqkm_iyEUe/', '🎉#경북대학교_79번째 생일#🎉', '경북대학교 학생', 'images/knuofficial/DJqkm_iyEUe', '기타', '2025-05-15', '경북대학교 학우 여러분!\n경북대가 벌써 79주년을 맞이했습니다.\n\n학생리포터가 개교기념일을 맞아 이벤트를 준비했습니다.\n\n이번 이벤트는 학우 여러분이 직접 호반우를 꾸미거나 새로운 콘셉트를 제안하는 형식으로 진행되며, 선발 작품은 네 컷 사진의 프레임으로 제작할 예정입니다.\n학우 여러분들의 많은 참여 부탁드립니다!\n\n#경북대 #KNU #KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DJqCfAkypv4/', '오늘은 ''스승의 날''입니다.', '경북대학교 학생', 'images/knuofficial/DJqCfAkypv4', '기타', '2025-05-15', '⠀\n스승의 날은 우리에게 지식과 지혜를 전해주시고, 삶의 방향을 밝혀주신 선생님께 감사의 마음을 전하는 날입니다.\n⠀\n경북대학교 곳곳에서 학생들의 성장을 위해 묵묵히 헌신해주시는 교수님들과 선생님들이 계시기에, 우리는 매일 조금씩 더 나아갈 수 있었습니다.\n⠀\n오늘 하루만큼은 그 고마움을 떠올리며, 배움의 길을 함께 걸어주신 모든 분들께 진심을 담아 감사 인사를 전해보는 건 어떨까요?\n\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DJp4mK8S0dh/', '📣2025학년도 여름계절학기 수강신청 안내📣', '경북대학교 학생', 'images/knuofficial/DJp4mK8S0dh', '기타', '2025-05-15', '금일 오후 12:00부터 수강신청이 가능합니다. 여름의 무더위 속에서도 학업에 힘쓰는 여러분의 열정을 응원합니다! 수강 변경 기간은 6. 4. ~ 6. 5. 입니다.\n\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DJlQdGpSxdq/', '[2025년 천원의 아침밥 이벤트]', '경북대학교 학생', 'images/knuofficial/DJlQdGpSxdq', '기타', '2025-05-13', '''0원의 아침밥''으로 여러분께 특별한 선물을 전합니다. 학생들의 활기찬 20대를 응원합니다♥\n\n-일시: 2025. 5. 19.(월), 08:00~09:30\n-장소: 카페테리아 첨성(복지관 1층 학생식당)\n-대상: 학부 및 대학원 재학생\n-식사가격: 무료(선착순 500명에 한함)\n-이용방법: 크누피아 어플 내 QR체크인 누르고 QR코드 찍기(식권 미제출)\n\n※ 비대상자의 경우 해당 일자에는 아침식사가 어려우니 양해 부탁드립니다.\n\n#경북대 #KNU #성년의날 #재학생 #아침밥_무료'),
+
+('https://www.instagram.com/knuofficial/p/DJipkAhScUf/', '😆5월 도서관,뭐하니?😆', '경북대학교 학생', 'images/knuofficial/DJipkAhScUf', '기타', '2025-05-12', 'KNU Library 이모저모 알아보기!\n\n📌Research AI\n📌Research Boost UP\n📌인문사회계열 학위논문주간\n📌이공자연계열 학위논문주간\n📌학부생을 위한 도서관 교육\n📌온라인 도서관 전자정보박람회\n📌KNU 문화다양성 주간 기념 도서전시회\n\n모두들 도서관에서 만나요🫶\n\n#경북대 #KNU #도서관 #행사'),
+
+('https://www.instagram.com/knuofficial/p/DJaeDRaSmKa/', '✏️학생리포터 취재팀이 추천하는 KNU 웹진✏️', '경북대학교 학생', 'images/knuofficial/DJaeDRaSmKa', '기타', '2025-05-09', '경북대학교의 시간을 담고, 사람을 전하는 KNU 웹진! 학생리포터 취재팀이 직접 고른 ''추천 웹진 9편''을 소개합니다. \n\n 동문님의 진솔한 이야기부터, 우리가 몰랐던 캠퍼스 소식까지! 지금 바로 리포터들의 시선으로 담아낸 KNU웹진을 만나러 가볼까요?\n\n#경북대 #KNU #KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DJQbCI2SmQF/', '오늘은 ''어린이날''입니다🍀', '경북대학교 학생', 'images/knuofficial/DJQbCI2SmQF', '기타', '2025-05-05', '어린이날은 어린이들의 순수한 꿈과 희망을 응원하고 행복을 도모 하기 위해 제정된 기념일입니다.\n\n영원히 어린이일 것만 같았던 우리들도 어느새 어른이 되어 각자의 삶을 살아가느라 바쁜 하루하루를 보내고 있습니다.\n호반우가 그린 어린이날 그림일기를 보며, 잠깐이나마 동심을 찾아보는 건 어떨까요?\n\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DJI9z8Nyow6/', 'RE:PLAY, 학생RE포터의 PLAY리스트🎶', '경북대학교 학생', 'images/knuofficial/DJI9z8Nyow6', '기타', '2025-05-02', '우리는 음악을 통해 많은 힘을 얻곤 합니다.\n기분이 꿀꿀할 때, 혼자라고 느껴질 때, 또는 포기하고 싶어질 때 좋아하는 노래를 들으면 힘이 조금씩 생기는 신기한 경험을 할 수 있어요. \n\n 오늘은 여러분을 위해 24기 학생리포터가 노래 몇 곡을 준비했어요. 어울리는 상황에 따라 다양하게 감상해보세요!☺️\n\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DJDZDo6yLSI/', '🏡5월 학사일정🏡', '경북대학교 학생', 'images/knuofficial/DJDZDo6yLSI', '기타', '2025-04-30', '여러분, 즐겁게 학교생활하고 계신가요?\n가정의 달인 5월이 성큼 다가왔습니다!\n푸르른 5월과 함께 가족들과 행복한 시간을 보내시길 바랍니다💚\n\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위'),
+
+('https://www.instagram.com/knuofficial/p/DI-bb49yLSB/', '🐮경북대학교 웹진 280호 캠퍼스스토리🐮', '경북대학교 학생', 'images/knuofficial/DI-bb49yLSB', '기타', '2025-04-28', ': 경북대학교 마스코트, 호반우 이야기\n\n''응답하라 경북대''로 돌아온 280호 캠퍼스스토리에서는 \n명실상부한 경북대학교의 마스코트, 호반우에 대한 이야기를 담아보았습니다.\n더 자세한 이야기가 궁금하다면 KNU 웹진을 찾아주세요!'),
+
+('https://www.instagram.com/knuofficial/p/DI2st9dSk9S/', '🐾 경북대학교 웹진 280호 KNU 피플 🐾', '경북대학교 학생', 'images/knuofficial/DI2st9dSk9S', '기타', '2025-04-25', ': 커다란 온기는 작은 심장을 다시 뛰게끔 한다.\n\n반려동물들과 함께 살아가는 우리들의 곁을 지키는, 수의과대학 수의학과 배슬기 교수를 만나보았습니다.🚑\n\n더 자세한 이야기가 궁금하다면, KNU 웹진을 찾아주세요!\n\n#KNU#KYUNGPOOK_NATIONAL_UNIVERSITY #국가거점국립대 #2023_THE세계대학영향력평가_국립대1위 #국가고객만족도_국립대_2년_연속1위') [22001-232]
+2025-05-31 16:08:43.549016+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJ735m4SKWt/', '🎉 야구장에서 더 즐겁게! ’하루‘가 준비한 특별한 이벤트 2종 ⚾️💙', NULL, 'images/knu_dongari/DJ735m4SKWt', '기타', '2025-05-22', NULL, NULL, '🎉 야구장에서 더 즐겁게! ’하루‘가 준비한 특별한 이벤트 2종 ⚾️💙
+
+5월 28일, 삼성 라이온즈 vs 롯데 자이언츠 경기!
+야구 관람과 더불어 특별한 추억을 위해 선물과 함께하는 이벤트를 
+준비했습니다!
+
+📍 EVENT 1 – 스코어 맞추기 이벤트
+
+⚾ 경기 전, 승리할 팀과 예상 스코어를 구글폼을 통해 작성해 주세요!
+🎯 가장 근접하게 맞추신 분들께는
+배달의민족 상품권 총 10만원 상당을 나누어 드립니다! (인원 초과 시 선착순 10명에게만 지급)
+
+📌 참고
+동일 점수 예측자 수에 따라 금액이 나뉘어요!
+4명 인원: 1인당 25,000원
+2명 인원: 1인당 50,000원
+스코어 예측 작성 기재 예시 - 삼성 승, 삼성 5 : 롯데 3
+
+📍 EVENT 2 – 인스타그램 태그 이벤트
+
+📸 총동연과 함께 야구 경기를 관람하며 찍은 사진을
+👉 인스타그램 스토리에 @KNU_DONGARI를 태그하여 업로드해주세요!
+(*비공개 계정은 참여가 어렵습니다.)
+🎁 참여해주신 분들 중 추첨을 통해 5분께 삼성 라이온즈 응원봉을 드립니다!
+
+🗓 이벤트 당첨자 발표: 5월 29일
+상품은 총동연 사무실에서 수령하실 수 있습니다.
+
+💬문의: 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:08:43.552563+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJyx5tWyjgq/', '안녕하세요.', NULL, 'images/knu_dongari/DJyx5tWyjgq', '기타', '2025-05-19', NULL, NULL, '총동아리연합회 비상대책위원회 하루입니다.
+
+⚾ 5월 28일 (수) 삼성 라이온즈 vs 롯데 자이언츠 야구 경기 관람 ⚾
+야구 경기 관람 2차 참가자 모집을 진행합니다!
+
+💰참가비는 9,000원으로 책정되었습니다.
+(참가비에는 왕복 대형 버스 이동 비용과 경기 티켓값이 모두 포함되어 있습니다.)
+또한 총 15만원 상당의 소규모 이벤트도 준비되어 있으니 많은 관심 부탁드립니다!🎁
+
+👫중앙동아리 부원 1인당 지인 1명까지 동반 가능하며,
+지인은 중앙동아리 소속이 아니어도 무방합니다!
+
+👉 참여 링크는 19일 19시에 총동아리연합회 인스타그램 스토리를 통해 공지될 예정입니다.
+✅ 선발된 분들은 추후 단체 채팅방에 초대될 예정입니다!
+
+여러분들의 많은 관심과 참여 부탁드립니다!🙌".') [42102-232]
+2025-05-31 16:08:43.554546+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJjir27y7AV/', '🏋‍♀ 경북대학교 총동아리연합회 비상대책위원회 ‘하루’ X 레드짐 전 지점🏋‍♂', NULL, 'images/knu_dongari/DJjir27y7AV', '제휴', '2025-05-12', NULL, NULL, '✨ 2025 여름맞이 건강챙김 특별 제휴 이벤트! ✨
+
+📣 경북대 중앙동아리 부원만을 위한 전용 혜택!
+최대 할인 + PT 체험까지 한 번에!
+운동, 아직 시작 안 하셨다고요? 지금이 기회입니다!
+
+✔ 레드짐 등록 시 10% 추가 할인 (단, 신년행사, 주년행사, 오픈행사, 신규 1+1 행사 적용불가)
+✔ PT 1회 체험
+❗레드짐 전 지점 적용
+
+📌 이용 방법
+1⃣ 레드짐 방문 후 ‘중앙동아리 소속’이라고 말하기
+2⃣ 등록 시 동아리 확인 & 혜택 적용
+3⃣ 할인 혜택 누리기!
+
+✅ 경북대 중앙동아리 소속이면 누구나 가능!
+✅ 동아리 임원부터 신입 부원까지 전원 OK
+✅ 사전 예약 없이 방문만으로 혜택 적용
+
+💪 올여름, 총동아리연합회가 추천하는 건강 루틴!
+레드짐에서 새로운 시작을 놓치지 마세요🔥
+
+💬문의: 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:08:43.555580+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJiTaK7Smn3/', '🌹2025 성년의 날 행사🌹', NULL, 'images/knu_dongari/DJiTaK7Smn3', '기타', '2025-05-12', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다. 
+기분좋은 햇살과 함께하는 5월, 성인이 된 경북대학교 학생들을 위해 하루가 성년의 날 기념 행사를 준비하였습니다.🔆
+
+성년의 날 기념 장미꽃 배부와 함께, 재학생들도 즐길 수 있는 보드판 이벤트를 준비했습니다! 여러분들의 20살은 어떠셨나요?💌 포스트잇에 가장 찬란했던 20살의 순간을 적어주세요.✏️ Best 5인의 코멘트를 기다립니다!
+이외에도 폴라로이드 촬영과 스토리 업로드 이벤트, 다채로운 상품까지💝 준비되어 있으니 학우분들의 많은 관심과 참여 부탁드립니다!
+
+🏷️ 일시 : 2025. 5. 19 (월) 12:00-15:00
+🏷️ 장소 : 경북대학교 일청담
+
+자세한 내용은 카드뉴스 참고 부탁드리며, 당일 수량 소진 시 행사가 조기 마감될 수 있습니다.
+💬 문의사항 : 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:08:43.557542+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJgihC8yymK/', '🎬 CGV 개봉전 무료 시사회 참가자 모집! 🎟', NULL, 'images/knu_dongari/DJgihC8yymK', '기타', '2025-05-11', NULL, NULL, '⠀
+ ”나를 모르는 그녀의 세계에서“
+가장 가까웠던 사람이, 어느 날 나를 잊은 채 낯선 세계에 있었다면?
+그녀를 다시 만나기 위한 시간 너머의 여정,
+그 특별한 로맨스의 시작에 경북대 학생 120명을 초대합니다.🎟
+⠀
+📅 일시: 2025년 5월 16일(금) 오후 7시 30분
+📍 장소: CGV 대구 한일 2관
+🎞 장르: 멜로/로맨스
+💬 러닝타임: 122분
+✅ 대상: 경북대학교 학생 최대 120명
+
+❗️신청마감: 5월 12일(월) 오전 10시⠀
+👉https://forms.gle/vnBjk27hU6xuPsUt6
+
+💬문의: 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:08:43.559794+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJYSaAzShsV/', '안녕하세요.', NULL, 'images/knu_dongari/DJYSaAzShsV', '기타', '2025-05-19', NULL, NULL, '총동아리연합회 비상대책위원회 하루입니다.
+
+⚾ 5월 28일 (수) 삼성 라이온즈 vs 롯데 자이언츠 야구 경기 관람 ⚾
+야구 경기 관람에 대한 참가자를 모집하고자 합니다!
+
+💰참가비는 9,000원으로 책정되었습니다.
+(참가비에는 왕복 대형 버스 이동 비용과 경기 티켓값이 모두 포함되어 있습니다.)
+또한 총 15만원 상당의 소규모 이벤트도 준비되어 있으니 많은 관심 부탁드립니다!🎁
+
+👫중앙동아리 부원 1인당, 지인 1명까지 동반 가능하며,
+지인은 중앙동아리 소속이 아니어도 무방합니다!
+
+👉 참여 링크는 9일 12시에 스토리에 공지되며, 이후 프로필 링크에도 고정될 예정입니다! 
+✅ 선발된 분들은 추후 단체 채팅방에 초대될 예정입니다!
+
+⚠️ 예매 경쟁률에 따라 티켓 확보가 어려울 경우, 부득이하게 행사가 취소될 수 있는 점 미리 양해 부탁드립니다.
+
+여러분들의 많은 관심과 참여 부탁드립니다!🙌".') [42102-232]
+2025-05-31 16:08:43.561785+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJNx_3RSgQK/', '⠀', NULL, 'images/knu_dongari/DJNx_3RSgQK', '제휴', '2025-05-04', NULL, NULL, '🎡경북대학교 총동아리연합회 비상대책위원회 ‘하루’ X 이월드🎡
+✨ 2025 캠퍼스DAY 특별 할인 이벤트! ✨
+
+📣 경북대 학우들을 위해 최대 75% 할인 혜택
+친구, 연인, 가족과 함께 봄날의 이월드를 즐겨보세요!
+
+📅 행사기간
+~ 2025년 5월 31일(토)까지
+
+🎟 티켓 가격
+✔ 종일 자유이용권 + 83타워 전망대
+64,000원 → 22,000원
+
+✔ 야간 자유이용권 + 83타워 전망대
+48,000원 → 12,000원
+
+📌 이용방법
+1️⃣ 사전예약 👉 www.sensecampusday.shop
+2️⃣ 이월드 연간단체 서비스센터 5번 창구에서 티켓 수령
+3️⃣ 현장에서 결제 후 즉시 입장 가능!
+
+✅ 사전예약 시 학생증 필요 없음!
+✅ 현장 방문 시에는 학생증 지참 필수 (모바일 학생증 가능)
+✅ 동반자 전원 동일 요금 적용
+✅ 신청 인원 제한 없음!
+
+🎠 따뜻한 봄, 즐거운 하루 보내러 이월드로 떠나요~
+📸 많은 관심과 참여 부탁드립니다!".') [42102-232]
+2025-05-31 16:08:43.564207+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DIzvjhfyjAw/', '안녕하세요. 총동아리연합회 비상대책위원회 ’하루‘ 입니다🪐', NULL, 'images/knu_dongari/DIzvjhfyjAw', '기타', '2025-04-24', NULL, NULL, '중간고사 고생 많으셨습니다. 남은 2025년 총동아리연합회에서 의미 있는 하루 하루를 만들어 나가는 건 어떨까요?
+
+총동아리연합회는 중앙동아리 운영, 동아리 관련 행사 기획, 행사 협조처 관련 업무를 수행하며, 매주 화요일 19시에 정기회의가 진행됩니다!
+
+재학 및 휴학 여부는 무관하며, 학생회 경험이 없어도 괜찮습니다. 열정과 책임감이 있다면 누구든 환영합니다!
+
+✅ 모집기간
+📍서류 : 04.24(목) ~ 04.27(일) 23:59
+📍면접 : 05.01(목) / 05.02(금)
+✅ 지원 방법
+📍지원서: 총동아리연합회 홈페이지 공지사항/ 총동아리연합회 인스타그램 프로필 링크에서 다운로드
+- 지원서 작성 후 jajudong34@gmail.com 로 제출
+✅지원 가능한 부서: 대외협력국, 편집국
+📍면접 이후 부서가 확정되며, 지원자에 따라 위 2개 외의 다른 부서에도 배정될 수 있습니다.
+✅ 문의사항
+카카오톡 채널 http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:08:43.566288+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DH7gAnjyaym/', '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다!', NULL, 'images/knu_dongari/DH7gAnjyaym', '간식마차', '2025-04-02', NULL, NULL, '올해의 첫 번째 중간고사를 앞두고, 하루하루 열심히 준비하시는 중앙동아리원들을 위해 야식마차를 준비했습니다!⭐
+
+💫일시: 2025년 4월 8일(화) 19:00
+💫수령 장소: 백호관 1층 게시판 옆 (백호관 소강당에서 대기)
+💫메뉴: 다니상점 샌드위치🥪 (갈릭베이컨 or 단호박크림치즈 中 택 1개) + 얼라이브 스위티자몽 250ml🧃
+💫수령 방법: 당일 선착순 ‘200‘명
+
+⭐ EVENT: 행운 숫자 당첨 시 20명에게 과일컵 증정! (행운 숫자는 당일 공개)
+
+❗경북대학교 소속의 중앙동아리원만 신청이 가능합니다. (수령 시 학생증 및 소속 중앙동아리 단톡방 확인)
+
+❗백호관 소강당 개방 시간은 17시입니다. (스티커 분실로 인한 피해는 보상해드리지 않습니다!)
+
+📢 문의사항: 카카오톡 채널 http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:08:43.567778+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHnWWZ2SP6N/', '🏟2025 상반기 가두모집 메인 이벤트 당첨자 안내🏟', NULL, 'images/knu_dongari/DHnWWZ2SP6N', '기타', '2025-03-25', NULL, NULL, '안녕하세요. 경북대학교 총동아리연합회 비상대책위원회 하루입니다.🪐
+
+2025학년도 상반기 가두모집 메인 이벤트 당첨자를 공개합니다!!🎁
+약 2800명의 학우분들께서 메인 이벤트에 참여해주셨습니다. 당첨되신 모든 분들 축하드립니다.🥳
+3월 25일 금일자로 라이브 방송을 통해 추첨을 진행하였으며, 저장된 영상은 금일 19시까지 총동아리연합회 게시물에서 확인하실 수 있습니다!
+당첨자분들께서는 응모권에 기재된 번호로 개별 연락을 드릴 예정이니 메세지 확인 부탁드립니다.🙌
+
+실물 상품 수령은 3월 25일 금일부터 가능하며, 백호관 215호 총동아리연합회 사무실에 방문하시어 수령하시면 됩니다! (9:00-18:00 행사협조처 운영시간)
+상품권은 빠른 시일 내로 지급될 예정이오니 참고 부탁드립니다.
+
+2025 상반기 가두모집에 참여해주신 모든 학우분들께 감사드리며, 앞으로 더욱 색다르고 활기찬 행사로 찾아뵙겠습니다! 많은 참여와 관심 부탁드립니다!🪐".') [42102-232]
+2025-05-31 16:08:43.569895+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHc67OUxrmU/', '💡경북대학교 총동아리연합회 비상대책위원회 ’하루‘ 신입간부 모집💡', NULL, 'images/knu_dongari/DHc67OUxrmU', '대여', '2025-03-21', NULL, NULL, '안녕하세요. 총동아리연합회 비상대책위원회 ’하루‘ 입니다!🪐
+설레는 새학기의 시작과 함께, 의미있는 하루를 함께 만들어 나갈 신입간부를 모집합니다.
+
+총동아리연합회는 중앙동아리 운영, 동아리 관련 행사 기획, 행사 협조처 관련 업무를 수행하며, 매주 화요일 19시에 정기회의가 진행됩니다!
+
+지원 가능한 부서는 총 5개로, 대외협력국, 복지국, 사무국, 조직국, 편집국이 있습니다. (각 부서에 대한 설명은 카드뉴스를 참고해 주세요)
+
+재학 및 휴학 여부는 무관하며, 학생회 경험이 없어도 괜찮습니다. 열정과 책임감이 있다면 누구든 환영합니다!
+
+✅ 모집기간
+📍서류 : 03.21(금) - 03.24(월) 23:59
+📍면접 : 03.27(목)
+✅ 지원 방법
+📍지원서: 총동아리연합회 인스타그램 프로필 링크 / 카드뉴스 QR코드 / 총동아리연합회 홈페이지 공지사항에서 다운로드
+📍지원서 작성 후 jajudong34@gmail.com 로 제출
+✅ 문의사항
+카카오톡 채널 http://pf.kakao.com/_exixdxmxj
+(인스타그램 프로필 링크 참고)".') [42102-232]
+2025-05-31 16:08:43.572790+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHaEwm6S0dX/', '무신사 스토어 대구 x 경북대 총동아리연합회 비상대책위원회 하루 최대 만원 할인 신학기 프로모션 🎉', NULL, 'images/knu_dongari/DHaEwm6S0dX', '제휴', '2025-03-20', NULL, NULL, '1️⃣경북대 총동아리연합회 비상대책위원회 하루 신학기 프로모션 캐셔에서 학생증과 쿠폰 인증할 시,
+💸 10만원 이상 구매 시 1만원 즉시 할인 (선착순 100명)
+💸 이후 10만원 이상 구매 시 5천원 즉시 할인
+
+☑️ 기간 : 2025.03.21 - 03.31
+☑️ 진행 매장 : 무신사 스토어 대구
+☑️ 인증 방법 : 학생증 or 모바일 학생증 & 카카오 쿠폰 인증
+* 무신사 스탠다드 동성로점은 프로모션 대상 매장이 아닙니다.
+* 1인 1회 사용 가능하며, 직원 확인 버튼을 누를 시 재사용 불가능합니다.
+
+👇🏻쿠폰 다운로드
+http://pf.kakao.com/_xceRCu/coupons/_kzkmkmo44Z 
+
+2️⃣무신사 스토어 대구 단독 프로모션
+- 봄 신상 오프라인 추가할인 10% OFF (일부브랜드, 03.23 까지)
+- SPECIAL PRICE ZONE, UP TO 80% OFF. 29,000원부터 시작 (엑스톤즈, 낫포너드, 이에이, 사운즈라이프, 크리틱)
+- 무신사 스토어 대구 고객 대상 이월드 자유이용권 50% 할인
+
+주소 : 대구광역시 중구 공평동 45-1 무신사 스토어 대구
+영업시간 : 11:30 - 21:30 연중무휴".') [42102-232]
+2025-05-31 16:08:43.573899+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHUpwxqSIa5/', '🏟2025 상반기 가두모집 사전이벤트 ’어하루‘ 안내🏟', NULL, 'images/knu_dongari/DHUpwxqSIa5', '기타', '2025-03-18', NULL, NULL, '안녕하세요. 경북대학교 총동아리연합회 비상대책위원회 하루입니다.🪐
+
+🚨본격적으로 가두모집을 시작하기 전 사전 이벤트 ’어쩌다 발견한 하루‘를 진행합니다!
+학교 전역에 하루 올림픽 표지의 쿠폰을 붙여놓았습니다.✨
+학교를 둘러보며 쿠폰을 찾아 가두모집 행사 당일 총동아리연합회 부스로 방문하시면 됩니다!🎁
+‼️19일, 20일 부스 운영 시간(10:00-18:00)안에 방문해주셔야 합니다.
+
+🏅행사 일정: 3월18일(화)~3월20일(목)
+🏅행사 장소: 경북대학교 전역 및 총동아리연합회 부스
+💬 문의 사항: http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:08:43.574893+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHPrdo1SOJJ/', '🏟️2025 상반기 가두모집 동아리 공연 안내🏟️', NULL, 'images/knu_dongari/DHPrdo1SOJJ', '기타', '2025-03-17', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다. 🪐
+하루 올림픽을 더욱 빛내줄 11개의 동아리 공연 일정을 공개합니다!
+
+눈과 귀를 더욱 즐겁게 해줄 다양한 동아리들의 퍼포먼스!
+D-3, 하루 올림픽에서 만나요🎶
+
+🏅부스 일정: 3월19일(수) ~ 3월20일(목) 10:00-18:00
+🏅공연 일정: 양일 점심 일청담 부근
+🏅행사 장소: 일청담 및 백양로 일대
+💬 문의 사항: http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:08:43.576892+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHKxTskyqBz/', '🏟️2025 상반기 가두모집 참여 동아리 소개🏟️', NULL, 'images/knu_dongari/DHKxTskyqBz', '기타', '2025-03-17', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다. 🪐
+하루 올림픽에 참가하는 중앙동아리를 소개하오니 많은 관심 부탁드립니다.
+
+64개의 동아리가 2025 상반기 가두모집을 빛내기 위해 모였습니다. 자신의 취향에 맞는 동아리를 만나보세요. 중앙동아리의 대축제 하루 올림픽에서 만나요~
+
+🏅부스 일정: 3월 19일(수) ~ 3월20일(목) 10:00-18:00
+🏅공연 일정: 양일 점심
+🏅행사 장소: 일청담 및 백양로 일대
+💬 문의 사항: http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:08:43.577898+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHGUfi2y6NA/', '🏟️2025 상반기 가두모집 부스 배치도 소개🏟️', NULL, 'images/knu_dongari/DHGUfi2y6NA', '기타', '2025-03-17', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다. 🪐
+대망의 2025 상반기 가두모집 부스를 공개합니다!
+
+5개의 색으로 이루어진 오륜기처럼, 5개의 중앙동아리 분과가 모여 이번 하루 올림픽을 개최하게 되었습니다. 포기하지 않는 올림픽 정신처럼, 중앙동아리에서 만들어갈 여러분의 도전을 응원합니다. 대학생활의 하루하루를 즐겁게 만들 운명의 중앙동아리를 찾아보세요!
+
+🏅부스 일정: 3월19일(수) ~ 3월20일(목) 10:00-18:00
+🏅공연 일정: 양일 점심
+🏅행사 장소: 일청담 및 백양로 일대
+💬 문의 사항: http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:08:43.578895+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHA0UCmyZFY/', '안녕하세요, 총동아리연합회 비상대책위원회입니다! 곧 개최될 가두모집 <하루 올림픽>은 다들 잘 준비하고 계신가요? 운영본부에서 참가자들을 위한 다양한 이벤트를 안내해 드립니다!', NULL, 'images/knu_dongari/DHA0UCmyZFY', '기타', '2025-03-10', NULL, NULL, '총동연 부스에서 배부하는 티켓에 스티커를 모아 오륜기를 완성해 주세요! 5개의 스티커를 모두 모아 Gift shop에서 응모권을 제출해 맛있는 나쵸도 먹고 애플워치, 스탠리 텀블러, 배민 상품권의 주인공이 되어보세요! 당첨이 되지 않더라도 괜찮아요! 스티커 5종류를 모아 오시는 모든 분께는 특별한 상품이 기다리고 있답니다~😉
+
+뿐만 아니라 총동연 부스에서의 미니게임을 통해 상품을 수령하고 백양로를 달리는 성화봉송 주자를 찾아 간식도 받아보세요! 여러분의 많은 참여 기다리고 있겠습니다! 💪
+
+🥇 행사 일시: 3월 19일(수) ~ 20일(목) 10:00 - 18:00
+🥇 행사 장소: 일청담 및 백양로 일대
+
+💬문의사항: 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:08:43.579902+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DG4cs8zvT-2/', '🎖️가두모집 서포터즈 모집 공지🎖️', NULL, 'images/knu_dongari/DG4cs8zvT-2', '기타', '2025-03-17', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회입니다! 새로운 학기의 시작을 알릴 1학기 동아리 가두모집 행사를 도와주실 서포터즈를 모집합니다.
+
+가두모집 서포터즈로 활동하는 기간 내 식사가 제공되며, 활동 시간은 봉사 시간으로 제공될 예정입니다. 다양한 경험을 할 수 있는 서포터즈에 많은 지원 부탁드립니다!
+
+🏅행사 기간: 3/19(수) - 3/20(목) 
+🏅모집 기간: 3/7(금) - 3/10(월) 18:00
+🏅신청 링크
+  https://forms.gle/n7UCFgUUpGUKNnsa6
+❗기간이 지난 후 제출된 폼은 수합되지 않으니 기간 엄수 바랍니다❗
+
+🏅선발 조건: 지원 동기, 행사에 할애 가능한 시간 
+ (신입생, 휴학생 환영 😄)
+🏅결과 통지: 3/11 화요일 
+ (합격자에 한하여 일괄 문자 통보)
+🏅가두모집 행사 전, 서포터즈 OT 진행 
+ (3/17 월요일 오후 18:30 예정)
+
+ 💬문의사항: 총동아리연합회 카카오톡 채널
+  http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:00.100845+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "URL" not found; SQL statement:
+INSERT INTO Club_Event (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJ735m4SKWt/', '🎉 야구장에서 더 즐겁게! ’하루‘가 준비한 특별한 이벤트 2종 ⚾️💙', NULL, 'images/knu_dongari/DJ735m4SKWt', '기타', '2025-05-22', NULL, NULL, '🎉 야구장에서 더 즐겁게! ’하루‘가 준비한 특별한 이벤트 2종 ⚾️💙
+
+5월 28일, 삼성 라이온즈 vs 롯데 자이언츠 경기!
+야구 관람과 더불어 특별한 추억을 위해 선물과 함께하는 이벤트를 
+준비했습니다!
+
+📍 EVENT 1 – 스코어 맞추기 이벤트
+
+⚾ 경기 전, 승리할 팀과 예상 스코어를 구글폼을 통해 작성해 주세요!
+🎯 가장 근접하게 맞추신 분들께는
+배달의민족 상품권 총 10만원 상당을 나누어 드립니다! (인원 초과 시 선착순 10명에게만 지급)
+
+📌 참고
+동일 점수 예측자 수에 따라 금액이 나뉘어요!
+4명 인원: 1인당 25,000원
+2명 인원: 1인당 50,000원
+스코어 예측 작성 기재 예시 - 삼성 승, 삼성 5 : 롯데 3
+
+📍 EVENT 2 – 인스타그램 태그 이벤트
+
+📸 총동연과 함께 야구 경기를 관람하며 찍은 사진을
+👉 인스타그램 스토리에 @KNU_DONGARI를 태그하여 업로드해주세요!
+(*비공개 계정은 참여가 어렵습니다.)
+🎁 참여해주신 분들 중 추첨을 통해 5분께 삼성 라이온즈 응원봉을 드립니다!
+
+🗓 이벤트 당첨자 발표: 5월 29일
+상품은 총동연 사무실에서 수령하실 수 있습니다.
+
+💬문의: 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42122-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:786)
+	at org.h2.command.Parser.parseColumn(Parser.java:1171)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1156)
+	at org.h2.command.Parser.parseInsert(Parser.java:1530)
+	at org.h2.command.Parser.parsePrepared(Parser.java:698)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp.query(WebApp.java:1118)
+	at org.h2.server.web.WebApp.process(WebApp.java:244)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.JakartaWebServlet.doGet(JakartaWebServlet.java:129)
+	at org.h2.server.web.JakartaWebServlet.doPost(JakartaWebServlet.java:166)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-05-31 16:09:00.104843+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJyx5tWyjgq/', '안녕하세요.', NULL, 'images/knu_dongari/DJyx5tWyjgq', '기타', '2025-05-19', NULL, NULL, '총동아리연합회 비상대책위원회 하루입니다.
+
+⚾ 5월 28일 (수) 삼성 라이온즈 vs 롯데 자이언츠 야구 경기 관람 ⚾
+야구 경기 관람 2차 참가자 모집을 진행합니다!
+
+💰참가비는 9,000원으로 책정되었습니다.
+(참가비에는 왕복 대형 버스 이동 비용과 경기 티켓값이 모두 포함되어 있습니다.)
+또한 총 15만원 상당의 소규모 이벤트도 준비되어 있으니 많은 관심 부탁드립니다!🎁
+
+👫중앙동아리 부원 1인당 지인 1명까지 동반 가능하며,
+지인은 중앙동아리 소속이 아니어도 무방합니다!
+
+👉 참여 링크는 19일 19시에 총동아리연합회 인스타그램 스토리를 통해 공지될 예정입니다.
+✅ 선발된 분들은 추후 단체 채팅방에 초대될 예정입니다!
+
+여러분들의 많은 관심과 참여 부탁드립니다!🙌".') [42102-232]
+2025-05-31 16:09:00.107252+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJjir27y7AV/', '🏋‍♀ 경북대학교 총동아리연합회 비상대책위원회 ‘하루’ X 레드짐 전 지점🏋‍♂', NULL, 'images/knu_dongari/DJjir27y7AV', '제휴', '2025-05-12', NULL, NULL, '✨ 2025 여름맞이 건강챙김 특별 제휴 이벤트! ✨
+
+📣 경북대 중앙동아리 부원만을 위한 전용 혜택!
+최대 할인 + PT 체험까지 한 번에!
+운동, 아직 시작 안 하셨다고요? 지금이 기회입니다!
+
+✔ 레드짐 등록 시 10% 추가 할인 (단, 신년행사, 주년행사, 오픈행사, 신규 1+1 행사 적용불가)
+✔ PT 1회 체험
+❗레드짐 전 지점 적용
+
+📌 이용 방법
+1⃣ 레드짐 방문 후 ‘중앙동아리 소속’이라고 말하기
+2⃣ 등록 시 동아리 확인 & 혜택 적용
+3⃣ 할인 혜택 누리기!
+
+✅ 경북대 중앙동아리 소속이면 누구나 가능!
+✅ 동아리 임원부터 신입 부원까지 전원 OK
+✅ 사전 예약 없이 방문만으로 혜택 적용
+
+💪 올여름, 총동아리연합회가 추천하는 건강 루틴!
+레드짐에서 새로운 시작을 놓치지 마세요🔥
+
+💬문의: 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:00.108393+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJiTaK7Smn3/', '🌹2025 성년의 날 행사🌹', NULL, 'images/knu_dongari/DJiTaK7Smn3', '기타', '2025-05-12', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다. 
+기분좋은 햇살과 함께하는 5월, 성인이 된 경북대학교 학생들을 위해 하루가 성년의 날 기념 행사를 준비하였습니다.🔆
+
+성년의 날 기념 장미꽃 배부와 함께, 재학생들도 즐길 수 있는 보드판 이벤트를 준비했습니다! 여러분들의 20살은 어떠셨나요?💌 포스트잇에 가장 찬란했던 20살의 순간을 적어주세요.✏️ Best 5인의 코멘트를 기다립니다!
+이외에도 폴라로이드 촬영과 스토리 업로드 이벤트, 다채로운 상품까지💝 준비되어 있으니 학우분들의 많은 관심과 참여 부탁드립니다!
+
+🏷️ 일시 : 2025. 5. 19 (월) 12:00-15:00
+🏷️ 장소 : 경북대학교 일청담
+
+자세한 내용은 카드뉴스 참고 부탁드리며, 당일 수량 소진 시 행사가 조기 마감될 수 있습니다.
+💬 문의사항 : 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:00.110420+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJgihC8yymK/', '🎬 CGV 개봉전 무료 시사회 참가자 모집! 🎟', NULL, 'images/knu_dongari/DJgihC8yymK', '기타', '2025-05-11', NULL, NULL, '⠀
+ ”나를 모르는 그녀의 세계에서“
+가장 가까웠던 사람이, 어느 날 나를 잊은 채 낯선 세계에 있었다면?
+그녀를 다시 만나기 위한 시간 너머의 여정,
+그 특별한 로맨스의 시작에 경북대 학생 120명을 초대합니다.🎟
+⠀
+📅 일시: 2025년 5월 16일(금) 오후 7시 30분
+📍 장소: CGV 대구 한일 2관
+🎞 장르: 멜로/로맨스
+💬 러닝타임: 122분
+✅ 대상: 경북대학교 학생 최대 120명
+
+❗️신청마감: 5월 12일(월) 오전 10시⠀
+👉https://forms.gle/vnBjk27hU6xuPsUt6
+
+💬문의: 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:00.111415+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJYSaAzShsV/', '안녕하세요.', NULL, 'images/knu_dongari/DJYSaAzShsV', '기타', '2025-05-19', NULL, NULL, '총동아리연합회 비상대책위원회 하루입니다.
+
+⚾ 5월 28일 (수) 삼성 라이온즈 vs 롯데 자이언츠 야구 경기 관람 ⚾
+야구 경기 관람에 대한 참가자를 모집하고자 합니다!
+
+💰참가비는 9,000원으로 책정되었습니다.
+(참가비에는 왕복 대형 버스 이동 비용과 경기 티켓값이 모두 포함되어 있습니다.)
+또한 총 15만원 상당의 소규모 이벤트도 준비되어 있으니 많은 관심 부탁드립니다!🎁
+
+👫중앙동아리 부원 1인당, 지인 1명까지 동반 가능하며,
+지인은 중앙동아리 소속이 아니어도 무방합니다!
+
+👉 참여 링크는 9일 12시에 스토리에 공지되며, 이후 프로필 링크에도 고정될 예정입니다! 
+✅ 선발된 분들은 추후 단체 채팅방에 초대될 예정입니다!
+
+⚠️ 예매 경쟁률에 따라 티켓 확보가 어려울 경우, 부득이하게 행사가 취소될 수 있는 점 미리 양해 부탁드립니다.
+
+여러분들의 많은 관심과 참여 부탁드립니다!🙌".') [42102-232]
+2025-05-31 16:09:00.112909+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJNx_3RSgQK/', '⠀', NULL, 'images/knu_dongari/DJNx_3RSgQK', '제휴', '2025-05-04', NULL, NULL, '🎡경북대학교 총동아리연합회 비상대책위원회 ‘하루’ X 이월드🎡
+✨ 2025 캠퍼스DAY 특별 할인 이벤트! ✨
+
+📣 경북대 학우들을 위해 최대 75% 할인 혜택
+친구, 연인, 가족과 함께 봄날의 이월드를 즐겨보세요!
+
+📅 행사기간
+~ 2025년 5월 31일(토)까지
+
+🎟 티켓 가격
+✔ 종일 자유이용권 + 83타워 전망대
+64,000원 → 22,000원
+
+✔ 야간 자유이용권 + 83타워 전망대
+48,000원 → 12,000원
+
+📌 이용방법
+1️⃣ 사전예약 👉 www.sensecampusday.shop
+2️⃣ 이월드 연간단체 서비스센터 5번 창구에서 티켓 수령
+3️⃣ 현장에서 결제 후 즉시 입장 가능!
+
+✅ 사전예약 시 학생증 필요 없음!
+✅ 현장 방문 시에는 학생증 지참 필수 (모바일 학생증 가능)
+✅ 동반자 전원 동일 요금 적용
+✅ 신청 인원 제한 없음!
+
+🎠 따뜻한 봄, 즐거운 하루 보내러 이월드로 떠나요~
+📸 많은 관심과 참여 부탁드립니다!".') [42102-232]
+2025-05-31 16:09:00.119863+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DIzvjhfyjAw/', '안녕하세요. 총동아리연합회 비상대책위원회 ’하루‘ 입니다🪐', NULL, 'images/knu_dongari/DIzvjhfyjAw', '기타', '2025-04-24', NULL, NULL, '중간고사 고생 많으셨습니다. 남은 2025년 총동아리연합회에서 의미 있는 하루 하루를 만들어 나가는 건 어떨까요?
+
+총동아리연합회는 중앙동아리 운영, 동아리 관련 행사 기획, 행사 협조처 관련 업무를 수행하며, 매주 화요일 19시에 정기회의가 진행됩니다!
+
+재학 및 휴학 여부는 무관하며, 학생회 경험이 없어도 괜찮습니다. 열정과 책임감이 있다면 누구든 환영합니다!
+
+✅ 모집기간
+📍서류 : 04.24(목) ~ 04.27(일) 23:59
+📍면접 : 05.01(목) / 05.02(금)
+✅ 지원 방법
+📍지원서: 총동아리연합회 홈페이지 공지사항/ 총동아리연합회 인스타그램 프로필 링크에서 다운로드
+- 지원서 작성 후 jajudong34@gmail.com 로 제출
+✅지원 가능한 부서: 대외협력국, 편집국
+📍면접 이후 부서가 확정되며, 지원자에 따라 위 2개 외의 다른 부서에도 배정될 수 있습니다.
+✅ 문의사항
+카카오톡 채널 http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:00.120887+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DH7gAnjyaym/', '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다!', NULL, 'images/knu_dongari/DH7gAnjyaym', '간식마차', '2025-04-02', NULL, NULL, '올해의 첫 번째 중간고사를 앞두고, 하루하루 열심히 준비하시는 중앙동아리원들을 위해 야식마차를 준비했습니다!⭐
+
+💫일시: 2025년 4월 8일(화) 19:00
+💫수령 장소: 백호관 1층 게시판 옆 (백호관 소강당에서 대기)
+💫메뉴: 다니상점 샌드위치🥪 (갈릭베이컨 or 단호박크림치즈 中 택 1개) + 얼라이브 스위티자몽 250ml🧃
+💫수령 방법: 당일 선착순 ‘200‘명
+
+⭐ EVENT: 행운 숫자 당첨 시 20명에게 과일컵 증정! (행운 숫자는 당일 공개)
+
+❗경북대학교 소속의 중앙동아리원만 신청이 가능합니다. (수령 시 학생증 및 소속 중앙동아리 단톡방 확인)
+
+❗백호관 소강당 개방 시간은 17시입니다. (스티커 분실로 인한 피해는 보상해드리지 않습니다!)
+
+📢 문의사항: 카카오톡 채널 http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:00.123399+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHnWWZ2SP6N/', '🏟2025 상반기 가두모집 메인 이벤트 당첨자 안내🏟', NULL, 'images/knu_dongari/DHnWWZ2SP6N', '기타', '2025-03-25', NULL, NULL, '안녕하세요. 경북대학교 총동아리연합회 비상대책위원회 하루입니다.🪐
+
+2025학년도 상반기 가두모집 메인 이벤트 당첨자를 공개합니다!!🎁
+약 2800명의 학우분들께서 메인 이벤트에 참여해주셨습니다. 당첨되신 모든 분들 축하드립니다.🥳
+3월 25일 금일자로 라이브 방송을 통해 추첨을 진행하였으며, 저장된 영상은 금일 19시까지 총동아리연합회 게시물에서 확인하실 수 있습니다!
+당첨자분들께서는 응모권에 기재된 번호로 개별 연락을 드릴 예정이니 메세지 확인 부탁드립니다.🙌
+
+실물 상품 수령은 3월 25일 금일부터 가능하며, 백호관 215호 총동아리연합회 사무실에 방문하시어 수령하시면 됩니다! (9:00-18:00 행사협조처 운영시간)
+상품권은 빠른 시일 내로 지급될 예정이오니 참고 부탁드립니다.
+
+2025 상반기 가두모집에 참여해주신 모든 학우분들께 감사드리며, 앞으로 더욱 색다르고 활기찬 행사로 찾아뵙겠습니다! 많은 참여와 관심 부탁드립니다!🪐".') [42102-232]
+2025-05-31 16:09:00.125398+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHc67OUxrmU/', '💡경북대학교 총동아리연합회 비상대책위원회 ’하루‘ 신입간부 모집💡', NULL, 'images/knu_dongari/DHc67OUxrmU', '대여', '2025-03-21', NULL, NULL, '안녕하세요. 총동아리연합회 비상대책위원회 ’하루‘ 입니다!🪐
+설레는 새학기의 시작과 함께, 의미있는 하루를 함께 만들어 나갈 신입간부를 모집합니다.
+
+총동아리연합회는 중앙동아리 운영, 동아리 관련 행사 기획, 행사 협조처 관련 업무를 수행하며, 매주 화요일 19시에 정기회의가 진행됩니다!
+
+지원 가능한 부서는 총 5개로, 대외협력국, 복지국, 사무국, 조직국, 편집국이 있습니다. (각 부서에 대한 설명은 카드뉴스를 참고해 주세요)
+
+재학 및 휴학 여부는 무관하며, 학생회 경험이 없어도 괜찮습니다. 열정과 책임감이 있다면 누구든 환영합니다!
+
+✅ 모집기간
+📍서류 : 03.21(금) - 03.24(월) 23:59
+📍면접 : 03.27(목)
+✅ 지원 방법
+📍지원서: 총동아리연합회 인스타그램 프로필 링크 / 카드뉴스 QR코드 / 총동아리연합회 홈페이지 공지사항에서 다운로드
+📍지원서 작성 후 jajudong34@gmail.com 로 제출
+✅ 문의사항
+카카오톡 채널 http://pf.kakao.com/_exixdxmxj
+(인스타그램 프로필 링크 참고)".') [42102-232]
+2025-05-31 16:09:00.127412+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHaEwm6S0dX/', '무신사 스토어 대구 x 경북대 총동아리연합회 비상대책위원회 하루 최대 만원 할인 신학기 프로모션 🎉', NULL, 'images/knu_dongari/DHaEwm6S0dX', '제휴', '2025-03-20', NULL, NULL, '1️⃣경북대 총동아리연합회 비상대책위원회 하루 신학기 프로모션 캐셔에서 학생증과 쿠폰 인증할 시,
+💸 10만원 이상 구매 시 1만원 즉시 할인 (선착순 100명)
+💸 이후 10만원 이상 구매 시 5천원 즉시 할인
+
+☑️ 기간 : 2025.03.21 - 03.31
+☑️ 진행 매장 : 무신사 스토어 대구
+☑️ 인증 방법 : 학생증 or 모바일 학생증 & 카카오 쿠폰 인증
+* 무신사 스탠다드 동성로점은 프로모션 대상 매장이 아닙니다.
+* 1인 1회 사용 가능하며, 직원 확인 버튼을 누를 시 재사용 불가능합니다.
+
+👇🏻쿠폰 다운로드
+http://pf.kakao.com/_xceRCu/coupons/_kzkmkmo44Z 
+
+2️⃣무신사 스토어 대구 단독 프로모션
+- 봄 신상 오프라인 추가할인 10% OFF (일부브랜드, 03.23 까지)
+- SPECIAL PRICE ZONE, UP TO 80% OFF. 29,000원부터 시작 (엑스톤즈, 낫포너드, 이에이, 사운즈라이프, 크리틱)
+- 무신사 스토어 대구 고객 대상 이월드 자유이용권 50% 할인
+
+주소 : 대구광역시 중구 공평동 45-1 무신사 스토어 대구
+영업시간 : 11:30 - 21:30 연중무휴".') [42102-232]
+2025-05-31 16:09:00.129405+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHUpwxqSIa5/', '🏟2025 상반기 가두모집 사전이벤트 ’어하루‘ 안내🏟', NULL, 'images/knu_dongari/DHUpwxqSIa5', '기타', '2025-03-18', NULL, NULL, '안녕하세요. 경북대학교 총동아리연합회 비상대책위원회 하루입니다.🪐
+
+🚨본격적으로 가두모집을 시작하기 전 사전 이벤트 ’어쩌다 발견한 하루‘를 진행합니다!
+학교 전역에 하루 올림픽 표지의 쿠폰을 붙여놓았습니다.✨
+학교를 둘러보며 쿠폰을 찾아 가두모집 행사 당일 총동아리연합회 부스로 방문하시면 됩니다!🎁
+‼️19일, 20일 부스 운영 시간(10:00-18:00)안에 방문해주셔야 합니다.
+
+🏅행사 일정: 3월18일(화)~3월20일(목)
+🏅행사 장소: 경북대학교 전역 및 총동아리연합회 부스
+💬 문의 사항: http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:00.130399+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHPrdo1SOJJ/', '🏟️2025 상반기 가두모집 동아리 공연 안내🏟️', NULL, 'images/knu_dongari/DHPrdo1SOJJ', '기타', '2025-03-17', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다. 🪐
+하루 올림픽을 더욱 빛내줄 11개의 동아리 공연 일정을 공개합니다!
+
+눈과 귀를 더욱 즐겁게 해줄 다양한 동아리들의 퍼포먼스!
+D-3, 하루 올림픽에서 만나요🎶
+
+🏅부스 일정: 3월19일(수) ~ 3월20일(목) 10:00-18:00
+🏅공연 일정: 양일 점심 일청담 부근
+🏅행사 장소: 일청담 및 백양로 일대
+💬 문의 사항: http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:00.132400+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHKxTskyqBz/', '🏟️2025 상반기 가두모집 참여 동아리 소개🏟️', NULL, 'images/knu_dongari/DHKxTskyqBz', '기타', '2025-03-17', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다. 🪐
+하루 올림픽에 참가하는 중앙동아리를 소개하오니 많은 관심 부탁드립니다.
+
+64개의 동아리가 2025 상반기 가두모집을 빛내기 위해 모였습니다. 자신의 취향에 맞는 동아리를 만나보세요. 중앙동아리의 대축제 하루 올림픽에서 만나요~
+
+🏅부스 일정: 3월 19일(수) ~ 3월20일(목) 10:00-18:00
+🏅공연 일정: 양일 점심
+🏅행사 장소: 일청담 및 백양로 일대
+💬 문의 사항: http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:00.133403+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHGUfi2y6NA/', '🏟️2025 상반기 가두모집 부스 배치도 소개🏟️', NULL, 'images/knu_dongari/DHGUfi2y6NA', '기타', '2025-03-17', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다. 🪐
+대망의 2025 상반기 가두모집 부스를 공개합니다!
+
+5개의 색으로 이루어진 오륜기처럼, 5개의 중앙동아리 분과가 모여 이번 하루 올림픽을 개최하게 되었습니다. 포기하지 않는 올림픽 정신처럼, 중앙동아리에서 만들어갈 여러분의 도전을 응원합니다. 대학생활의 하루하루를 즐겁게 만들 운명의 중앙동아리를 찾아보세요!
+
+🏅부스 일정: 3월19일(수) ~ 3월20일(목) 10:00-18:00
+🏅공연 일정: 양일 점심
+🏅행사 장소: 일청담 및 백양로 일대
+💬 문의 사항: http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:00.134400+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHA0UCmyZFY/', '안녕하세요, 총동아리연합회 비상대책위원회입니다! 곧 개최될 가두모집 <하루 올림픽>은 다들 잘 준비하고 계신가요? 운영본부에서 참가자들을 위한 다양한 이벤트를 안내해 드립니다!', NULL, 'images/knu_dongari/DHA0UCmyZFY', '기타', '2025-03-10', NULL, NULL, '총동연 부스에서 배부하는 티켓에 스티커를 모아 오륜기를 완성해 주세요! 5개의 스티커를 모두 모아 Gift shop에서 응모권을 제출해 맛있는 나쵸도 먹고 애플워치, 스탠리 텀블러, 배민 상품권의 주인공이 되어보세요! 당첨이 되지 않더라도 괜찮아요! 스티커 5종류를 모아 오시는 모든 분께는 특별한 상품이 기다리고 있답니다~😉
+
+뿐만 아니라 총동연 부스에서의 미니게임을 통해 상품을 수령하고 백양로를 달리는 성화봉송 주자를 찾아 간식도 받아보세요! 여러분의 많은 참여 기다리고 있겠습니다! 💪
+
+🥇 행사 일시: 3월 19일(수) ~ 20일(목) 10:00 - 18:00
+🥇 행사 장소: 일청담 및 백양로 일대
+
+💬문의사항: 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:00.135400+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DG4cs8zvT-2/', '🎖️가두모집 서포터즈 모집 공지🎖️', NULL, 'images/knu_dongari/DG4cs8zvT-2', '기타', '2025-03-17', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회입니다! 새로운 학기의 시작을 알릴 1학기 동아리 가두모집 행사를 도와주실 서포터즈를 모집합니다.
+
+가두모집 서포터즈로 활동하는 기간 내 식사가 제공되며, 활동 시간은 봉사 시간으로 제공될 예정입니다. 다양한 경험을 할 수 있는 서포터즈에 많은 지원 부탁드립니다!
+
+🏅행사 기간: 3/19(수) - 3/20(목) 
+🏅모집 기간: 3/7(금) - 3/10(월) 18:00
+🏅신청 링크
+  https://forms.gle/n7UCFgUUpGUKNnsa6
+❗기간이 지난 후 제출된 폼은 수합되지 않으니 기간 엄수 바랍니다❗
+
+🏅선발 조건: 지원 동기, 행사에 할애 가능한 시간 
+ (신입생, 휴학생 환영 😄)
+🏅결과 통지: 3/11 화요일 
+ (합격자에 한하여 일괄 문자 통보)
+🏅가두모집 행사 전, 서포터즈 OT 진행 
+ (3/17 월요일 오후 18:30 예정)
+
+ 💬문의사항: 총동아리연합회 카카오톡 채널
+  http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:10.814224+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "URL" not found; SQL statement:
+INSERT INTO Club_Event (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJ735m4SKWt/', '🎉 야구장에서 더 즐겁게! ’하루‘가 준비한 특별한 이벤트 2종 ⚾️💙', NULL, 'images/knu_dongari/DJ735m4SKWt', '기타', '2025-05-22', NULL, NULL, '🎉 야구장에서 더 즐겁게! ’하루‘가 준비한 특별한 이벤트 2종 ⚾️💙
+
+5월 28일, 삼성 라이온즈 vs 롯데 자이언츠 경기!
+야구 관람과 더불어 특별한 추억을 위해 선물과 함께하는 이벤트를 
+준비했습니다!
+
+📍 EVENT 1 – 스코어 맞추기 이벤트
+
+⚾ 경기 전, 승리할 팀과 예상 스코어를 구글폼을 통해 작성해 주세요!
+🎯 가장 근접하게 맞추신 분들께는
+배달의민족 상품권 총 10만원 상당을 나누어 드립니다! (인원 초과 시 선착순 10명에게만 지급)
+
+📌 참고
+동일 점수 예측자 수에 따라 금액이 나뉘어요!
+4명 인원: 1인당 25,000원
+2명 인원: 1인당 50,000원
+스코어 예측 작성 기재 예시 - 삼성 승, 삼성 5 : 롯데 3
+
+📍 EVENT 2 – 인스타그램 태그 이벤트
+
+📸 총동연과 함께 야구 경기를 관람하며 찍은 사진을
+👉 인스타그램 스토리에 @KNU_DONGARI를 태그하여 업로드해주세요!
+(*비공개 계정은 참여가 어렵습니다.)
+🎁 참여해주신 분들 중 추첨을 통해 5분께 삼성 라이온즈 응원봉을 드립니다!
+
+🗓 이벤트 당첨자 발표: 5월 29일
+상품은 총동연 사무실에서 수령하실 수 있습니다.
+
+💬문의: 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42122-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:786)
+	at org.h2.command.Parser.parseColumn(Parser.java:1171)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1156)
+	at org.h2.command.Parser.parseInsert(Parser.java:1530)
+	at org.h2.command.Parser.parsePrepared(Parser.java:698)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp.query(WebApp.java:1118)
+	at org.h2.server.web.WebApp.process(WebApp.java:244)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.JakartaWebServlet.doGet(JakartaWebServlet.java:129)
+	at org.h2.server.web.JakartaWebServlet.doPost(JakartaWebServlet.java:166)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-05-31 16:09:10.816373+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJyx5tWyjgq/', '안녕하세요.', NULL, 'images/knu_dongari/DJyx5tWyjgq', '기타', '2025-05-19', NULL, NULL, '총동아리연합회 비상대책위원회 하루입니다.
+
+⚾ 5월 28일 (수) 삼성 라이온즈 vs 롯데 자이언츠 야구 경기 관람 ⚾
+야구 경기 관람 2차 참가자 모집을 진행합니다!
+
+💰참가비는 9,000원으로 책정되었습니다.
+(참가비에는 왕복 대형 버스 이동 비용과 경기 티켓값이 모두 포함되어 있습니다.)
+또한 총 15만원 상당의 소규모 이벤트도 준비되어 있으니 많은 관심 부탁드립니다!🎁
+
+👫중앙동아리 부원 1인당 지인 1명까지 동반 가능하며,
+지인은 중앙동아리 소속이 아니어도 무방합니다!
+
+👉 참여 링크는 19일 19시에 총동아리연합회 인스타그램 스토리를 통해 공지될 예정입니다.
+✅ 선발된 분들은 추후 단체 채팅방에 초대될 예정입니다!
+
+여러분들의 많은 관심과 참여 부탁드립니다!🙌".') [42102-232]
+2025-05-31 16:09:10.817364+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJjir27y7AV/', '🏋‍♀ 경북대학교 총동아리연합회 비상대책위원회 ‘하루’ X 레드짐 전 지점🏋‍♂', NULL, 'images/knu_dongari/DJjir27y7AV', '제휴', '2025-05-12', NULL, NULL, '✨ 2025 여름맞이 건강챙김 특별 제휴 이벤트! ✨
+
+📣 경북대 중앙동아리 부원만을 위한 전용 혜택!
+최대 할인 + PT 체험까지 한 번에!
+운동, 아직 시작 안 하셨다고요? 지금이 기회입니다!
+
+✔ 레드짐 등록 시 10% 추가 할인 (단, 신년행사, 주년행사, 오픈행사, 신규 1+1 행사 적용불가)
+✔ PT 1회 체험
+❗레드짐 전 지점 적용
+
+📌 이용 방법
+1⃣ 레드짐 방문 후 ‘중앙동아리 소속’이라고 말하기
+2⃣ 등록 시 동아리 확인 & 혜택 적용
+3⃣ 할인 혜택 누리기!
+
+✅ 경북대 중앙동아리 소속이면 누구나 가능!
+✅ 동아리 임원부터 신입 부원까지 전원 OK
+✅ 사전 예약 없이 방문만으로 혜택 적용
+
+💪 올여름, 총동아리연합회가 추천하는 건강 루틴!
+레드짐에서 새로운 시작을 놓치지 마세요🔥
+
+💬문의: 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:10.819368+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJiTaK7Smn3/', '🌹2025 성년의 날 행사🌹', NULL, 'images/knu_dongari/DJiTaK7Smn3', '기타', '2025-05-12', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다. 
+기분좋은 햇살과 함께하는 5월, 성인이 된 경북대학교 학생들을 위해 하루가 성년의 날 기념 행사를 준비하였습니다.🔆
+
+성년의 날 기념 장미꽃 배부와 함께, 재학생들도 즐길 수 있는 보드판 이벤트를 준비했습니다! 여러분들의 20살은 어떠셨나요?💌 포스트잇에 가장 찬란했던 20살의 순간을 적어주세요.✏️ Best 5인의 코멘트를 기다립니다!
+이외에도 폴라로이드 촬영과 스토리 업로드 이벤트, 다채로운 상품까지💝 준비되어 있으니 학우분들의 많은 관심과 참여 부탁드립니다!
+
+🏷️ 일시 : 2025. 5. 19 (월) 12:00-15:00
+🏷️ 장소 : 경북대학교 일청담
+
+자세한 내용은 카드뉴스 참고 부탁드리며, 당일 수량 소진 시 행사가 조기 마감될 수 있습니다.
+💬 문의사항 : 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:10.820376+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJgihC8yymK/', '🎬 CGV 개봉전 무료 시사회 참가자 모집! 🎟', NULL, 'images/knu_dongari/DJgihC8yymK', '기타', '2025-05-11', NULL, NULL, '⠀
+ ”나를 모르는 그녀의 세계에서“
+가장 가까웠던 사람이, 어느 날 나를 잊은 채 낯선 세계에 있었다면?
+그녀를 다시 만나기 위한 시간 너머의 여정,
+그 특별한 로맨스의 시작에 경북대 학생 120명을 초대합니다.🎟
+⠀
+📅 일시: 2025년 5월 16일(금) 오후 7시 30분
+📍 장소: CGV 대구 한일 2관
+🎞 장르: 멜로/로맨스
+💬 러닝타임: 122분
+✅ 대상: 경북대학교 학생 최대 120명
+
+❗️신청마감: 5월 12일(월) 오전 10시⠀
+👉https://forms.gle/vnBjk27hU6xuPsUt6
+
+💬문의: 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:10.822708+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJYSaAzShsV/', '안녕하세요.', NULL, 'images/knu_dongari/DJYSaAzShsV', '기타', '2025-05-19', NULL, NULL, '총동아리연합회 비상대책위원회 하루입니다.
+
+⚾ 5월 28일 (수) 삼성 라이온즈 vs 롯데 자이언츠 야구 경기 관람 ⚾
+야구 경기 관람에 대한 참가자를 모집하고자 합니다!
+
+💰참가비는 9,000원으로 책정되었습니다.
+(참가비에는 왕복 대형 버스 이동 비용과 경기 티켓값이 모두 포함되어 있습니다.)
+또한 총 15만원 상당의 소규모 이벤트도 준비되어 있으니 많은 관심 부탁드립니다!🎁
+
+👫중앙동아리 부원 1인당, 지인 1명까지 동반 가능하며,
+지인은 중앙동아리 소속이 아니어도 무방합니다!
+
+👉 참여 링크는 9일 12시에 스토리에 공지되며, 이후 프로필 링크에도 고정될 예정입니다! 
+✅ 선발된 분들은 추후 단체 채팅방에 초대될 예정입니다!
+
+⚠️ 예매 경쟁률에 따라 티켓 확보가 어려울 경우, 부득이하게 행사가 취소될 수 있는 점 미리 양해 부탁드립니다.
+
+여러분들의 많은 관심과 참여 부탁드립니다!🙌".') [42102-232]
+2025-05-31 16:09:10.823724+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJNx_3RSgQK/', '⠀', NULL, 'images/knu_dongari/DJNx_3RSgQK', '제휴', '2025-05-04', NULL, NULL, '🎡경북대학교 총동아리연합회 비상대책위원회 ‘하루’ X 이월드🎡
+✨ 2025 캠퍼스DAY 특별 할인 이벤트! ✨
+
+📣 경북대 학우들을 위해 최대 75% 할인 혜택
+친구, 연인, 가족과 함께 봄날의 이월드를 즐겨보세요!
+
+📅 행사기간
+~ 2025년 5월 31일(토)까지
+
+🎟 티켓 가격
+✔ 종일 자유이용권 + 83타워 전망대
+64,000원 → 22,000원
+
+✔ 야간 자유이용권 + 83타워 전망대
+48,000원 → 12,000원
+
+📌 이용방법
+1️⃣ 사전예약 👉 www.sensecampusday.shop
+2️⃣ 이월드 연간단체 서비스센터 5번 창구에서 티켓 수령
+3️⃣ 현장에서 결제 후 즉시 입장 가능!
+
+✅ 사전예약 시 학생증 필요 없음!
+✅ 현장 방문 시에는 학생증 지참 필수 (모바일 학생증 가능)
+✅ 동반자 전원 동일 요금 적용
+✅ 신청 인원 제한 없음!
+
+🎠 따뜻한 봄, 즐거운 하루 보내러 이월드로 떠나요~
+📸 많은 관심과 참여 부탁드립니다!".') [42102-232]
+2025-05-31 16:09:10.825707+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DIzvjhfyjAw/', '안녕하세요. 총동아리연합회 비상대책위원회 ’하루‘ 입니다🪐', NULL, 'images/knu_dongari/DIzvjhfyjAw', '기타', '2025-04-24', NULL, NULL, '중간고사 고생 많으셨습니다. 남은 2025년 총동아리연합회에서 의미 있는 하루 하루를 만들어 나가는 건 어떨까요?
+
+총동아리연합회는 중앙동아리 운영, 동아리 관련 행사 기획, 행사 협조처 관련 업무를 수행하며, 매주 화요일 19시에 정기회의가 진행됩니다!
+
+재학 및 휴학 여부는 무관하며, 학생회 경험이 없어도 괜찮습니다. 열정과 책임감이 있다면 누구든 환영합니다!
+
+✅ 모집기간
+📍서류 : 04.24(목) ~ 04.27(일) 23:59
+📍면접 : 05.01(목) / 05.02(금)
+✅ 지원 방법
+📍지원서: 총동아리연합회 홈페이지 공지사항/ 총동아리연합회 인스타그램 프로필 링크에서 다운로드
+- 지원서 작성 후 jajudong34@gmail.com 로 제출
+✅지원 가능한 부서: 대외협력국, 편집국
+📍면접 이후 부서가 확정되며, 지원자에 따라 위 2개 외의 다른 부서에도 배정될 수 있습니다.
+✅ 문의사항
+카카오톡 채널 http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:10.826707+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DH7gAnjyaym/', '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다!', NULL, 'images/knu_dongari/DH7gAnjyaym', '간식마차', '2025-04-02', NULL, NULL, '올해의 첫 번째 중간고사를 앞두고, 하루하루 열심히 준비하시는 중앙동아리원들을 위해 야식마차를 준비했습니다!⭐
+
+💫일시: 2025년 4월 8일(화) 19:00
+💫수령 장소: 백호관 1층 게시판 옆 (백호관 소강당에서 대기)
+💫메뉴: 다니상점 샌드위치🥪 (갈릭베이컨 or 단호박크림치즈 中 택 1개) + 얼라이브 스위티자몽 250ml🧃
+💫수령 방법: 당일 선착순 ‘200‘명
+
+⭐ EVENT: 행운 숫자 당첨 시 20명에게 과일컵 증정! (행운 숫자는 당일 공개)
+
+❗경북대학교 소속의 중앙동아리원만 신청이 가능합니다. (수령 시 학생증 및 소속 중앙동아리 단톡방 확인)
+
+❗백호관 소강당 개방 시간은 17시입니다. (스티커 분실로 인한 피해는 보상해드리지 않습니다!)
+
+📢 문의사항: 카카오톡 채널 http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:10.827709+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHnWWZ2SP6N/', '🏟2025 상반기 가두모집 메인 이벤트 당첨자 안내🏟', NULL, 'images/knu_dongari/DHnWWZ2SP6N', '기타', '2025-03-25', NULL, NULL, '안녕하세요. 경북대학교 총동아리연합회 비상대책위원회 하루입니다.🪐
+
+2025학년도 상반기 가두모집 메인 이벤트 당첨자를 공개합니다!!🎁
+약 2800명의 학우분들께서 메인 이벤트에 참여해주셨습니다. 당첨되신 모든 분들 축하드립니다.🥳
+3월 25일 금일자로 라이브 방송을 통해 추첨을 진행하였으며, 저장된 영상은 금일 19시까지 총동아리연합회 게시물에서 확인하실 수 있습니다!
+당첨자분들께서는 응모권에 기재된 번호로 개별 연락을 드릴 예정이니 메세지 확인 부탁드립니다.🙌
+
+실물 상품 수령은 3월 25일 금일부터 가능하며, 백호관 215호 총동아리연합회 사무실에 방문하시어 수령하시면 됩니다! (9:00-18:00 행사협조처 운영시간)
+상품권은 빠른 시일 내로 지급될 예정이오니 참고 부탁드립니다.
+
+2025 상반기 가두모집에 참여해주신 모든 학우분들께 감사드리며, 앞으로 더욱 색다르고 활기찬 행사로 찾아뵙겠습니다! 많은 참여와 관심 부탁드립니다!🪐".') [42102-232]
+2025-05-31 16:09:10.828708+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHc67OUxrmU/', '💡경북대학교 총동아리연합회 비상대책위원회 ’하루‘ 신입간부 모집💡', NULL, 'images/knu_dongari/DHc67OUxrmU', '대여', '2025-03-21', NULL, NULL, '안녕하세요. 총동아리연합회 비상대책위원회 ’하루‘ 입니다!🪐
+설레는 새학기의 시작과 함께, 의미있는 하루를 함께 만들어 나갈 신입간부를 모집합니다.
+
+총동아리연합회는 중앙동아리 운영, 동아리 관련 행사 기획, 행사 협조처 관련 업무를 수행하며, 매주 화요일 19시에 정기회의가 진행됩니다!
+
+지원 가능한 부서는 총 5개로, 대외협력국, 복지국, 사무국, 조직국, 편집국이 있습니다. (각 부서에 대한 설명은 카드뉴스를 참고해 주세요)
+
+재학 및 휴학 여부는 무관하며, 학생회 경험이 없어도 괜찮습니다. 열정과 책임감이 있다면 누구든 환영합니다!
+
+✅ 모집기간
+📍서류 : 03.21(금) - 03.24(월) 23:59
+📍면접 : 03.27(목)
+✅ 지원 방법
+📍지원서: 총동아리연합회 인스타그램 프로필 링크 / 카드뉴스 QR코드 / 총동아리연합회 홈페이지 공지사항에서 다운로드
+📍지원서 작성 후 jajudong34@gmail.com 로 제출
+✅ 문의사항
+카카오톡 채널 http://pf.kakao.com/_exixdxmxj
+(인스타그램 프로필 링크 참고)".') [42102-232]
+2025-05-31 16:09:10.830707+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHaEwm6S0dX/', '무신사 스토어 대구 x 경북대 총동아리연합회 비상대책위원회 하루 최대 만원 할인 신학기 프로모션 🎉', NULL, 'images/knu_dongari/DHaEwm6S0dX', '제휴', '2025-03-20', NULL, NULL, '1️⃣경북대 총동아리연합회 비상대책위원회 하루 신학기 프로모션 캐셔에서 학생증과 쿠폰 인증할 시,
+💸 10만원 이상 구매 시 1만원 즉시 할인 (선착순 100명)
+💸 이후 10만원 이상 구매 시 5천원 즉시 할인
+
+☑️ 기간 : 2025.03.21 - 03.31
+☑️ 진행 매장 : 무신사 스토어 대구
+☑️ 인증 방법 : 학생증 or 모바일 학생증 & 카카오 쿠폰 인증
+* 무신사 스탠다드 동성로점은 프로모션 대상 매장이 아닙니다.
+* 1인 1회 사용 가능하며, 직원 확인 버튼을 누를 시 재사용 불가능합니다.
+
+👇🏻쿠폰 다운로드
+http://pf.kakao.com/_xceRCu/coupons/_kzkmkmo44Z 
+
+2️⃣무신사 스토어 대구 단독 프로모션
+- 봄 신상 오프라인 추가할인 10% OFF (일부브랜드, 03.23 까지)
+- SPECIAL PRICE ZONE, UP TO 80% OFF. 29,000원부터 시작 (엑스톤즈, 낫포너드, 이에이, 사운즈라이프, 크리틱)
+- 무신사 스토어 대구 고객 대상 이월드 자유이용권 50% 할인
+
+주소 : 대구광역시 중구 공평동 45-1 무신사 스토어 대구
+영업시간 : 11:30 - 21:30 연중무휴".') [42102-232]
+2025-05-31 16:09:10.831699+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHUpwxqSIa5/', '🏟2025 상반기 가두모집 사전이벤트 ’어하루‘ 안내🏟', NULL, 'images/knu_dongari/DHUpwxqSIa5', '기타', '2025-03-18', NULL, NULL, '안녕하세요. 경북대학교 총동아리연합회 비상대책위원회 하루입니다.🪐
+
+🚨본격적으로 가두모집을 시작하기 전 사전 이벤트 ’어쩌다 발견한 하루‘를 진행합니다!
+학교 전역에 하루 올림픽 표지의 쿠폰을 붙여놓았습니다.✨
+학교를 둘러보며 쿠폰을 찾아 가두모집 행사 당일 총동아리연합회 부스로 방문하시면 됩니다!🎁
+‼️19일, 20일 부스 운영 시간(10:00-18:00)안에 방문해주셔야 합니다.
+
+🏅행사 일정: 3월18일(화)~3월20일(목)
+🏅행사 장소: 경북대학교 전역 및 총동아리연합회 부스
+💬 문의 사항: http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:10.832699+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHPrdo1SOJJ/', '🏟️2025 상반기 가두모집 동아리 공연 안내🏟️', NULL, 'images/knu_dongari/DHPrdo1SOJJ', '기타', '2025-03-17', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다. 🪐
+하루 올림픽을 더욱 빛내줄 11개의 동아리 공연 일정을 공개합니다!
+
+눈과 귀를 더욱 즐겁게 해줄 다양한 동아리들의 퍼포먼스!
+D-3, 하루 올림픽에서 만나요🎶
+
+🏅부스 일정: 3월19일(수) ~ 3월20일(목) 10:00-18:00
+🏅공연 일정: 양일 점심 일청담 부근
+🏅행사 장소: 일청담 및 백양로 일대
+💬 문의 사항: http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:10.834161+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHKxTskyqBz/', '🏟️2025 상반기 가두모집 참여 동아리 소개🏟️', NULL, 'images/knu_dongari/DHKxTskyqBz', '기타', '2025-03-17', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다. 🪐
+하루 올림픽에 참가하는 중앙동아리를 소개하오니 많은 관심 부탁드립니다.
+
+64개의 동아리가 2025 상반기 가두모집을 빛내기 위해 모였습니다. 자신의 취향에 맞는 동아리를 만나보세요. 중앙동아리의 대축제 하루 올림픽에서 만나요~
+
+🏅부스 일정: 3월 19일(수) ~ 3월20일(목) 10:00-18:00
+🏅공연 일정: 양일 점심
+🏅행사 장소: 일청담 및 백양로 일대
+💬 문의 사항: http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:10.835329+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHGUfi2y6NA/', '🏟️2025 상반기 가두모집 부스 배치도 소개🏟️', NULL, 'images/knu_dongari/DHGUfi2y6NA', '기타', '2025-03-17', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다. 🪐
+대망의 2025 상반기 가두모집 부스를 공개합니다!
+
+5개의 색으로 이루어진 오륜기처럼, 5개의 중앙동아리 분과가 모여 이번 하루 올림픽을 개최하게 되었습니다. 포기하지 않는 올림픽 정신처럼, 중앙동아리에서 만들어갈 여러분의 도전을 응원합니다. 대학생활의 하루하루를 즐겁게 만들 운명의 중앙동아리를 찾아보세요!
+
+🏅부스 일정: 3월19일(수) ~ 3월20일(목) 10:00-18:00
+🏅공연 일정: 양일 점심
+🏅행사 장소: 일청담 및 백양로 일대
+💬 문의 사항: http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:10.837345+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHA0UCmyZFY/', '안녕하세요, 총동아리연합회 비상대책위원회입니다! 곧 개최될 가두모집 <하루 올림픽>은 다들 잘 준비하고 계신가요? 운영본부에서 참가자들을 위한 다양한 이벤트를 안내해 드립니다!', NULL, 'images/knu_dongari/DHA0UCmyZFY', '기타', '2025-03-10', NULL, NULL, '총동연 부스에서 배부하는 티켓에 스티커를 모아 오륜기를 완성해 주세요! 5개의 스티커를 모두 모아 Gift shop에서 응모권을 제출해 맛있는 나쵸도 먹고 애플워치, 스탠리 텀블러, 배민 상품권의 주인공이 되어보세요! 당첨이 되지 않더라도 괜찮아요! 스티커 5종류를 모아 오시는 모든 분께는 특별한 상품이 기다리고 있답니다~😉
+
+뿐만 아니라 총동연 부스에서의 미니게임을 통해 상품을 수령하고 백양로를 달리는 성화봉송 주자를 찾아 간식도 받아보세요! 여러분의 많은 참여 기다리고 있겠습니다! 💪
+
+🥇 행사 일시: 3월 19일(수) ~ 20일(목) 10:00 - 18:00
+🥇 행사 장소: 일청담 및 백양로 일대
+
+💬문의사항: 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:10.838345+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DG4cs8zvT-2/', '🎖️가두모집 서포터즈 모집 공지🎖️', NULL, 'images/knu_dongari/DG4cs8zvT-2', '기타', '2025-03-17', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회입니다! 새로운 학기의 시작을 알릴 1학기 동아리 가두모집 행사를 도와주실 서포터즈를 모집합니다.
+
+가두모집 서포터즈로 활동하는 기간 내 식사가 제공되며, 활동 시간은 봉사 시간으로 제공될 예정입니다. 다양한 경험을 할 수 있는 서포터즈에 많은 지원 부탁드립니다!
+
+🏅행사 기간: 3/19(수) - 3/20(목) 
+🏅모집 기간: 3/7(금) - 3/10(월) 18:00
+🏅신청 링크
+  https://forms.gle/n7UCFgUUpGUKNnsa6
+❗기간이 지난 후 제출된 폼은 수합되지 않으니 기간 엄수 바랍니다❗
+
+🏅선발 조건: 지원 동기, 행사에 할애 가능한 시간 
+ (신입생, 휴학생 환영 😄)
+🏅결과 통지: 3/11 화요일 
+ (합격자에 한하여 일괄 문자 통보)
+🏅가두모집 행사 전, 서포터즈 OT 진행 
+ (3/17 월요일 오후 18:30 예정)
+
+ 💬문의사항: 총동아리연합회 카카오톡 채널
+  http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:10.948023+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "URL" not found; SQL statement:
+INSERT INTO Club_Event (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJ735m4SKWt/', '🎉 야구장에서 더 즐겁게! ’하루‘가 준비한 특별한 이벤트 2종 ⚾️💙', NULL, 'images/knu_dongari/DJ735m4SKWt', '기타', '2025-05-22', NULL, NULL, '🎉 야구장에서 더 즐겁게! ’하루‘가 준비한 특별한 이벤트 2종 ⚾️💙
+
+5월 28일, 삼성 라이온즈 vs 롯데 자이언츠 경기!
+야구 관람과 더불어 특별한 추억을 위해 선물과 함께하는 이벤트를 
+준비했습니다!
+
+📍 EVENT 1 – 스코어 맞추기 이벤트
+
+⚾ 경기 전, 승리할 팀과 예상 스코어를 구글폼을 통해 작성해 주세요!
+🎯 가장 근접하게 맞추신 분들께는
+배달의민족 상품권 총 10만원 상당을 나누어 드립니다! (인원 초과 시 선착순 10명에게만 지급)
+
+📌 참고
+동일 점수 예측자 수에 따라 금액이 나뉘어요!
+4명 인원: 1인당 25,000원
+2명 인원: 1인당 50,000원
+스코어 예측 작성 기재 예시 - 삼성 승, 삼성 5 : 롯데 3
+
+📍 EVENT 2 – 인스타그램 태그 이벤트
+
+📸 총동연과 함께 야구 경기를 관람하며 찍은 사진을
+👉 인스타그램 스토리에 @KNU_DONGARI를 태그하여 업로드해주세요!
+(*비공개 계정은 참여가 어렵습니다.)
+🎁 참여해주신 분들 중 추첨을 통해 5분께 삼성 라이온즈 응원봉을 드립니다!
+
+🗓 이벤트 당첨자 발표: 5월 29일
+상품은 총동연 사무실에서 수령하실 수 있습니다.
+
+💬문의: 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42122-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:786)
+	at org.h2.command.Parser.parseColumn(Parser.java:1171)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1156)
+	at org.h2.command.Parser.parseInsert(Parser.java:1530)
+	at org.h2.command.Parser.parsePrepared(Parser.java:698)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp.query(WebApp.java:1118)
+	at org.h2.server.web.WebApp.process(WebApp.java:244)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.JakartaWebServlet.doGet(JakartaWebServlet.java:129)
+	at org.h2.server.web.JakartaWebServlet.doPost(JakartaWebServlet.java:166)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-05-31 16:09:10.951741+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJyx5tWyjgq/', '안녕하세요.', NULL, 'images/knu_dongari/DJyx5tWyjgq', '기타', '2025-05-19', NULL, NULL, '총동아리연합회 비상대책위원회 하루입니다.
+
+⚾ 5월 28일 (수) 삼성 라이온즈 vs 롯데 자이언츠 야구 경기 관람 ⚾
+야구 경기 관람 2차 참가자 모집을 진행합니다!
+
+💰참가비는 9,000원으로 책정되었습니다.
+(참가비에는 왕복 대형 버스 이동 비용과 경기 티켓값이 모두 포함되어 있습니다.)
+또한 총 15만원 상당의 소규모 이벤트도 준비되어 있으니 많은 관심 부탁드립니다!🎁
+
+👫중앙동아리 부원 1인당 지인 1명까지 동반 가능하며,
+지인은 중앙동아리 소속이 아니어도 무방합니다!
+
+👉 참여 링크는 19일 19시에 총동아리연합회 인스타그램 스토리를 통해 공지될 예정입니다.
+✅ 선발된 분들은 추후 단체 채팅방에 초대될 예정입니다!
+
+여러분들의 많은 관심과 참여 부탁드립니다!🙌".') [42102-232]
+2025-05-31 16:09:10.954013+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJjir27y7AV/', '🏋‍♀ 경북대학교 총동아리연합회 비상대책위원회 ‘하루’ X 레드짐 전 지점🏋‍♂', NULL, 'images/knu_dongari/DJjir27y7AV', '제휴', '2025-05-12', NULL, NULL, '✨ 2025 여름맞이 건강챙김 특별 제휴 이벤트! ✨
+
+📣 경북대 중앙동아리 부원만을 위한 전용 혜택!
+최대 할인 + PT 체험까지 한 번에!
+운동, 아직 시작 안 하셨다고요? 지금이 기회입니다!
+
+✔ 레드짐 등록 시 10% 추가 할인 (단, 신년행사, 주년행사, 오픈행사, 신규 1+1 행사 적용불가)
+✔ PT 1회 체험
+❗레드짐 전 지점 적용
+
+📌 이용 방법
+1⃣ 레드짐 방문 후 ‘중앙동아리 소속’이라고 말하기
+2⃣ 등록 시 동아리 확인 & 혜택 적용
+3⃣ 할인 혜택 누리기!
+
+✅ 경북대 중앙동아리 소속이면 누구나 가능!
+✅ 동아리 임원부터 신입 부원까지 전원 OK
+✅ 사전 예약 없이 방문만으로 혜택 적용
+
+💪 올여름, 총동아리연합회가 추천하는 건강 루틴!
+레드짐에서 새로운 시작을 놓치지 마세요🔥
+
+💬문의: 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:10.956030+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJiTaK7Smn3/', '🌹2025 성년의 날 행사🌹', NULL, 'images/knu_dongari/DJiTaK7Smn3', '기타', '2025-05-12', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다. 
+기분좋은 햇살과 함께하는 5월, 성인이 된 경북대학교 학생들을 위해 하루가 성년의 날 기념 행사를 준비하였습니다.🔆
+
+성년의 날 기념 장미꽃 배부와 함께, 재학생들도 즐길 수 있는 보드판 이벤트를 준비했습니다! 여러분들의 20살은 어떠셨나요?💌 포스트잇에 가장 찬란했던 20살의 순간을 적어주세요.✏️ Best 5인의 코멘트를 기다립니다!
+이외에도 폴라로이드 촬영과 스토리 업로드 이벤트, 다채로운 상품까지💝 준비되어 있으니 학우분들의 많은 관심과 참여 부탁드립니다!
+
+🏷️ 일시 : 2025. 5. 19 (월) 12:00-15:00
+🏷️ 장소 : 경북대학교 일청담
+
+자세한 내용은 카드뉴스 참고 부탁드리며, 당일 수량 소진 시 행사가 조기 마감될 수 있습니다.
+💬 문의사항 : 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:10.958031+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJgihC8yymK/', '🎬 CGV 개봉전 무료 시사회 참가자 모집! 🎟', NULL, 'images/knu_dongari/DJgihC8yymK', '기타', '2025-05-11', NULL, NULL, '⠀
+ ”나를 모르는 그녀의 세계에서“
+가장 가까웠던 사람이, 어느 날 나를 잊은 채 낯선 세계에 있었다면?
+그녀를 다시 만나기 위한 시간 너머의 여정,
+그 특별한 로맨스의 시작에 경북대 학생 120명을 초대합니다.🎟
+⠀
+📅 일시: 2025년 5월 16일(금) 오후 7시 30분
+📍 장소: CGV 대구 한일 2관
+🎞 장르: 멜로/로맨스
+💬 러닝타임: 122분
+✅ 대상: 경북대학교 학생 최대 120명
+
+❗️신청마감: 5월 12일(월) 오전 10시⠀
+👉https://forms.gle/vnBjk27hU6xuPsUt6
+
+💬문의: 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:10.959026+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJYSaAzShsV/', '안녕하세요.', NULL, 'images/knu_dongari/DJYSaAzShsV', '기타', '2025-05-19', NULL, NULL, '총동아리연합회 비상대책위원회 하루입니다.
+
+⚾ 5월 28일 (수) 삼성 라이온즈 vs 롯데 자이언츠 야구 경기 관람 ⚾
+야구 경기 관람에 대한 참가자를 모집하고자 합니다!
+
+💰참가비는 9,000원으로 책정되었습니다.
+(참가비에는 왕복 대형 버스 이동 비용과 경기 티켓값이 모두 포함되어 있습니다.)
+또한 총 15만원 상당의 소규모 이벤트도 준비되어 있으니 많은 관심 부탁드립니다!🎁
+
+👫중앙동아리 부원 1인당, 지인 1명까지 동반 가능하며,
+지인은 중앙동아리 소속이 아니어도 무방합니다!
+
+👉 참여 링크는 9일 12시에 스토리에 공지되며, 이후 프로필 링크에도 고정될 예정입니다! 
+✅ 선발된 분들은 추후 단체 채팅방에 초대될 예정입니다!
+
+⚠️ 예매 경쟁률에 따라 티켓 확보가 어려울 경우, 부득이하게 행사가 취소될 수 있는 점 미리 양해 부탁드립니다.
+
+여러분들의 많은 관심과 참여 부탁드립니다!🙌".') [42102-232]
+2025-05-31 16:09:10.960168+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJNx_3RSgQK/', '⠀', NULL, 'images/knu_dongari/DJNx_3RSgQK', '제휴', '2025-05-04', NULL, NULL, '🎡경북대학교 총동아리연합회 비상대책위원회 ‘하루’ X 이월드🎡
+✨ 2025 캠퍼스DAY 특별 할인 이벤트! ✨
+
+📣 경북대 학우들을 위해 최대 75% 할인 혜택
+친구, 연인, 가족과 함께 봄날의 이월드를 즐겨보세요!
+
+📅 행사기간
+~ 2025년 5월 31일(토)까지
+
+🎟 티켓 가격
+✔ 종일 자유이용권 + 83타워 전망대
+64,000원 → 22,000원
+
+✔ 야간 자유이용권 + 83타워 전망대
+48,000원 → 12,000원
+
+📌 이용방법
+1️⃣ 사전예약 👉 www.sensecampusday.shop
+2️⃣ 이월드 연간단체 서비스센터 5번 창구에서 티켓 수령
+3️⃣ 현장에서 결제 후 즉시 입장 가능!
+
+✅ 사전예약 시 학생증 필요 없음!
+✅ 현장 방문 시에는 학생증 지참 필수 (모바일 학생증 가능)
+✅ 동반자 전원 동일 요금 적용
+✅ 신청 인원 제한 없음!
+
+🎠 따뜻한 봄, 즐거운 하루 보내러 이월드로 떠나요~
+📸 많은 관심과 참여 부탁드립니다!".') [42102-232]
+2025-05-31 16:09:10.962184+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DIzvjhfyjAw/', '안녕하세요. 총동아리연합회 비상대책위원회 ’하루‘ 입니다🪐', NULL, 'images/knu_dongari/DIzvjhfyjAw', '기타', '2025-04-24', NULL, NULL, '중간고사 고생 많으셨습니다. 남은 2025년 총동아리연합회에서 의미 있는 하루 하루를 만들어 나가는 건 어떨까요?
+
+총동아리연합회는 중앙동아리 운영, 동아리 관련 행사 기획, 행사 협조처 관련 업무를 수행하며, 매주 화요일 19시에 정기회의가 진행됩니다!
+
+재학 및 휴학 여부는 무관하며, 학생회 경험이 없어도 괜찮습니다. 열정과 책임감이 있다면 누구든 환영합니다!
+
+✅ 모집기간
+📍서류 : 04.24(목) ~ 04.27(일) 23:59
+📍면접 : 05.01(목) / 05.02(금)
+✅ 지원 방법
+📍지원서: 총동아리연합회 홈페이지 공지사항/ 총동아리연합회 인스타그램 프로필 링크에서 다운로드
+- 지원서 작성 후 jajudong34@gmail.com 로 제출
+✅지원 가능한 부서: 대외협력국, 편집국
+📍면접 이후 부서가 확정되며, 지원자에 따라 위 2개 외의 다른 부서에도 배정될 수 있습니다.
+✅ 문의사항
+카카오톡 채널 http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:10.962184+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DH7gAnjyaym/', '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다!', NULL, 'images/knu_dongari/DH7gAnjyaym', '간식마차', '2025-04-02', NULL, NULL, '올해의 첫 번째 중간고사를 앞두고, 하루하루 열심히 준비하시는 중앙동아리원들을 위해 야식마차를 준비했습니다!⭐
+
+💫일시: 2025년 4월 8일(화) 19:00
+💫수령 장소: 백호관 1층 게시판 옆 (백호관 소강당에서 대기)
+💫메뉴: 다니상점 샌드위치🥪 (갈릭베이컨 or 단호박크림치즈 中 택 1개) + 얼라이브 스위티자몽 250ml🧃
+💫수령 방법: 당일 선착순 ‘200‘명
+
+⭐ EVENT: 행운 숫자 당첨 시 20명에게 과일컵 증정! (행운 숫자는 당일 공개)
+
+❗경북대학교 소속의 중앙동아리원만 신청이 가능합니다. (수령 시 학생증 및 소속 중앙동아리 단톡방 확인)
+
+❗백호관 소강당 개방 시간은 17시입니다. (스티커 분실로 인한 피해는 보상해드리지 않습니다!)
+
+📢 문의사항: 카카오톡 채널 http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:10.963719+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHnWWZ2SP6N/', '🏟2025 상반기 가두모집 메인 이벤트 당첨자 안내🏟', NULL, 'images/knu_dongari/DHnWWZ2SP6N', '기타', '2025-03-25', NULL, NULL, '안녕하세요. 경북대학교 총동아리연합회 비상대책위원회 하루입니다.🪐
+
+2025학년도 상반기 가두모집 메인 이벤트 당첨자를 공개합니다!!🎁
+약 2800명의 학우분들께서 메인 이벤트에 참여해주셨습니다. 당첨되신 모든 분들 축하드립니다.🥳
+3월 25일 금일자로 라이브 방송을 통해 추첨을 진행하였으며, 저장된 영상은 금일 19시까지 총동아리연합회 게시물에서 확인하실 수 있습니다!
+당첨자분들께서는 응모권에 기재된 번호로 개별 연락을 드릴 예정이니 메세지 확인 부탁드립니다.🙌
+
+실물 상품 수령은 3월 25일 금일부터 가능하며, 백호관 215호 총동아리연합회 사무실에 방문하시어 수령하시면 됩니다! (9:00-18:00 행사협조처 운영시간)
+상품권은 빠른 시일 내로 지급될 예정이오니 참고 부탁드립니다.
+
+2025 상반기 가두모집에 참여해주신 모든 학우분들께 감사드리며, 앞으로 더욱 색다르고 활기찬 행사로 찾아뵙겠습니다! 많은 참여와 관심 부탁드립니다!🪐".') [42102-232]
+2025-05-31 16:09:10.964752+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHc67OUxrmU/', '💡경북대학교 총동아리연합회 비상대책위원회 ’하루‘ 신입간부 모집💡', NULL, 'images/knu_dongari/DHc67OUxrmU', '대여', '2025-03-21', NULL, NULL, '안녕하세요. 총동아리연합회 비상대책위원회 ’하루‘ 입니다!🪐
+설레는 새학기의 시작과 함께, 의미있는 하루를 함께 만들어 나갈 신입간부를 모집합니다.
+
+총동아리연합회는 중앙동아리 운영, 동아리 관련 행사 기획, 행사 협조처 관련 업무를 수행하며, 매주 화요일 19시에 정기회의가 진행됩니다!
+
+지원 가능한 부서는 총 5개로, 대외협력국, 복지국, 사무국, 조직국, 편집국이 있습니다. (각 부서에 대한 설명은 카드뉴스를 참고해 주세요)
+
+재학 및 휴학 여부는 무관하며, 학생회 경험이 없어도 괜찮습니다. 열정과 책임감이 있다면 누구든 환영합니다!
+
+✅ 모집기간
+📍서류 : 03.21(금) - 03.24(월) 23:59
+📍면접 : 03.27(목)
+✅ 지원 방법
+📍지원서: 총동아리연합회 인스타그램 프로필 링크 / 카드뉴스 QR코드 / 총동아리연합회 홈페이지 공지사항에서 다운로드
+📍지원서 작성 후 jajudong34@gmail.com 로 제출
+✅ 문의사항
+카카오톡 채널 http://pf.kakao.com/_exixdxmxj
+(인스타그램 프로필 링크 참고)".') [42102-232]
+2025-05-31 16:09:10.965739+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHaEwm6S0dX/', '무신사 스토어 대구 x 경북대 총동아리연합회 비상대책위원회 하루 최대 만원 할인 신학기 프로모션 🎉', NULL, 'images/knu_dongari/DHaEwm6S0dX', '제휴', '2025-03-20', NULL, NULL, '1️⃣경북대 총동아리연합회 비상대책위원회 하루 신학기 프로모션 캐셔에서 학생증과 쿠폰 인증할 시,
+💸 10만원 이상 구매 시 1만원 즉시 할인 (선착순 100명)
+💸 이후 10만원 이상 구매 시 5천원 즉시 할인
+
+☑️ 기간 : 2025.03.21 - 03.31
+☑️ 진행 매장 : 무신사 스토어 대구
+☑️ 인증 방법 : 학생증 or 모바일 학생증 & 카카오 쿠폰 인증
+* 무신사 스탠다드 동성로점은 프로모션 대상 매장이 아닙니다.
+* 1인 1회 사용 가능하며, 직원 확인 버튼을 누를 시 재사용 불가능합니다.
+
+👇🏻쿠폰 다운로드
+http://pf.kakao.com/_xceRCu/coupons/_kzkmkmo44Z 
+
+2️⃣무신사 스토어 대구 단독 프로모션
+- 봄 신상 오프라인 추가할인 10% OFF (일부브랜드, 03.23 까지)
+- SPECIAL PRICE ZONE, UP TO 80% OFF. 29,000원부터 시작 (엑스톤즈, 낫포너드, 이에이, 사운즈라이프, 크리틱)
+- 무신사 스토어 대구 고객 대상 이월드 자유이용권 50% 할인
+
+주소 : 대구광역시 중구 공평동 45-1 무신사 스토어 대구
+영업시간 : 11:30 - 21:30 연중무휴".') [42102-232]
+2025-05-31 16:09:10.966738+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHUpwxqSIa5/', '🏟2025 상반기 가두모집 사전이벤트 ’어하루‘ 안내🏟', NULL, 'images/knu_dongari/DHUpwxqSIa5', '기타', '2025-03-18', NULL, NULL, '안녕하세요. 경북대학교 총동아리연합회 비상대책위원회 하루입니다.🪐
+
+🚨본격적으로 가두모집을 시작하기 전 사전 이벤트 ’어쩌다 발견한 하루‘를 진행합니다!
+학교 전역에 하루 올림픽 표지의 쿠폰을 붙여놓았습니다.✨
+학교를 둘러보며 쿠폰을 찾아 가두모집 행사 당일 총동아리연합회 부스로 방문하시면 됩니다!🎁
+‼️19일, 20일 부스 운영 시간(10:00-18:00)안에 방문해주셔야 합니다.
+
+🏅행사 일정: 3월18일(화)~3월20일(목)
+🏅행사 장소: 경북대학교 전역 및 총동아리연합회 부스
+💬 문의 사항: http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:10.968181+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHPrdo1SOJJ/', '🏟️2025 상반기 가두모집 동아리 공연 안내🏟️', NULL, 'images/knu_dongari/DHPrdo1SOJJ', '기타', '2025-03-17', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다. 🪐
+하루 올림픽을 더욱 빛내줄 11개의 동아리 공연 일정을 공개합니다!
+
+눈과 귀를 더욱 즐겁게 해줄 다양한 동아리들의 퍼포먼스!
+D-3, 하루 올림픽에서 만나요🎶
+
+🏅부스 일정: 3월19일(수) ~ 3월20일(목) 10:00-18:00
+🏅공연 일정: 양일 점심 일청담 부근
+🏅행사 장소: 일청담 및 백양로 일대
+💬 문의 사항: http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:10.969627+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHKxTskyqBz/', '🏟️2025 상반기 가두모집 참여 동아리 소개🏟️', NULL, 'images/knu_dongari/DHKxTskyqBz', '기타', '2025-03-17', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다. 🪐
+하루 올림픽에 참가하는 중앙동아리를 소개하오니 많은 관심 부탁드립니다.
+
+64개의 동아리가 2025 상반기 가두모집을 빛내기 위해 모였습니다. 자신의 취향에 맞는 동아리를 만나보세요. 중앙동아리의 대축제 하루 올림픽에서 만나요~
+
+🏅부스 일정: 3월 19일(수) ~ 3월20일(목) 10:00-18:00
+🏅공연 일정: 양일 점심
+🏅행사 장소: 일청담 및 백양로 일대
+💬 문의 사항: http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:10.971931+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHGUfi2y6NA/', '🏟️2025 상반기 가두모집 부스 배치도 소개🏟️', NULL, 'images/knu_dongari/DHGUfi2y6NA', '기타', '2025-03-17', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다. 🪐
+대망의 2025 상반기 가두모집 부스를 공개합니다!
+
+5개의 색으로 이루어진 오륜기처럼, 5개의 중앙동아리 분과가 모여 이번 하루 올림픽을 개최하게 되었습니다. 포기하지 않는 올림픽 정신처럼, 중앙동아리에서 만들어갈 여러분의 도전을 응원합니다. 대학생활의 하루하루를 즐겁게 만들 운명의 중앙동아리를 찾아보세요!
+
+🏅부스 일정: 3월19일(수) ~ 3월20일(목) 10:00-18:00
+🏅공연 일정: 양일 점심
+🏅행사 장소: 일청담 및 백양로 일대
+💬 문의 사항: http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:10.971931+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHA0UCmyZFY/', '안녕하세요, 총동아리연합회 비상대책위원회입니다! 곧 개최될 가두모집 <하루 올림픽>은 다들 잘 준비하고 계신가요? 운영본부에서 참가자들을 위한 다양한 이벤트를 안내해 드립니다!', NULL, 'images/knu_dongari/DHA0UCmyZFY', '기타', '2025-03-10', NULL, NULL, '총동연 부스에서 배부하는 티켓에 스티커를 모아 오륜기를 완성해 주세요! 5개의 스티커를 모두 모아 Gift shop에서 응모권을 제출해 맛있는 나쵸도 먹고 애플워치, 스탠리 텀블러, 배민 상품권의 주인공이 되어보세요! 당첨이 되지 않더라도 괜찮아요! 스티커 5종류를 모아 오시는 모든 분께는 특별한 상품이 기다리고 있답니다~😉
+
+뿐만 아니라 총동연 부스에서의 미니게임을 통해 상품을 수령하고 백양로를 달리는 성화봉송 주자를 찾아 간식도 받아보세요! 여러분의 많은 참여 기다리고 있겠습니다! 💪
+
+🥇 행사 일시: 3월 19일(수) ~ 20일(목) 10:00 - 18:00
+🥇 행사 장소: 일청담 및 백양로 일대
+
+💬문의사항: 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:10.973909+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DG4cs8zvT-2/', '🎖️가두모집 서포터즈 모집 공지🎖️', NULL, 'images/knu_dongari/DG4cs8zvT-2', '기타', '2025-03-17', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회입니다! 새로운 학기의 시작을 알릴 1학기 동아리 가두모집 행사를 도와주실 서포터즈를 모집합니다.
+
+가두모집 서포터즈로 활동하는 기간 내 식사가 제공되며, 활동 시간은 봉사 시간으로 제공될 예정입니다. 다양한 경험을 할 수 있는 서포터즈에 많은 지원 부탁드립니다!
+
+🏅행사 기간: 3/19(수) - 3/20(목) 
+🏅모집 기간: 3/7(금) - 3/10(월) 18:00
+🏅신청 링크
+  https://forms.gle/n7UCFgUUpGUKNnsa6
+❗기간이 지난 후 제출된 폼은 수합되지 않으니 기간 엄수 바랍니다❗
+
+🏅선발 조건: 지원 동기, 행사에 할애 가능한 시간 
+ (신입생, 휴학생 환영 😄)
+🏅결과 통지: 3/11 화요일 
+ (합격자에 한하여 일괄 문자 통보)
+🏅가두모집 행사 전, 서포터즈 OT 진행 
+ (3/17 월요일 오후 18:30 예정)
+
+ 💬문의사항: 총동아리연합회 카카오톡 채널
+  http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:11.141030+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "URL" not found; SQL statement:
+INSERT INTO Club_Event (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJ735m4SKWt/', '🎉 야구장에서 더 즐겁게! ’하루‘가 준비한 특별한 이벤트 2종 ⚾️💙', NULL, 'images/knu_dongari/DJ735m4SKWt', '기타', '2025-05-22', NULL, NULL, '🎉 야구장에서 더 즐겁게! ’하루‘가 준비한 특별한 이벤트 2종 ⚾️💙
+
+5월 28일, 삼성 라이온즈 vs 롯데 자이언츠 경기!
+야구 관람과 더불어 특별한 추억을 위해 선물과 함께하는 이벤트를 
+준비했습니다!
+
+📍 EVENT 1 – 스코어 맞추기 이벤트
+
+⚾ 경기 전, 승리할 팀과 예상 스코어를 구글폼을 통해 작성해 주세요!
+🎯 가장 근접하게 맞추신 분들께는
+배달의민족 상품권 총 10만원 상당을 나누어 드립니다! (인원 초과 시 선착순 10명에게만 지급)
+
+📌 참고
+동일 점수 예측자 수에 따라 금액이 나뉘어요!
+4명 인원: 1인당 25,000원
+2명 인원: 1인당 50,000원
+스코어 예측 작성 기재 예시 - 삼성 승, 삼성 5 : 롯데 3
+
+📍 EVENT 2 – 인스타그램 태그 이벤트
+
+📸 총동연과 함께 야구 경기를 관람하며 찍은 사진을
+👉 인스타그램 스토리에 @KNU_DONGARI를 태그하여 업로드해주세요!
+(*비공개 계정은 참여가 어렵습니다.)
+🎁 참여해주신 분들 중 추첨을 통해 5분께 삼성 라이온즈 응원봉을 드립니다!
+
+🗓 이벤트 당첨자 발표: 5월 29일
+상품은 총동연 사무실에서 수령하실 수 있습니다.
+
+💬문의: 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42122-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:786)
+	at org.h2.command.Parser.parseColumn(Parser.java:1171)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1156)
+	at org.h2.command.Parser.parseInsert(Parser.java:1530)
+	at org.h2.command.Parser.parsePrepared(Parser.java:698)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp.query(WebApp.java:1118)
+	at org.h2.server.web.WebApp.process(WebApp.java:244)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.JakartaWebServlet.doGet(JakartaWebServlet.java:129)
+	at org.h2.server.web.JakartaWebServlet.doPost(JakartaWebServlet.java:166)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-05-31 16:09:11.143047+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJyx5tWyjgq/', '안녕하세요.', NULL, 'images/knu_dongari/DJyx5tWyjgq', '기타', '2025-05-19', NULL, NULL, '총동아리연합회 비상대책위원회 하루입니다.
+
+⚾ 5월 28일 (수) 삼성 라이온즈 vs 롯데 자이언츠 야구 경기 관람 ⚾
+야구 경기 관람 2차 참가자 모집을 진행합니다!
+
+💰참가비는 9,000원으로 책정되었습니다.
+(참가비에는 왕복 대형 버스 이동 비용과 경기 티켓값이 모두 포함되어 있습니다.)
+또한 총 15만원 상당의 소규모 이벤트도 준비되어 있으니 많은 관심 부탁드립니다!🎁
+
+👫중앙동아리 부원 1인당 지인 1명까지 동반 가능하며,
+지인은 중앙동아리 소속이 아니어도 무방합니다!
+
+👉 참여 링크는 19일 19시에 총동아리연합회 인스타그램 스토리를 통해 공지될 예정입니다.
+✅ 선발된 분들은 추후 단체 채팅방에 초대될 예정입니다!
+
+여러분들의 많은 관심과 참여 부탁드립니다!🙌".') [42102-232]
+2025-05-31 16:09:11.144037+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJjir27y7AV/', '🏋‍♀ 경북대학교 총동아리연합회 비상대책위원회 ‘하루’ X 레드짐 전 지점🏋‍♂', NULL, 'images/knu_dongari/DJjir27y7AV', '제휴', '2025-05-12', NULL, NULL, '✨ 2025 여름맞이 건강챙김 특별 제휴 이벤트! ✨
+
+📣 경북대 중앙동아리 부원만을 위한 전용 혜택!
+최대 할인 + PT 체험까지 한 번에!
+운동, 아직 시작 안 하셨다고요? 지금이 기회입니다!
+
+✔ 레드짐 등록 시 10% 추가 할인 (단, 신년행사, 주년행사, 오픈행사, 신규 1+1 행사 적용불가)
+✔ PT 1회 체험
+❗레드짐 전 지점 적용
+
+📌 이용 방법
+1⃣ 레드짐 방문 후 ‘중앙동아리 소속’이라고 말하기
+2⃣ 등록 시 동아리 확인 & 혜택 적용
+3⃣ 할인 혜택 누리기!
+
+✅ 경북대 중앙동아리 소속이면 누구나 가능!
+✅ 동아리 임원부터 신입 부원까지 전원 OK
+✅ 사전 예약 없이 방문만으로 혜택 적용
+
+💪 올여름, 총동아리연합회가 추천하는 건강 루틴!
+레드짐에서 새로운 시작을 놓치지 마세요🔥
+
+💬문의: 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:11.145036+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJiTaK7Smn3/', '🌹2025 성년의 날 행사🌹', NULL, 'images/knu_dongari/DJiTaK7Smn3', '기타', '2025-05-12', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다. 
+기분좋은 햇살과 함께하는 5월, 성인이 된 경북대학교 학생들을 위해 하루가 성년의 날 기념 행사를 준비하였습니다.🔆
+
+성년의 날 기념 장미꽃 배부와 함께, 재학생들도 즐길 수 있는 보드판 이벤트를 준비했습니다! 여러분들의 20살은 어떠셨나요?💌 포스트잇에 가장 찬란했던 20살의 순간을 적어주세요.✏️ Best 5인의 코멘트를 기다립니다!
+이외에도 폴라로이드 촬영과 스토리 업로드 이벤트, 다채로운 상품까지💝 준비되어 있으니 학우분들의 많은 관심과 참여 부탁드립니다!
+
+🏷️ 일시 : 2025. 5. 19 (월) 12:00-15:00
+🏷️ 장소 : 경북대학교 일청담
+
+자세한 내용은 카드뉴스 참고 부탁드리며, 당일 수량 소진 시 행사가 조기 마감될 수 있습니다.
+💬 문의사항 : 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:11.146037+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJgihC8yymK/', '🎬 CGV 개봉전 무료 시사회 참가자 모집! 🎟', NULL, 'images/knu_dongari/DJgihC8yymK', '기타', '2025-05-11', NULL, NULL, '⠀
+ ”나를 모르는 그녀의 세계에서“
+가장 가까웠던 사람이, 어느 날 나를 잊은 채 낯선 세계에 있었다면?
+그녀를 다시 만나기 위한 시간 너머의 여정,
+그 특별한 로맨스의 시작에 경북대 학생 120명을 초대합니다.🎟
+⠀
+📅 일시: 2025년 5월 16일(금) 오후 7시 30분
+📍 장소: CGV 대구 한일 2관
+🎞 장르: 멜로/로맨스
+💬 러닝타임: 122분
+✅ 대상: 경북대학교 학생 최대 120명
+
+❗️신청마감: 5월 12일(월) 오전 10시⠀
+👉https://forms.gle/vnBjk27hU6xuPsUt6
+
+💬문의: 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:11.147041+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJYSaAzShsV/', '안녕하세요.', NULL, 'images/knu_dongari/DJYSaAzShsV', '기타', '2025-05-19', NULL, NULL, '총동아리연합회 비상대책위원회 하루입니다.
+
+⚾ 5월 28일 (수) 삼성 라이온즈 vs 롯데 자이언츠 야구 경기 관람 ⚾
+야구 경기 관람에 대한 참가자를 모집하고자 합니다!
+
+💰참가비는 9,000원으로 책정되었습니다.
+(참가비에는 왕복 대형 버스 이동 비용과 경기 티켓값이 모두 포함되어 있습니다.)
+또한 총 15만원 상당의 소규모 이벤트도 준비되어 있으니 많은 관심 부탁드립니다!🎁
+
+👫중앙동아리 부원 1인당, 지인 1명까지 동반 가능하며,
+지인은 중앙동아리 소속이 아니어도 무방합니다!
+
+👉 참여 링크는 9일 12시에 스토리에 공지되며, 이후 프로필 링크에도 고정될 예정입니다! 
+✅ 선발된 분들은 추후 단체 채팅방에 초대될 예정입니다!
+
+⚠️ 예매 경쟁률에 따라 티켓 확보가 어려울 경우, 부득이하게 행사가 취소될 수 있는 점 미리 양해 부탁드립니다.
+
+여러분들의 많은 관심과 참여 부탁드립니다!🙌".') [42102-232]
+2025-05-31 16:09:11.148240+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJNx_3RSgQK/', '⠀', NULL, 'images/knu_dongari/DJNx_3RSgQK', '제휴', '2025-05-04', NULL, NULL, '🎡경북대학교 총동아리연합회 비상대책위원회 ‘하루’ X 이월드🎡
+✨ 2025 캠퍼스DAY 특별 할인 이벤트! ✨
+
+📣 경북대 학우들을 위해 최대 75% 할인 혜택
+친구, 연인, 가족과 함께 봄날의 이월드를 즐겨보세요!
+
+📅 행사기간
+~ 2025년 5월 31일(토)까지
+
+🎟 티켓 가격
+✔ 종일 자유이용권 + 83타워 전망대
+64,000원 → 22,000원
+
+✔ 야간 자유이용권 + 83타워 전망대
+48,000원 → 12,000원
+
+📌 이용방법
+1️⃣ 사전예약 👉 www.sensecampusday.shop
+2️⃣ 이월드 연간단체 서비스센터 5번 창구에서 티켓 수령
+3️⃣ 현장에서 결제 후 즉시 입장 가능!
+
+✅ 사전예약 시 학생증 필요 없음!
+✅ 현장 방문 시에는 학생증 지참 필수 (모바일 학생증 가능)
+✅ 동반자 전원 동일 요금 적용
+✅ 신청 인원 제한 없음!
+
+🎠 따뜻한 봄, 즐거운 하루 보내러 이월드로 떠나요~
+📸 많은 관심과 참여 부탁드립니다!".') [42102-232]
+2025-05-31 16:09:11.149261+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DIzvjhfyjAw/', '안녕하세요. 총동아리연합회 비상대책위원회 ’하루‘ 입니다🪐', NULL, 'images/knu_dongari/DIzvjhfyjAw', '기타', '2025-04-24', NULL, NULL, '중간고사 고생 많으셨습니다. 남은 2025년 총동아리연합회에서 의미 있는 하루 하루를 만들어 나가는 건 어떨까요?
+
+총동아리연합회는 중앙동아리 운영, 동아리 관련 행사 기획, 행사 협조처 관련 업무를 수행하며, 매주 화요일 19시에 정기회의가 진행됩니다!
+
+재학 및 휴학 여부는 무관하며, 학생회 경험이 없어도 괜찮습니다. 열정과 책임감이 있다면 누구든 환영합니다!
+
+✅ 모집기간
+📍서류 : 04.24(목) ~ 04.27(일) 23:59
+📍면접 : 05.01(목) / 05.02(금)
+✅ 지원 방법
+📍지원서: 총동아리연합회 홈페이지 공지사항/ 총동아리연합회 인스타그램 프로필 링크에서 다운로드
+- 지원서 작성 후 jajudong34@gmail.com 로 제출
+✅지원 가능한 부서: 대외협력국, 편집국
+📍면접 이후 부서가 확정되며, 지원자에 따라 위 2개 외의 다른 부서에도 배정될 수 있습니다.
+✅ 문의사항
+카카오톡 채널 http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:11.150365+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DH7gAnjyaym/', '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다!', NULL, 'images/knu_dongari/DH7gAnjyaym', '간식마차', '2025-04-02', NULL, NULL, '올해의 첫 번째 중간고사를 앞두고, 하루하루 열심히 준비하시는 중앙동아리원들을 위해 야식마차를 준비했습니다!⭐
+
+💫일시: 2025년 4월 8일(화) 19:00
+💫수령 장소: 백호관 1층 게시판 옆 (백호관 소강당에서 대기)
+💫메뉴: 다니상점 샌드위치🥪 (갈릭베이컨 or 단호박크림치즈 中 택 1개) + 얼라이브 스위티자몽 250ml🧃
+💫수령 방법: 당일 선착순 ‘200‘명
+
+⭐ EVENT: 행운 숫자 당첨 시 20명에게 과일컵 증정! (행운 숫자는 당일 공개)
+
+❗경북대학교 소속의 중앙동아리원만 신청이 가능합니다. (수령 시 학생증 및 소속 중앙동아리 단톡방 확인)
+
+❗백호관 소강당 개방 시간은 17시입니다. (스티커 분실로 인한 피해는 보상해드리지 않습니다!)
+
+📢 문의사항: 카카오톡 채널 http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:11.151388+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHnWWZ2SP6N/', '🏟2025 상반기 가두모집 메인 이벤트 당첨자 안내🏟', NULL, 'images/knu_dongari/DHnWWZ2SP6N', '기타', '2025-03-25', NULL, NULL, '안녕하세요. 경북대학교 총동아리연합회 비상대책위원회 하루입니다.🪐
+
+2025학년도 상반기 가두모집 메인 이벤트 당첨자를 공개합니다!!🎁
+약 2800명의 학우분들께서 메인 이벤트에 참여해주셨습니다. 당첨되신 모든 분들 축하드립니다.🥳
+3월 25일 금일자로 라이브 방송을 통해 추첨을 진행하였으며, 저장된 영상은 금일 19시까지 총동아리연합회 게시물에서 확인하실 수 있습니다!
+당첨자분들께서는 응모권에 기재된 번호로 개별 연락을 드릴 예정이니 메세지 확인 부탁드립니다.🙌
+
+실물 상품 수령은 3월 25일 금일부터 가능하며, 백호관 215호 총동아리연합회 사무실에 방문하시어 수령하시면 됩니다! (9:00-18:00 행사협조처 운영시간)
+상품권은 빠른 시일 내로 지급될 예정이오니 참고 부탁드립니다.
+
+2025 상반기 가두모집에 참여해주신 모든 학우분들께 감사드리며, 앞으로 더욱 색다르고 활기찬 행사로 찾아뵙겠습니다! 많은 참여와 관심 부탁드립니다!🪐".') [42102-232]
+2025-05-31 16:09:11.152374+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHc67OUxrmU/', '💡경북대학교 총동아리연합회 비상대책위원회 ’하루‘ 신입간부 모집💡', NULL, 'images/knu_dongari/DHc67OUxrmU', '대여', '2025-03-21', NULL, NULL, '안녕하세요. 총동아리연합회 비상대책위원회 ’하루‘ 입니다!🪐
+설레는 새학기의 시작과 함께, 의미있는 하루를 함께 만들어 나갈 신입간부를 모집합니다.
+
+총동아리연합회는 중앙동아리 운영, 동아리 관련 행사 기획, 행사 협조처 관련 업무를 수행하며, 매주 화요일 19시에 정기회의가 진행됩니다!
+
+지원 가능한 부서는 총 5개로, 대외협력국, 복지국, 사무국, 조직국, 편집국이 있습니다. (각 부서에 대한 설명은 카드뉴스를 참고해 주세요)
+
+재학 및 휴학 여부는 무관하며, 학생회 경험이 없어도 괜찮습니다. 열정과 책임감이 있다면 누구든 환영합니다!
+
+✅ 모집기간
+📍서류 : 03.21(금) - 03.24(월) 23:59
+📍면접 : 03.27(목)
+✅ 지원 방법
+📍지원서: 총동아리연합회 인스타그램 프로필 링크 / 카드뉴스 QR코드 / 총동아리연합회 홈페이지 공지사항에서 다운로드
+📍지원서 작성 후 jajudong34@gmail.com 로 제출
+✅ 문의사항
+카카오톡 채널 http://pf.kakao.com/_exixdxmxj
+(인스타그램 프로필 링크 참고)".') [42102-232]
+2025-05-31 16:09:11.153389+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHaEwm6S0dX/', '무신사 스토어 대구 x 경북대 총동아리연합회 비상대책위원회 하루 최대 만원 할인 신학기 프로모션 🎉', NULL, 'images/knu_dongari/DHaEwm6S0dX', '제휴', '2025-03-20', NULL, NULL, '1️⃣경북대 총동아리연합회 비상대책위원회 하루 신학기 프로모션 캐셔에서 학생증과 쿠폰 인증할 시,
+💸 10만원 이상 구매 시 1만원 즉시 할인 (선착순 100명)
+💸 이후 10만원 이상 구매 시 5천원 즉시 할인
+
+☑️ 기간 : 2025.03.21 - 03.31
+☑️ 진행 매장 : 무신사 스토어 대구
+☑️ 인증 방법 : 학생증 or 모바일 학생증 & 카카오 쿠폰 인증
+* 무신사 스탠다드 동성로점은 프로모션 대상 매장이 아닙니다.
+* 1인 1회 사용 가능하며, 직원 확인 버튼을 누를 시 재사용 불가능합니다.
+
+👇🏻쿠폰 다운로드
+http://pf.kakao.com/_xceRCu/coupons/_kzkmkmo44Z 
+
+2️⃣무신사 스토어 대구 단독 프로모션
+- 봄 신상 오프라인 추가할인 10% OFF (일부브랜드, 03.23 까지)
+- SPECIAL PRICE ZONE, UP TO 80% OFF. 29,000원부터 시작 (엑스톤즈, 낫포너드, 이에이, 사운즈라이프, 크리틱)
+- 무신사 스토어 대구 고객 대상 이월드 자유이용권 50% 할인
+
+주소 : 대구광역시 중구 공평동 45-1 무신사 스토어 대구
+영업시간 : 11:30 - 21:30 연중무휴".') [42102-232]
+2025-05-31 16:09:11.154375+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHUpwxqSIa5/', '🏟2025 상반기 가두모집 사전이벤트 ’어하루‘ 안내🏟', NULL, 'images/knu_dongari/DHUpwxqSIa5', '기타', '2025-03-18', NULL, NULL, '안녕하세요. 경북대학교 총동아리연합회 비상대책위원회 하루입니다.🪐
+
+🚨본격적으로 가두모집을 시작하기 전 사전 이벤트 ’어쩌다 발견한 하루‘를 진행합니다!
+학교 전역에 하루 올림픽 표지의 쿠폰을 붙여놓았습니다.✨
+학교를 둘러보며 쿠폰을 찾아 가두모집 행사 당일 총동아리연합회 부스로 방문하시면 됩니다!🎁
+‼️19일, 20일 부스 운영 시간(10:00-18:00)안에 방문해주셔야 합니다.
+
+🏅행사 일정: 3월18일(화)~3월20일(목)
+🏅행사 장소: 경북대학교 전역 및 총동아리연합회 부스
+💬 문의 사항: http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:11.155376+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHPrdo1SOJJ/', '🏟️2025 상반기 가두모집 동아리 공연 안내🏟️', NULL, 'images/knu_dongari/DHPrdo1SOJJ', '기타', '2025-03-17', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다. 🪐
+하루 올림픽을 더욱 빛내줄 11개의 동아리 공연 일정을 공개합니다!
+
+눈과 귀를 더욱 즐겁게 해줄 다양한 동아리들의 퍼포먼스!
+D-3, 하루 올림픽에서 만나요🎶
+
+🏅부스 일정: 3월19일(수) ~ 3월20일(목) 10:00-18:00
+🏅공연 일정: 양일 점심 일청담 부근
+🏅행사 장소: 일청담 및 백양로 일대
+💬 문의 사항: http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:11.157389+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHKxTskyqBz/', '🏟️2025 상반기 가두모집 참여 동아리 소개🏟️', NULL, 'images/knu_dongari/DHKxTskyqBz', '기타', '2025-03-17', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다. 🪐
+하루 올림픽에 참가하는 중앙동아리를 소개하오니 많은 관심 부탁드립니다.
+
+64개의 동아리가 2025 상반기 가두모집을 빛내기 위해 모였습니다. 자신의 취향에 맞는 동아리를 만나보세요. 중앙동아리의 대축제 하루 올림픽에서 만나요~
+
+🏅부스 일정: 3월 19일(수) ~ 3월20일(목) 10:00-18:00
+🏅공연 일정: 양일 점심
+🏅행사 장소: 일청담 및 백양로 일대
+💬 문의 사항: http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:11.158378+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHGUfi2y6NA/', '🏟️2025 상반기 가두모집 부스 배치도 소개🏟️', NULL, 'images/knu_dongari/DHGUfi2y6NA', '기타', '2025-03-17', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다. 🪐
+대망의 2025 상반기 가두모집 부스를 공개합니다!
+
+5개의 색으로 이루어진 오륜기처럼, 5개의 중앙동아리 분과가 모여 이번 하루 올림픽을 개최하게 되었습니다. 포기하지 않는 올림픽 정신처럼, 중앙동아리에서 만들어갈 여러분의 도전을 응원합니다. 대학생활의 하루하루를 즐겁게 만들 운명의 중앙동아리를 찾아보세요!
+
+🏅부스 일정: 3월19일(수) ~ 3월20일(목) 10:00-18:00
+🏅공연 일정: 양일 점심
+🏅행사 장소: 일청담 및 백양로 일대
+💬 문의 사항: http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:11.159377+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHA0UCmyZFY/', '안녕하세요, 총동아리연합회 비상대책위원회입니다! 곧 개최될 가두모집 <하루 올림픽>은 다들 잘 준비하고 계신가요? 운영본부에서 참가자들을 위한 다양한 이벤트를 안내해 드립니다!', NULL, 'images/knu_dongari/DHA0UCmyZFY', '기타', '2025-03-10', NULL, NULL, '총동연 부스에서 배부하는 티켓에 스티커를 모아 오륜기를 완성해 주세요! 5개의 스티커를 모두 모아 Gift shop에서 응모권을 제출해 맛있는 나쵸도 먹고 애플워치, 스탠리 텀블러, 배민 상품권의 주인공이 되어보세요! 당첨이 되지 않더라도 괜찮아요! 스티커 5종류를 모아 오시는 모든 분께는 특별한 상품이 기다리고 있답니다~😉
+
+뿐만 아니라 총동연 부스에서의 미니게임을 통해 상품을 수령하고 백양로를 달리는 성화봉송 주자를 찾아 간식도 받아보세요! 여러분의 많은 참여 기다리고 있겠습니다! 💪
+
+🥇 행사 일시: 3월 19일(수) ~ 20일(목) 10:00 - 18:00
+🥇 행사 장소: 일청담 및 백양로 일대
+
+💬문의사항: 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:11.160381+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DG4cs8zvT-2/', '🎖️가두모집 서포터즈 모집 공지🎖️', NULL, 'images/knu_dongari/DG4cs8zvT-2', '기타', '2025-03-17', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회입니다! 새로운 학기의 시작을 알릴 1학기 동아리 가두모집 행사를 도와주실 서포터즈를 모집합니다.
+
+가두모집 서포터즈로 활동하는 기간 내 식사가 제공되며, 활동 시간은 봉사 시간으로 제공될 예정입니다. 다양한 경험을 할 수 있는 서포터즈에 많은 지원 부탁드립니다!
+
+🏅행사 기간: 3/19(수) - 3/20(목) 
+🏅모집 기간: 3/7(금) - 3/10(월) 18:00
+🏅신청 링크
+  https://forms.gle/n7UCFgUUpGUKNnsa6
+❗기간이 지난 후 제출된 폼은 수합되지 않으니 기간 엄수 바랍니다❗
+
+🏅선발 조건: 지원 동기, 행사에 할애 가능한 시간 
+ (신입생, 휴학생 환영 😄)
+🏅결과 통지: 3/11 화요일 
+ (합격자에 한하여 일괄 문자 통보)
+🏅가두모집 행사 전, 서포터즈 OT 진행 
+ (3/17 월요일 오후 18:30 예정)
+
+ 💬문의사항: 총동아리연합회 카카오톡 채널
+  http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:11.196174+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "URL" not found; SQL statement:
+INSERT INTO Club_Event (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJ735m4SKWt/', '🎉 야구장에서 더 즐겁게! ’하루‘가 준비한 특별한 이벤트 2종 ⚾️💙', NULL, 'images/knu_dongari/DJ735m4SKWt', '기타', '2025-05-22', NULL, NULL, '🎉 야구장에서 더 즐겁게! ’하루‘가 준비한 특별한 이벤트 2종 ⚾️💙
+
+5월 28일, 삼성 라이온즈 vs 롯데 자이언츠 경기!
+야구 관람과 더불어 특별한 추억을 위해 선물과 함께하는 이벤트를 
+준비했습니다!
+
+📍 EVENT 1 – 스코어 맞추기 이벤트
+
+⚾ 경기 전, 승리할 팀과 예상 스코어를 구글폼을 통해 작성해 주세요!
+🎯 가장 근접하게 맞추신 분들께는
+배달의민족 상품권 총 10만원 상당을 나누어 드립니다! (인원 초과 시 선착순 10명에게만 지급)
+
+📌 참고
+동일 점수 예측자 수에 따라 금액이 나뉘어요!
+4명 인원: 1인당 25,000원
+2명 인원: 1인당 50,000원
+스코어 예측 작성 기재 예시 - 삼성 승, 삼성 5 : 롯데 3
+
+📍 EVENT 2 – 인스타그램 태그 이벤트
+
+📸 총동연과 함께 야구 경기를 관람하며 찍은 사진을
+👉 인스타그램 스토리에 @KNU_DONGARI를 태그하여 업로드해주세요!
+(*비공개 계정은 참여가 어렵습니다.)
+🎁 참여해주신 분들 중 추첨을 통해 5분께 삼성 라이온즈 응원봉을 드립니다!
+
+🗓 이벤트 당첨자 발표: 5월 29일
+상품은 총동연 사무실에서 수령하실 수 있습니다.
+
+💬문의: 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42122-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:786)
+	at org.h2.command.Parser.parseColumn(Parser.java:1171)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1156)
+	at org.h2.command.Parser.parseInsert(Parser.java:1530)
+	at org.h2.command.Parser.parsePrepared(Parser.java:698)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp.query(WebApp.java:1118)
+	at org.h2.server.web.WebApp.process(WebApp.java:244)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.JakartaWebServlet.doGet(JakartaWebServlet.java:129)
+	at org.h2.server.web.JakartaWebServlet.doPost(JakartaWebServlet.java:166)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-05-31 16:09:11.198173+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJyx5tWyjgq/', '안녕하세요.', NULL, 'images/knu_dongari/DJyx5tWyjgq', '기타', '2025-05-19', NULL, NULL, '총동아리연합회 비상대책위원회 하루입니다.
+
+⚾ 5월 28일 (수) 삼성 라이온즈 vs 롯데 자이언츠 야구 경기 관람 ⚾
+야구 경기 관람 2차 참가자 모집을 진행합니다!
+
+💰참가비는 9,000원으로 책정되었습니다.
+(참가비에는 왕복 대형 버스 이동 비용과 경기 티켓값이 모두 포함되어 있습니다.)
+또한 총 15만원 상당의 소규모 이벤트도 준비되어 있으니 많은 관심 부탁드립니다!🎁
+
+👫중앙동아리 부원 1인당 지인 1명까지 동반 가능하며,
+지인은 중앙동아리 소속이 아니어도 무방합니다!
+
+👉 참여 링크는 19일 19시에 총동아리연합회 인스타그램 스토리를 통해 공지될 예정입니다.
+✅ 선발된 분들은 추후 단체 채팅방에 초대될 예정입니다!
+
+여러분들의 많은 관심과 참여 부탁드립니다!🙌".') [42102-232]
+2025-05-31 16:09:11.199173+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJjir27y7AV/', '🏋‍♀ 경북대학교 총동아리연합회 비상대책위원회 ‘하루’ X 레드짐 전 지점🏋‍♂', NULL, 'images/knu_dongari/DJjir27y7AV', '제휴', '2025-05-12', NULL, NULL, '✨ 2025 여름맞이 건강챙김 특별 제휴 이벤트! ✨
+
+📣 경북대 중앙동아리 부원만을 위한 전용 혜택!
+최대 할인 + PT 체험까지 한 번에!
+운동, 아직 시작 안 하셨다고요? 지금이 기회입니다!
+
+✔ 레드짐 등록 시 10% 추가 할인 (단, 신년행사, 주년행사, 오픈행사, 신규 1+1 행사 적용불가)
+✔ PT 1회 체험
+❗레드짐 전 지점 적용
+
+📌 이용 방법
+1⃣ 레드짐 방문 후 ‘중앙동아리 소속’이라고 말하기
+2⃣ 등록 시 동아리 확인 & 혜택 적용
+3⃣ 할인 혜택 누리기!
+
+✅ 경북대 중앙동아리 소속이면 누구나 가능!
+✅ 동아리 임원부터 신입 부원까지 전원 OK
+✅ 사전 예약 없이 방문만으로 혜택 적용
+
+💪 올여름, 총동아리연합회가 추천하는 건강 루틴!
+레드짐에서 새로운 시작을 놓치지 마세요🔥
+
+💬문의: 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:11.206815+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJiTaK7Smn3/', '🌹2025 성년의 날 행사🌹', NULL, 'images/knu_dongari/DJiTaK7Smn3', '기타', '2025-05-12', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다. 
+기분좋은 햇살과 함께하는 5월, 성인이 된 경북대학교 학생들을 위해 하루가 성년의 날 기념 행사를 준비하였습니다.🔆
+
+성년의 날 기념 장미꽃 배부와 함께, 재학생들도 즐길 수 있는 보드판 이벤트를 준비했습니다! 여러분들의 20살은 어떠셨나요?💌 포스트잇에 가장 찬란했던 20살의 순간을 적어주세요.✏️ Best 5인의 코멘트를 기다립니다!
+이외에도 폴라로이드 촬영과 스토리 업로드 이벤트, 다채로운 상품까지💝 준비되어 있으니 학우분들의 많은 관심과 참여 부탁드립니다!
+
+🏷️ 일시 : 2025. 5. 19 (월) 12:00-15:00
+🏷️ 장소 : 경북대학교 일청담
+
+자세한 내용은 카드뉴스 참고 부탁드리며, 당일 수량 소진 시 행사가 조기 마감될 수 있습니다.
+💬 문의사항 : 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:11.207821+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJgihC8yymK/', '🎬 CGV 개봉전 무료 시사회 참가자 모집! 🎟', NULL, 'images/knu_dongari/DJgihC8yymK', '기타', '2025-05-11', NULL, NULL, '⠀
+ ”나를 모르는 그녀의 세계에서“
+가장 가까웠던 사람이, 어느 날 나를 잊은 채 낯선 세계에 있었다면?
+그녀를 다시 만나기 위한 시간 너머의 여정,
+그 특별한 로맨스의 시작에 경북대 학생 120명을 초대합니다.🎟
+⠀
+📅 일시: 2025년 5월 16일(금) 오후 7시 30분
+📍 장소: CGV 대구 한일 2관
+🎞 장르: 멜로/로맨스
+💬 러닝타임: 122분
+✅ 대상: 경북대학교 학생 최대 120명
+
+❗️신청마감: 5월 12일(월) 오전 10시⠀
+👉https://forms.gle/vnBjk27hU6xuPsUt6
+
+💬문의: 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:11.209821+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJYSaAzShsV/', '안녕하세요.', NULL, 'images/knu_dongari/DJYSaAzShsV', '기타', '2025-05-19', NULL, NULL, '총동아리연합회 비상대책위원회 하루입니다.
+
+⚾ 5월 28일 (수) 삼성 라이온즈 vs 롯데 자이언츠 야구 경기 관람 ⚾
+야구 경기 관람에 대한 참가자를 모집하고자 합니다!
+
+💰참가비는 9,000원으로 책정되었습니다.
+(참가비에는 왕복 대형 버스 이동 비용과 경기 티켓값이 모두 포함되어 있습니다.)
+또한 총 15만원 상당의 소규모 이벤트도 준비되어 있으니 많은 관심 부탁드립니다!🎁
+
+👫중앙동아리 부원 1인당, 지인 1명까지 동반 가능하며,
+지인은 중앙동아리 소속이 아니어도 무방합니다!
+
+👉 참여 링크는 9일 12시에 스토리에 공지되며, 이후 프로필 링크에도 고정될 예정입니다! 
+✅ 선발된 분들은 추후 단체 채팅방에 초대될 예정입니다!
+
+⚠️ 예매 경쟁률에 따라 티켓 확보가 어려울 경우, 부득이하게 행사가 취소될 수 있는 점 미리 양해 부탁드립니다.
+
+여러분들의 많은 관심과 참여 부탁드립니다!🙌".') [42102-232]
+2025-05-31 16:09:11.211818+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJNx_3RSgQK/', '⠀', NULL, 'images/knu_dongari/DJNx_3RSgQK', '제휴', '2025-05-04', NULL, NULL, '🎡경북대학교 총동아리연합회 비상대책위원회 ‘하루’ X 이월드🎡
+✨ 2025 캠퍼스DAY 특별 할인 이벤트! ✨
+
+📣 경북대 학우들을 위해 최대 75% 할인 혜택
+친구, 연인, 가족과 함께 봄날의 이월드를 즐겨보세요!
+
+📅 행사기간
+~ 2025년 5월 31일(토)까지
+
+🎟 티켓 가격
+✔ 종일 자유이용권 + 83타워 전망대
+64,000원 → 22,000원
+
+✔ 야간 자유이용권 + 83타워 전망대
+48,000원 → 12,000원
+
+📌 이용방법
+1️⃣ 사전예약 👉 www.sensecampusday.shop
+2️⃣ 이월드 연간단체 서비스센터 5번 창구에서 티켓 수령
+3️⃣ 현장에서 결제 후 즉시 입장 가능!
+
+✅ 사전예약 시 학생증 필요 없음!
+✅ 현장 방문 시에는 학생증 지참 필수 (모바일 학생증 가능)
+✅ 동반자 전원 동일 요금 적용
+✅ 신청 인원 제한 없음!
+
+🎠 따뜻한 봄, 즐거운 하루 보내러 이월드로 떠나요~
+📸 많은 관심과 참여 부탁드립니다!".') [42102-232]
+2025-05-31 16:09:11.212839+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DIzvjhfyjAw/', '안녕하세요. 총동아리연합회 비상대책위원회 ’하루‘ 입니다🪐', NULL, 'images/knu_dongari/DIzvjhfyjAw', '기타', '2025-04-24', NULL, NULL, '중간고사 고생 많으셨습니다. 남은 2025년 총동아리연합회에서 의미 있는 하루 하루를 만들어 나가는 건 어떨까요?
+
+총동아리연합회는 중앙동아리 운영, 동아리 관련 행사 기획, 행사 협조처 관련 업무를 수행하며, 매주 화요일 19시에 정기회의가 진행됩니다!
+
+재학 및 휴학 여부는 무관하며, 학생회 경험이 없어도 괜찮습니다. 열정과 책임감이 있다면 누구든 환영합니다!
+
+✅ 모집기간
+📍서류 : 04.24(목) ~ 04.27(일) 23:59
+📍면접 : 05.01(목) / 05.02(금)
+✅ 지원 방법
+📍지원서: 총동아리연합회 홈페이지 공지사항/ 총동아리연합회 인스타그램 프로필 링크에서 다운로드
+- 지원서 작성 후 jajudong34@gmail.com 로 제출
+✅지원 가능한 부서: 대외협력국, 편집국
+📍면접 이후 부서가 확정되며, 지원자에 따라 위 2개 외의 다른 부서에도 배정될 수 있습니다.
+✅ 문의사항
+카카오톡 채널 http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:11.213829+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DH7gAnjyaym/', '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다!', NULL, 'images/knu_dongari/DH7gAnjyaym', '간식마차', '2025-04-02', NULL, NULL, '올해의 첫 번째 중간고사를 앞두고, 하루하루 열심히 준비하시는 중앙동아리원들을 위해 야식마차를 준비했습니다!⭐
+
+💫일시: 2025년 4월 8일(화) 19:00
+💫수령 장소: 백호관 1층 게시판 옆 (백호관 소강당에서 대기)
+💫메뉴: 다니상점 샌드위치🥪 (갈릭베이컨 or 단호박크림치즈 中 택 1개) + 얼라이브 스위티자몽 250ml🧃
+💫수령 방법: 당일 선착순 ‘200‘명
+
+⭐ EVENT: 행운 숫자 당첨 시 20명에게 과일컵 증정! (행운 숫자는 당일 공개)
+
+❗경북대학교 소속의 중앙동아리원만 신청이 가능합니다. (수령 시 학생증 및 소속 중앙동아리 단톡방 확인)
+
+❗백호관 소강당 개방 시간은 17시입니다. (스티커 분실로 인한 피해는 보상해드리지 않습니다!)
+
+📢 문의사항: 카카오톡 채널 http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:11.214820+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHnWWZ2SP6N/', '🏟2025 상반기 가두모집 메인 이벤트 당첨자 안내🏟', NULL, 'images/knu_dongari/DHnWWZ2SP6N', '기타', '2025-03-25', NULL, NULL, '안녕하세요. 경북대학교 총동아리연합회 비상대책위원회 하루입니다.🪐
+
+2025학년도 상반기 가두모집 메인 이벤트 당첨자를 공개합니다!!🎁
+약 2800명의 학우분들께서 메인 이벤트에 참여해주셨습니다. 당첨되신 모든 분들 축하드립니다.🥳
+3월 25일 금일자로 라이브 방송을 통해 추첨을 진행하였으며, 저장된 영상은 금일 19시까지 총동아리연합회 게시물에서 확인하실 수 있습니다!
+당첨자분들께서는 응모권에 기재된 번호로 개별 연락을 드릴 예정이니 메세지 확인 부탁드립니다.🙌
+
+실물 상품 수령은 3월 25일 금일부터 가능하며, 백호관 215호 총동아리연합회 사무실에 방문하시어 수령하시면 됩니다! (9:00-18:00 행사협조처 운영시간)
+상품권은 빠른 시일 내로 지급될 예정이오니 참고 부탁드립니다.
+
+2025 상반기 가두모집에 참여해주신 모든 학우분들께 감사드리며, 앞으로 더욱 색다르고 활기찬 행사로 찾아뵙겠습니다! 많은 참여와 관심 부탁드립니다!🪐".') [42102-232]
+2025-05-31 16:09:11.215814+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHc67OUxrmU/', '💡경북대학교 총동아리연합회 비상대책위원회 ’하루‘ 신입간부 모집💡', NULL, 'images/knu_dongari/DHc67OUxrmU', '대여', '2025-03-21', NULL, NULL, '안녕하세요. 총동아리연합회 비상대책위원회 ’하루‘ 입니다!🪐
+설레는 새학기의 시작과 함께, 의미있는 하루를 함께 만들어 나갈 신입간부를 모집합니다.
+
+총동아리연합회는 중앙동아리 운영, 동아리 관련 행사 기획, 행사 협조처 관련 업무를 수행하며, 매주 화요일 19시에 정기회의가 진행됩니다!
+
+지원 가능한 부서는 총 5개로, 대외협력국, 복지국, 사무국, 조직국, 편집국이 있습니다. (각 부서에 대한 설명은 카드뉴스를 참고해 주세요)
+
+재학 및 휴학 여부는 무관하며, 학생회 경험이 없어도 괜찮습니다. 열정과 책임감이 있다면 누구든 환영합니다!
+
+✅ 모집기간
+📍서류 : 03.21(금) - 03.24(월) 23:59
+📍면접 : 03.27(목)
+✅ 지원 방법
+📍지원서: 총동아리연합회 인스타그램 프로필 링크 / 카드뉴스 QR코드 / 총동아리연합회 홈페이지 공지사항에서 다운로드
+📍지원서 작성 후 jajudong34@gmail.com 로 제출
+✅ 문의사항
+카카오톡 채널 http://pf.kakao.com/_exixdxmxj
+(인스타그램 프로필 링크 참고)".') [42102-232]
+2025-05-31 16:09:11.216816+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHaEwm6S0dX/', '무신사 스토어 대구 x 경북대 총동아리연합회 비상대책위원회 하루 최대 만원 할인 신학기 프로모션 🎉', NULL, 'images/knu_dongari/DHaEwm6S0dX', '제휴', '2025-03-20', NULL, NULL, '1️⃣경북대 총동아리연합회 비상대책위원회 하루 신학기 프로모션 캐셔에서 학생증과 쿠폰 인증할 시,
+💸 10만원 이상 구매 시 1만원 즉시 할인 (선착순 100명)
+💸 이후 10만원 이상 구매 시 5천원 즉시 할인
+
+☑️ 기간 : 2025.03.21 - 03.31
+☑️ 진행 매장 : 무신사 스토어 대구
+☑️ 인증 방법 : 학생증 or 모바일 학생증 & 카카오 쿠폰 인증
+* 무신사 스탠다드 동성로점은 프로모션 대상 매장이 아닙니다.
+* 1인 1회 사용 가능하며, 직원 확인 버튼을 누를 시 재사용 불가능합니다.
+
+👇🏻쿠폰 다운로드
+http://pf.kakao.com/_xceRCu/coupons/_kzkmkmo44Z 
+
+2️⃣무신사 스토어 대구 단독 프로모션
+- 봄 신상 오프라인 추가할인 10% OFF (일부브랜드, 03.23 까지)
+- SPECIAL PRICE ZONE, UP TO 80% OFF. 29,000원부터 시작 (엑스톤즈, 낫포너드, 이에이, 사운즈라이프, 크리틱)
+- 무신사 스토어 대구 고객 대상 이월드 자유이용권 50% 할인
+
+주소 : 대구광역시 중구 공평동 45-1 무신사 스토어 대구
+영업시간 : 11:30 - 21:30 연중무휴".') [42102-232]
+2025-05-31 16:09:11.219117+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHUpwxqSIa5/', '🏟2025 상반기 가두모집 사전이벤트 ’어하루‘ 안내🏟', NULL, 'images/knu_dongari/DHUpwxqSIa5', '기타', '2025-03-18', NULL, NULL, '안녕하세요. 경북대학교 총동아리연합회 비상대책위원회 하루입니다.🪐
+
+🚨본격적으로 가두모집을 시작하기 전 사전 이벤트 ’어쩌다 발견한 하루‘를 진행합니다!
+학교 전역에 하루 올림픽 표지의 쿠폰을 붙여놓았습니다.✨
+학교를 둘러보며 쿠폰을 찾아 가두모집 행사 당일 총동아리연합회 부스로 방문하시면 됩니다!🎁
+‼️19일, 20일 부스 운영 시간(10:00-18:00)안에 방문해주셔야 합니다.
+
+🏅행사 일정: 3월18일(화)~3월20일(목)
+🏅행사 장소: 경북대학교 전역 및 총동아리연합회 부스
+💬 문의 사항: http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:11.220133+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHPrdo1SOJJ/', '🏟️2025 상반기 가두모집 동아리 공연 안내🏟️', NULL, 'images/knu_dongari/DHPrdo1SOJJ', '기타', '2025-03-17', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다. 🪐
+하루 올림픽을 더욱 빛내줄 11개의 동아리 공연 일정을 공개합니다!
+
+눈과 귀를 더욱 즐겁게 해줄 다양한 동아리들의 퍼포먼스!
+D-3, 하루 올림픽에서 만나요🎶
+
+🏅부스 일정: 3월19일(수) ~ 3월20일(목) 10:00-18:00
+🏅공연 일정: 양일 점심 일청담 부근
+🏅행사 장소: 일청담 및 백양로 일대
+💬 문의 사항: http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:11.221564+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHKxTskyqBz/', '🏟️2025 상반기 가두모집 참여 동아리 소개🏟️', NULL, 'images/knu_dongari/DHKxTskyqBz', '기타', '2025-03-17', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다. 🪐
+하루 올림픽에 참가하는 중앙동아리를 소개하오니 많은 관심 부탁드립니다.
+
+64개의 동아리가 2025 상반기 가두모집을 빛내기 위해 모였습니다. 자신의 취향에 맞는 동아리를 만나보세요. 중앙동아리의 대축제 하루 올림픽에서 만나요~
+
+🏅부스 일정: 3월 19일(수) ~ 3월20일(목) 10:00-18:00
+🏅공연 일정: 양일 점심
+🏅행사 장소: 일청담 및 백양로 일대
+💬 문의 사항: http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:11.223026+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHGUfi2y6NA/', '🏟️2025 상반기 가두모집 부스 배치도 소개🏟️', NULL, 'images/knu_dongari/DHGUfi2y6NA', '기타', '2025-03-17', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다. 🪐
+대망의 2025 상반기 가두모집 부스를 공개합니다!
+
+5개의 색으로 이루어진 오륜기처럼, 5개의 중앙동아리 분과가 모여 이번 하루 올림픽을 개최하게 되었습니다. 포기하지 않는 올림픽 정신처럼, 중앙동아리에서 만들어갈 여러분의 도전을 응원합니다. 대학생활의 하루하루를 즐겁게 만들 운명의 중앙동아리를 찾아보세요!
+
+🏅부스 일정: 3월19일(수) ~ 3월20일(목) 10:00-18:00
+🏅공연 일정: 양일 점심
+🏅행사 장소: 일청담 및 백양로 일대
+💬 문의 사항: http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:11.224225+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHA0UCmyZFY/', '안녕하세요, 총동아리연합회 비상대책위원회입니다! 곧 개최될 가두모집 <하루 올림픽>은 다들 잘 준비하고 계신가요? 운영본부에서 참가자들을 위한 다양한 이벤트를 안내해 드립니다!', NULL, 'images/knu_dongari/DHA0UCmyZFY', '기타', '2025-03-10', NULL, NULL, '총동연 부스에서 배부하는 티켓에 스티커를 모아 오륜기를 완성해 주세요! 5개의 스티커를 모두 모아 Gift shop에서 응모권을 제출해 맛있는 나쵸도 먹고 애플워치, 스탠리 텀블러, 배민 상품권의 주인공이 되어보세요! 당첨이 되지 않더라도 괜찮아요! 스티커 5종류를 모아 오시는 모든 분께는 특별한 상품이 기다리고 있답니다~😉
+
+뿐만 아니라 총동연 부스에서의 미니게임을 통해 상품을 수령하고 백양로를 달리는 성화봉송 주자를 찾아 간식도 받아보세요! 여러분의 많은 참여 기다리고 있겠습니다! 💪
+
+🥇 행사 일시: 3월 19일(수) ~ 20일(목) 10:00 - 18:00
+🥇 행사 장소: 일청담 및 백양로 일대
+
+💬문의사항: 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:11.225240+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DG4cs8zvT-2/', '🎖️가두모집 서포터즈 모집 공지🎖️', NULL, 'images/knu_dongari/DG4cs8zvT-2', '기타', '2025-03-17', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회입니다! 새로운 학기의 시작을 알릴 1학기 동아리 가두모집 행사를 도와주실 서포터즈를 모집합니다.
+
+가두모집 서포터즈로 활동하는 기간 내 식사가 제공되며, 활동 시간은 봉사 시간으로 제공될 예정입니다. 다양한 경험을 할 수 있는 서포터즈에 많은 지원 부탁드립니다!
+
+🏅행사 기간: 3/19(수) - 3/20(목) 
+🏅모집 기간: 3/7(금) - 3/10(월) 18:00
+🏅신청 링크
+  https://forms.gle/n7UCFgUUpGUKNnsa6
+❗기간이 지난 후 제출된 폼은 수합되지 않으니 기간 엄수 바랍니다❗
+
+🏅선발 조건: 지원 동기, 행사에 할애 가능한 시간 
+ (신입생, 휴학생 환영 😄)
+🏅결과 통지: 3/11 화요일 
+ (합격자에 한하여 일괄 문자 통보)
+🏅가두모집 행사 전, 서포터즈 OT 진행 
+ (3/17 월요일 오후 18:30 예정)
+
+ 💬문의사항: 총동아리연합회 카카오톡 채널
+  http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:23.458159+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "URL" not found; SQL statement:
+INSERT INTO CLUB_EVENT (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJ735m4SKWt/', '🎉 야구장에서 더 즐겁게! ’하루‘가 준비한 특별한 이벤트 2종 ⚾️💙', NULL, 'images/knu_dongari/DJ735m4SKWt', '기타', '2025-05-22', NULL, NULL, '🎉 야구장에서 더 즐겁게! ’하루‘가 준비한 특별한 이벤트 2종 ⚾️💙
+
+5월 28일, 삼성 라이온즈 vs 롯데 자이언츠 경기!
+야구 관람과 더불어 특별한 추억을 위해 선물과 함께하는 이벤트를 
+준비했습니다!
+
+📍 EVENT 1 – 스코어 맞추기 이벤트
+
+⚾ 경기 전, 승리할 팀과 예상 스코어를 구글폼을 통해 작성해 주세요!
+🎯 가장 근접하게 맞추신 분들께는
+배달의민족 상품권 총 10만원 상당을 나누어 드립니다! (인원 초과 시 선착순 10명에게만 지급)
+
+📌 참고
+동일 점수 예측자 수에 따라 금액이 나뉘어요!
+4명 인원: 1인당 25,000원
+2명 인원: 1인당 50,000원
+스코어 예측 작성 기재 예시 - 삼성 승, 삼성 5 : 롯데 3
+
+📍 EVENT 2 – 인스타그램 태그 이벤트
+
+📸 총동연과 함께 야구 경기를 관람하며 찍은 사진을
+👉 인스타그램 스토리에 @KNU_DONGARI를 태그하여 업로드해주세요!
+(*비공개 계정은 참여가 어렵습니다.)
+🎁 참여해주신 분들 중 추첨을 통해 5분께 삼성 라이온즈 응원봉을 드립니다!
+
+🗓 이벤트 당첨자 발표: 5월 29일
+상품은 총동연 사무실에서 수령하실 수 있습니다.
+
+💬문의: 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42122-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:786)
+	at org.h2.command.Parser.parseColumn(Parser.java:1171)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1156)
+	at org.h2.command.Parser.parseInsert(Parser.java:1530)
+	at org.h2.command.Parser.parsePrepared(Parser.java:698)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp.query(WebApp.java:1118)
+	at org.h2.server.web.WebApp.process(WebApp.java:244)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.JakartaWebServlet.doGet(JakartaWebServlet.java:129)
+	at org.h2.server.web.JakartaWebServlet.doPost(JakartaWebServlet.java:166)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-05-31 16:09:23.461375+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJyx5tWyjgq/', '안녕하세요.', NULL, 'images/knu_dongari/DJyx5tWyjgq', '기타', '2025-05-19', NULL, NULL, '총동아리연합회 비상대책위원회 하루입니다.
+
+⚾ 5월 28일 (수) 삼성 라이온즈 vs 롯데 자이언츠 야구 경기 관람 ⚾
+야구 경기 관람 2차 참가자 모집을 진행합니다!
+
+💰참가비는 9,000원으로 책정되었습니다.
+(참가비에는 왕복 대형 버스 이동 비용과 경기 티켓값이 모두 포함되어 있습니다.)
+또한 총 15만원 상당의 소규모 이벤트도 준비되어 있으니 많은 관심 부탁드립니다!🎁
+
+👫중앙동아리 부원 1인당 지인 1명까지 동반 가능하며,
+지인은 중앙동아리 소속이 아니어도 무방합니다!
+
+👉 참여 링크는 19일 19시에 총동아리연합회 인스타그램 스토리를 통해 공지될 예정입니다.
+✅ 선발된 분들은 추후 단체 채팅방에 초대될 예정입니다!
+
+여러분들의 많은 관심과 참여 부탁드립니다!🙌".') [42102-232]
+2025-05-31 16:09:23.462364+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJjir27y7AV/', '🏋‍♀ 경북대학교 총동아리연합회 비상대책위원회 ‘하루’ X 레드짐 전 지점🏋‍♂', NULL, 'images/knu_dongari/DJjir27y7AV', '제휴', '2025-05-12', NULL, NULL, '✨ 2025 여름맞이 건강챙김 특별 제휴 이벤트! ✨
+
+📣 경북대 중앙동아리 부원만을 위한 전용 혜택!
+최대 할인 + PT 체험까지 한 번에!
+운동, 아직 시작 안 하셨다고요? 지금이 기회입니다!
+
+✔ 레드짐 등록 시 10% 추가 할인 (단, 신년행사, 주년행사, 오픈행사, 신규 1+1 행사 적용불가)
+✔ PT 1회 체험
+❗레드짐 전 지점 적용
+
+📌 이용 방법
+1⃣ 레드짐 방문 후 ‘중앙동아리 소속’이라고 말하기
+2⃣ 등록 시 동아리 확인 & 혜택 적용
+3⃣ 할인 혜택 누리기!
+
+✅ 경북대 중앙동아리 소속이면 누구나 가능!
+✅ 동아리 임원부터 신입 부원까지 전원 OK
+✅ 사전 예약 없이 방문만으로 혜택 적용
+
+💪 올여름, 총동아리연합회가 추천하는 건강 루틴!
+레드짐에서 새로운 시작을 놓치지 마세요🔥
+
+💬문의: 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:23.464362+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJiTaK7Smn3/', '🌹2025 성년의 날 행사🌹', NULL, 'images/knu_dongari/DJiTaK7Smn3', '기타', '2025-05-12', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다. 
+기분좋은 햇살과 함께하는 5월, 성인이 된 경북대학교 학생들을 위해 하루가 성년의 날 기념 행사를 준비하였습니다.🔆
+
+성년의 날 기념 장미꽃 배부와 함께, 재학생들도 즐길 수 있는 보드판 이벤트를 준비했습니다! 여러분들의 20살은 어떠셨나요?💌 포스트잇에 가장 찬란했던 20살의 순간을 적어주세요.✏️ Best 5인의 코멘트를 기다립니다!
+이외에도 폴라로이드 촬영과 스토리 업로드 이벤트, 다채로운 상품까지💝 준비되어 있으니 학우분들의 많은 관심과 참여 부탁드립니다!
+
+🏷️ 일시 : 2025. 5. 19 (월) 12:00-15:00
+🏷️ 장소 : 경북대학교 일청담
+
+자세한 내용은 카드뉴스 참고 부탁드리며, 당일 수량 소진 시 행사가 조기 마감될 수 있습니다.
+💬 문의사항 : 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:23.465362+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJgihC8yymK/', '🎬 CGV 개봉전 무료 시사회 참가자 모집! 🎟', NULL, 'images/knu_dongari/DJgihC8yymK', '기타', '2025-05-11', NULL, NULL, '⠀
+ ”나를 모르는 그녀의 세계에서“
+가장 가까웠던 사람이, 어느 날 나를 잊은 채 낯선 세계에 있었다면?
+그녀를 다시 만나기 위한 시간 너머의 여정,
+그 특별한 로맨스의 시작에 경북대 학생 120명을 초대합니다.🎟
+⠀
+📅 일시: 2025년 5월 16일(금) 오후 7시 30분
+📍 장소: CGV 대구 한일 2관
+🎞 장르: 멜로/로맨스
+💬 러닝타임: 122분
+✅ 대상: 경북대학교 학생 최대 120명
+
+❗️신청마감: 5월 12일(월) 오전 10시⠀
+👉https://forms.gle/vnBjk27hU6xuPsUt6
+
+💬문의: 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:23.466375+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJYSaAzShsV/', '안녕하세요.', NULL, 'images/knu_dongari/DJYSaAzShsV', '기타', '2025-05-19', NULL, NULL, '총동아리연합회 비상대책위원회 하루입니다.
+
+⚾ 5월 28일 (수) 삼성 라이온즈 vs 롯데 자이언츠 야구 경기 관람 ⚾
+야구 경기 관람에 대한 참가자를 모집하고자 합니다!
+
+💰참가비는 9,000원으로 책정되었습니다.
+(참가비에는 왕복 대형 버스 이동 비용과 경기 티켓값이 모두 포함되어 있습니다.)
+또한 총 15만원 상당의 소규모 이벤트도 준비되어 있으니 많은 관심 부탁드립니다!🎁
+
+👫중앙동아리 부원 1인당, 지인 1명까지 동반 가능하며,
+지인은 중앙동아리 소속이 아니어도 무방합니다!
+
+👉 참여 링크는 9일 12시에 스토리에 공지되며, 이후 프로필 링크에도 고정될 예정입니다! 
+✅ 선발된 분들은 추후 단체 채팅방에 초대될 예정입니다!
+
+⚠️ 예매 경쟁률에 따라 티켓 확보가 어려울 경우, 부득이하게 행사가 취소될 수 있는 점 미리 양해 부탁드립니다.
+
+여러분들의 많은 관심과 참여 부탁드립니다!🙌".') [42102-232]
+2025-05-31 16:09:23.467365+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DJNx_3RSgQK/', '⠀', NULL, 'images/knu_dongari/DJNx_3RSgQK', '제휴', '2025-05-04', NULL, NULL, '🎡경북대학교 총동아리연합회 비상대책위원회 ‘하루’ X 이월드🎡
+✨ 2025 캠퍼스DAY 특별 할인 이벤트! ✨
+
+📣 경북대 학우들을 위해 최대 75% 할인 혜택
+친구, 연인, 가족과 함께 봄날의 이월드를 즐겨보세요!
+
+📅 행사기간
+~ 2025년 5월 31일(토)까지
+
+🎟 티켓 가격
+✔ 종일 자유이용권 + 83타워 전망대
+64,000원 → 22,000원
+
+✔ 야간 자유이용권 + 83타워 전망대
+48,000원 → 12,000원
+
+📌 이용방법
+1️⃣ 사전예약 👉 www.sensecampusday.shop
+2️⃣ 이월드 연간단체 서비스센터 5번 창구에서 티켓 수령
+3️⃣ 현장에서 결제 후 즉시 입장 가능!
+
+✅ 사전예약 시 학생증 필요 없음!
+✅ 현장 방문 시에는 학생증 지참 필수 (모바일 학생증 가능)
+✅ 동반자 전원 동일 요금 적용
+✅ 신청 인원 제한 없음!
+
+🎠 따뜻한 봄, 즐거운 하루 보내러 이월드로 떠나요~
+📸 많은 관심과 참여 부탁드립니다!".') [42102-232]
+2025-05-31 16:09:23.469362+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DIzvjhfyjAw/', '안녕하세요. 총동아리연합회 비상대책위원회 ’하루‘ 입니다🪐', NULL, 'images/knu_dongari/DIzvjhfyjAw', '기타', '2025-04-24', NULL, NULL, '중간고사 고생 많으셨습니다. 남은 2025년 총동아리연합회에서 의미 있는 하루 하루를 만들어 나가는 건 어떨까요?
+
+총동아리연합회는 중앙동아리 운영, 동아리 관련 행사 기획, 행사 협조처 관련 업무를 수행하며, 매주 화요일 19시에 정기회의가 진행됩니다!
+
+재학 및 휴학 여부는 무관하며, 학생회 경험이 없어도 괜찮습니다. 열정과 책임감이 있다면 누구든 환영합니다!
+
+✅ 모집기간
+📍서류 : 04.24(목) ~ 04.27(일) 23:59
+📍면접 : 05.01(목) / 05.02(금)
+✅ 지원 방법
+📍지원서: 총동아리연합회 홈페이지 공지사항/ 총동아리연합회 인스타그램 프로필 링크에서 다운로드
+- 지원서 작성 후 jajudong34@gmail.com 로 제출
+✅지원 가능한 부서: 대외협력국, 편집국
+📍면접 이후 부서가 확정되며, 지원자에 따라 위 2개 외의 다른 부서에도 배정될 수 있습니다.
+✅ 문의사항
+카카오톡 채널 http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:23.470362+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DH7gAnjyaym/', '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다!', NULL, 'images/knu_dongari/DH7gAnjyaym', '간식마차', '2025-04-02', NULL, NULL, '올해의 첫 번째 중간고사를 앞두고, 하루하루 열심히 준비하시는 중앙동아리원들을 위해 야식마차를 준비했습니다!⭐
+
+💫일시: 2025년 4월 8일(화) 19:00
+💫수령 장소: 백호관 1층 게시판 옆 (백호관 소강당에서 대기)
+💫메뉴: 다니상점 샌드위치🥪 (갈릭베이컨 or 단호박크림치즈 中 택 1개) + 얼라이브 스위티자몽 250ml🧃
+💫수령 방법: 당일 선착순 ‘200‘명
+
+⭐ EVENT: 행운 숫자 당첨 시 20명에게 과일컵 증정! (행운 숫자는 당일 공개)
+
+❗경북대학교 소속의 중앙동아리원만 신청이 가능합니다. (수령 시 학생증 및 소속 중앙동아리 단톡방 확인)
+
+❗백호관 소강당 개방 시간은 17시입니다. (스티커 분실로 인한 피해는 보상해드리지 않습니다!)
+
+📢 문의사항: 카카오톡 채널 http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:23.472654+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHnWWZ2SP6N/', '🏟2025 상반기 가두모집 메인 이벤트 당첨자 안내🏟', NULL, 'images/knu_dongari/DHnWWZ2SP6N', '기타', '2025-03-25', NULL, NULL, '안녕하세요. 경북대학교 총동아리연합회 비상대책위원회 하루입니다.🪐
+
+2025학년도 상반기 가두모집 메인 이벤트 당첨자를 공개합니다!!🎁
+약 2800명의 학우분들께서 메인 이벤트에 참여해주셨습니다. 당첨되신 모든 분들 축하드립니다.🥳
+3월 25일 금일자로 라이브 방송을 통해 추첨을 진행하였으며, 저장된 영상은 금일 19시까지 총동아리연합회 게시물에서 확인하실 수 있습니다!
+당첨자분들께서는 응모권에 기재된 번호로 개별 연락을 드릴 예정이니 메세지 확인 부탁드립니다.🙌
+
+실물 상품 수령은 3월 25일 금일부터 가능하며, 백호관 215호 총동아리연합회 사무실에 방문하시어 수령하시면 됩니다! (9:00-18:00 행사협조처 운영시간)
+상품권은 빠른 시일 내로 지급될 예정이오니 참고 부탁드립니다.
+
+2025 상반기 가두모집에 참여해주신 모든 학우분들께 감사드리며, 앞으로 더욱 색다르고 활기찬 행사로 찾아뵙겠습니다! 많은 참여와 관심 부탁드립니다!🪐".') [42102-232]
+2025-05-31 16:09:23.473655+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHc67OUxrmU/', '💡경북대학교 총동아리연합회 비상대책위원회 ’하루‘ 신입간부 모집💡', NULL, 'images/knu_dongari/DHc67OUxrmU', '대여', '2025-03-21', NULL, NULL, '안녕하세요. 총동아리연합회 비상대책위원회 ’하루‘ 입니다!🪐
+설레는 새학기의 시작과 함께, 의미있는 하루를 함께 만들어 나갈 신입간부를 모집합니다.
+
+총동아리연합회는 중앙동아리 운영, 동아리 관련 행사 기획, 행사 협조처 관련 업무를 수행하며, 매주 화요일 19시에 정기회의가 진행됩니다!
+
+지원 가능한 부서는 총 5개로, 대외협력국, 복지국, 사무국, 조직국, 편집국이 있습니다. (각 부서에 대한 설명은 카드뉴스를 참고해 주세요)
+
+재학 및 휴학 여부는 무관하며, 학생회 경험이 없어도 괜찮습니다. 열정과 책임감이 있다면 누구든 환영합니다!
+
+✅ 모집기간
+📍서류 : 03.21(금) - 03.24(월) 23:59
+📍면접 : 03.27(목)
+✅ 지원 방법
+📍지원서: 총동아리연합회 인스타그램 프로필 링크 / 카드뉴스 QR코드 / 총동아리연합회 홈페이지 공지사항에서 다운로드
+📍지원서 작성 후 jajudong34@gmail.com 로 제출
+✅ 문의사항
+카카오톡 채널 http://pf.kakao.com/_exixdxmxj
+(인스타그램 프로필 링크 참고)".') [42102-232]
+2025-05-31 16:09:23.475043+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHaEwm6S0dX/', '무신사 스토어 대구 x 경북대 총동아리연합회 비상대책위원회 하루 최대 만원 할인 신학기 프로모션 🎉', NULL, 'images/knu_dongari/DHaEwm6S0dX', '제휴', '2025-03-20', NULL, NULL, '1️⃣경북대 총동아리연합회 비상대책위원회 하루 신학기 프로모션 캐셔에서 학생증과 쿠폰 인증할 시,
+💸 10만원 이상 구매 시 1만원 즉시 할인 (선착순 100명)
+💸 이후 10만원 이상 구매 시 5천원 즉시 할인
+
+☑️ 기간 : 2025.03.21 - 03.31
+☑️ 진행 매장 : 무신사 스토어 대구
+☑️ 인증 방법 : 학생증 or 모바일 학생증 & 카카오 쿠폰 인증
+* 무신사 스탠다드 동성로점은 프로모션 대상 매장이 아닙니다.
+* 1인 1회 사용 가능하며, 직원 확인 버튼을 누를 시 재사용 불가능합니다.
+
+👇🏻쿠폰 다운로드
+http://pf.kakao.com/_xceRCu/coupons/_kzkmkmo44Z 
+
+2️⃣무신사 스토어 대구 단독 프로모션
+- 봄 신상 오프라인 추가할인 10% OFF (일부브랜드, 03.23 까지)
+- SPECIAL PRICE ZONE, UP TO 80% OFF. 29,000원부터 시작 (엑스톤즈, 낫포너드, 이에이, 사운즈라이프, 크리틱)
+- 무신사 스토어 대구 고객 대상 이월드 자유이용권 50% 할인
+
+주소 : 대구광역시 중구 공평동 45-1 무신사 스토어 대구
+영업시간 : 11:30 - 21:30 연중무휴".') [42102-232]
+2025-05-31 16:09:23.476057+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHUpwxqSIa5/', '🏟2025 상반기 가두모집 사전이벤트 ’어하루‘ 안내🏟', NULL, 'images/knu_dongari/DHUpwxqSIa5', '기타', '2025-03-18', NULL, NULL, '안녕하세요. 경북대학교 총동아리연합회 비상대책위원회 하루입니다.🪐
+
+🚨본격적으로 가두모집을 시작하기 전 사전 이벤트 ’어쩌다 발견한 하루‘를 진행합니다!
+학교 전역에 하루 올림픽 표지의 쿠폰을 붙여놓았습니다.✨
+학교를 둘러보며 쿠폰을 찾아 가두모집 행사 당일 총동아리연합회 부스로 방문하시면 됩니다!🎁
+‼️19일, 20일 부스 운영 시간(10:00-18:00)안에 방문해주셔야 합니다.
+
+🏅행사 일정: 3월18일(화)~3월20일(목)
+🏅행사 장소: 경북대학교 전역 및 총동아리연합회 부스
+💬 문의 사항: http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:23.477084+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHPrdo1SOJJ/', '🏟️2025 상반기 가두모집 동아리 공연 안내🏟️', NULL, 'images/knu_dongari/DHPrdo1SOJJ', '기타', '2025-03-17', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다. 🪐
+하루 올림픽을 더욱 빛내줄 11개의 동아리 공연 일정을 공개합니다!
+
+눈과 귀를 더욱 즐겁게 해줄 다양한 동아리들의 퍼포먼스!
+D-3, 하루 올림픽에서 만나요🎶
+
+🏅부스 일정: 3월19일(수) ~ 3월20일(목) 10:00-18:00
+🏅공연 일정: 양일 점심 일청담 부근
+🏅행사 장소: 일청담 및 백양로 일대
+💬 문의 사항: http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:23.479062+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHKxTskyqBz/', '🏟️2025 상반기 가두모집 참여 동아리 소개🏟️', NULL, 'images/knu_dongari/DHKxTskyqBz', '기타', '2025-03-17', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다. 🪐
+하루 올림픽에 참가하는 중앙동아리를 소개하오니 많은 관심 부탁드립니다.
+
+64개의 동아리가 2025 상반기 가두모집을 빛내기 위해 모였습니다. 자신의 취향에 맞는 동아리를 만나보세요. 중앙동아리의 대축제 하루 올림픽에서 만나요~
+
+🏅부스 일정: 3월 19일(수) ~ 3월20일(목) 10:00-18:00
+🏅공연 일정: 양일 점심
+🏅행사 장소: 일청담 및 백양로 일대
+💬 문의 사항: http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:23.479062+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHGUfi2y6NA/', '🏟️2025 상반기 가두모집 부스 배치도 소개🏟️', NULL, 'images/knu_dongari/DHGUfi2y6NA', '기타', '2025-03-17', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회 하루입니다. 🪐
+대망의 2025 상반기 가두모집 부스를 공개합니다!
+
+5개의 색으로 이루어진 오륜기처럼, 5개의 중앙동아리 분과가 모여 이번 하루 올림픽을 개최하게 되었습니다. 포기하지 않는 올림픽 정신처럼, 중앙동아리에서 만들어갈 여러분의 도전을 응원합니다. 대학생활의 하루하루를 즐겁게 만들 운명의 중앙동아리를 찾아보세요!
+
+🏅부스 일정: 3월19일(수) ~ 3월20일(목) 10:00-18:00
+🏅공연 일정: 양일 점심
+🏅행사 장소: 일청담 및 백양로 일대
+💬 문의 사항: http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:23.481087+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DHA0UCmyZFY/', '안녕하세요, 총동아리연합회 비상대책위원회입니다! 곧 개최될 가두모집 <하루 올림픽>은 다들 잘 준비하고 계신가요? 운영본부에서 참가자들을 위한 다양한 이벤트를 안내해 드립니다!', NULL, 'images/knu_dongari/DHA0UCmyZFY', '기타', '2025-03-10', NULL, NULL, '총동연 부스에서 배부하는 티켓에 스티커를 모아 오륜기를 완성해 주세요! 5개의 스티커를 모두 모아 Gift shop에서 응모권을 제출해 맛있는 나쵸도 먹고 애플워치, 스탠리 텀블러, 배민 상품권의 주인공이 되어보세요! 당첨이 되지 않더라도 괜찮아요! 스티커 5종류를 모아 오시는 모든 분께는 특별한 상품이 기다리고 있답니다~😉
+
+뿐만 아니라 총동연 부스에서의 미니게임을 통해 상품을 수령하고 백양로를 달리는 성화봉송 주자를 찾아 간식도 받아보세요! 여러분의 많은 참여 기다리고 있겠습니다! 💪
+
+🥇 행사 일시: 3월 19일(수) ~ 20일(목) 10:00 - 18:00
+🥇 행사 장소: 일청담 및 백양로 일대
+
+💬문의사항: 총동아리연합회 카카오톡 채널
+http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:09:23.482060+09:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLUBEVENT" not found; SQL statement:
+INSERT INTO ClubEvent (url, title, target, imagePath, category, duration, college, department, notice) VALUES
+('https://www.instagram.com/knu_dongari/p/DG4cs8zvT-2/', '🎖️가두모집 서포터즈 모집 공지🎖️', NULL, 'images/knu_dongari/DG4cs8zvT-2', '기타', '2025-03-17', NULL, NULL, '안녕하세요, 총동아리연합회 비상대책위원회입니다! 새로운 학기의 시작을 알릴 1학기 동아리 가두모집 행사를 도와주실 서포터즈를 모집합니다.
+
+가두모집 서포터즈로 활동하는 기간 내 식사가 제공되며, 활동 시간은 봉사 시간으로 제공될 예정입니다. 다양한 경험을 할 수 있는 서포터즈에 많은 지원 부탁드립니다!
+
+🏅행사 기간: 3/19(수) - 3/20(목) 
+🏅모집 기간: 3/7(금) - 3/10(월) 18:00
+🏅신청 링크
+  https://forms.gle/n7UCFgUUpGUKNnsa6
+❗기간이 지난 후 제출된 폼은 수합되지 않으니 기간 엄수 바랍니다❗
+
+🏅선발 조건: 지원 동기, 행사에 할애 가능한 시간 
+ (신입생, 휴학생 환영 😄)
+🏅결과 통지: 3/11 화요일 
+ (합격자에 한하여 일괄 문자 통보)
+🏅가두모집 행사 전, 서포터즈 OT 진행 
+ (3/17 월요일 오후 18:30 예정)
+
+ 💬문의사항: 총동아리연합회 카카오톡 채널
+  http://pf.kakao.com/_exixdxmxj".') [42102-232]
+2025-05-31 16:23:34.223326+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "NOTICE CHARACTER VARYING(255)": "U&'\\+01f389 \\c57c\\ad6c\\c7a5\\c5d0\\c11c \\b354 \\c990\\ac81\\ac8c! ''\\d558\\b8e8''\\ac00... (666)"; SQL statement:
+INSERT INTO "PUBLIC"."CLUB_EVENT_COPY_3_0"("ID", "CATEGORY", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE") OVERRIDING SYSTEM VALUE SELECT "ID", "CATEGORY", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE" FROM "PUBLIC"."CLUB_EVENT" [22001-232]
+2025-05-31 16:23:34.232347+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "NOTICE CHARACTER VARYING(255)": "U&'\\c548\\b155\\d558\\c138\\c694, IT\\b300\\d559 \\d559\\c0dd\\d68c LIGHT\\c785\\b2c8\\b2e4!... (299)"; SQL statement:
+INSERT INTO "PUBLIC"."DEPARTMENT_EVENT_COPY_3_1"("ID", "CATEGORY", "COLLEGE", "DEPARTMENT", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE") OVERRIDING SYSTEM VALUE SELECT "ID", "CATEGORY", "COLLEGE", "DEPARTMENT", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE" FROM "PUBLIC"."DEPARTMENT_EVENT" [22001-232]
+2025-05-31 16:23:34.236715+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "NOTICE CHARACTER VARYING(255)": "U&'''\\d638\\bc18\\c6b0\\b97c \\afb8\\ba70\\c918'' \\c774\\bca4\\d2b8\\c5d0 \\b9ce\\c740 \\ad0... (352)"; SQL statement:
+INSERT INTO "PUBLIC"."OFFICIAL_EVENT_COPY_3_2"("ID", "CATEGORY", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE") OVERRIDING SYSTEM VALUE SELECT "ID", "CATEGORY", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE" FROM "PUBLIC"."OFFICIAL_EVENT" [22001-232]
+2025-05-31 16:24:35.100438+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "NOTICE CHARACTER VARYING(255)": "U&'\\+01f389 \\c57c\\ad6c\\c7a5\\c5d0\\c11c \\b354 \\c990\\ac81\\ac8c! ''\\d558\\b8e8''\\ac00... (666)"; SQL statement:
+INSERT INTO "PUBLIC"."CLUB_EVENT_COPY_3_0"("ID", "CATEGORY", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE") OVERRIDING SYSTEM VALUE SELECT "ID", "CATEGORY", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE" FROM "PUBLIC"."CLUB_EVENT" [22001-232]
+2025-05-31 16:24:35.109914+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "NOTICE CHARACTER VARYING(255)": "U&'\\c548\\b155\\d558\\c138\\c694, IT\\b300\\d559 \\d559\\c0dd\\d68c LIGHT\\c785\\b2c8\\b2e4!... (299)"; SQL statement:
+INSERT INTO "PUBLIC"."DEPARTMENT_EVENT_COPY_3_1"("ID", "CATEGORY", "COLLEGE", "DEPARTMENT", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE") OVERRIDING SYSTEM VALUE SELECT "ID", "CATEGORY", "COLLEGE", "DEPARTMENT", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE" FROM "PUBLIC"."DEPARTMENT_EVENT" [22001-232]
+2025-05-31 16:24:35.115072+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "NOTICE CHARACTER VARYING(255)": "U&'''\\d638\\bc18\\c6b0\\b97c \\afb8\\ba70\\c918'' \\c774\\bca4\\d2b8\\c5d0 \\b9ce\\c740 \\ad0... (352)"; SQL statement:
+INSERT INTO "PUBLIC"."OFFICIAL_EVENT_COPY_3_2"("ID", "CATEGORY", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE") OVERRIDING SYSTEM VALUE SELECT "ID", "CATEGORY", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE" FROM "PUBLIC"."OFFICIAL_EVENT" [22001-232]
+2025-05-31 16:28:00.935102+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "NOTICE CHARACTER VARYING(255)": "U&'\\+01f389 \\c57c\\ad6c\\c7a5\\c5d0\\c11c \\b354 \\c990\\ac81\\ac8c! ''\\d558\\b8e8''\\ac00... (666)"; SQL statement:
+INSERT INTO "PUBLIC"."CLUB_EVENT_COPY_3_0"("ID", "CATEGORY", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE") OVERRIDING SYSTEM VALUE SELECT "ID", "CATEGORY", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE" FROM "PUBLIC"."CLUB_EVENT" [22001-232]
+2025-05-31 16:28:00.943363+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "NOTICE CHARACTER VARYING(255)": "U&'\\c548\\b155\\d558\\c138\\c694, IT\\b300\\d559 \\d559\\c0dd\\d68c LIGHT\\c785\\b2c8\\b2e4!... (299)"; SQL statement:
+INSERT INTO "PUBLIC"."DEPARTMENT_EVENT_COPY_3_1"("ID", "CATEGORY", "COLLEGE", "DEPARTMENT", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE") OVERRIDING SYSTEM VALUE SELECT "ID", "CATEGORY", "COLLEGE", "DEPARTMENT", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE" FROM "PUBLIC"."DEPARTMENT_EVENT" [22001-232]
+2025-05-31 16:28:00.947363+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "NOTICE CHARACTER VARYING(255)": "U&'''\\d638\\bc18\\c6b0\\b97c \\afb8\\ba70\\c918'' \\c774\\bca4\\d2b8\\c5d0 \\b9ce\\c740 \\ad0... (352)"; SQL statement:
+INSERT INTO "PUBLIC"."OFFICIAL_EVENT_COPY_3_2"("ID", "CATEGORY", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE") OVERRIDING SYSTEM VALUE SELECT "ID", "CATEGORY", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE" FROM "PUBLIC"."OFFICIAL_EVENT" [22001-232]
+2025-05-31 16:33:06.133357+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "NOTICE CHARACTER VARYING(255)": "U&'\\+01f389 \\c57c\\ad6c\\c7a5\\c5d0\\c11c \\b354 \\c990\\ac81\\ac8c! ''\\d558\\b8e8''\\ac00... (666)"; SQL statement:
+INSERT INTO "PUBLIC"."CLUB_EVENT_COPY_3_0"("ID", "CATEGORY", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE") OVERRIDING SYSTEM VALUE SELECT "ID", "CATEGORY", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE" FROM "PUBLIC"."CLUB_EVENT" [22001-232]
+2025-05-31 16:33:06.142699+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "NOTICE CHARACTER VARYING(255)": "U&'\\c548\\b155\\d558\\c138\\c694, IT\\b300\\d559 \\d559\\c0dd\\d68c LIGHT\\c785\\b2c8\\b2e4!... (299)"; SQL statement:
+INSERT INTO "PUBLIC"."DEPARTMENT_EVENT_COPY_3_1"("ID", "CATEGORY", "COLLEGE", "DEPARTMENT", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE") OVERRIDING SYSTEM VALUE SELECT "ID", "CATEGORY", "COLLEGE", "DEPARTMENT", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE" FROM "PUBLIC"."DEPARTMENT_EVENT" [22001-232]
+2025-05-31 16:33:06.146659+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "NOTICE CHARACTER VARYING(255)": "U&'''\\d638\\bc18\\c6b0\\b97c \\afb8\\ba70\\c918'' \\c774\\bca4\\d2b8\\c5d0 \\b9ce\\c740 \\ad0... (352)"; SQL statement:
+INSERT INTO "PUBLIC"."OFFICIAL_EVENT_COPY_3_2"("ID", "CATEGORY", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE") OVERRIDING SYSTEM VALUE SELECT "ID", "CATEGORY", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE" FROM "PUBLIC"."OFFICIAL_EVENT" [22001-232]
+2025-05-31 16:41:06.614128+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "NOTICE CHARACTER VARYING(255)": "U&'\\+01f389 \\c57c\\ad6c\\c7a5\\c5d0\\c11c \\b354 \\c990\\ac81\\ac8c! ''\\d558\\b8e8''\\ac00... (666)"; SQL statement:
+INSERT INTO "PUBLIC"."CLUB_EVENT_COPY_3_0"("ID", "CATEGORY", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE") OVERRIDING SYSTEM VALUE SELECT "ID", "CATEGORY", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE" FROM "PUBLIC"."CLUB_EVENT" [22001-232]
+2025-05-31 16:41:06.623104+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "NOTICE CHARACTER VARYING(255)": "U&'\\c548\\b155\\d558\\c138\\c694, IT\\b300\\d559 \\d559\\c0dd\\d68c LIGHT\\c785\\b2c8\\b2e4!... (299)"; SQL statement:
+INSERT INTO "PUBLIC"."DEPARTMENT_EVENT_COPY_3_1"("ID", "CATEGORY", "COLLEGE", "DEPARTMENT", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE") OVERRIDING SYSTEM VALUE SELECT "ID", "CATEGORY", "COLLEGE", "DEPARTMENT", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE" FROM "PUBLIC"."DEPARTMENT_EVENT" [22001-232]
+2025-05-31 16:41:06.626105+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "NOTICE CHARACTER VARYING(255)": "U&'''\\d638\\bc18\\c6b0\\b97c \\afb8\\ba70\\c918'' \\c774\\bca4\\d2b8\\c5d0 \\b9ce\\c740 \\ad0... (352)"; SQL statement:
+INSERT INTO "PUBLIC"."OFFICIAL_EVENT_COPY_3_2"("ID", "CATEGORY", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE") OVERRIDING SYSTEM VALUE SELECT "ID", "CATEGORY", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE" FROM "PUBLIC"."OFFICIAL_EVENT" [22001-232]
+2025-05-31 16:44:25.700677+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "NOTICE CHARACTER VARYING(255)": "U&'\\+01f389 \\c57c\\ad6c\\c7a5\\c5d0\\c11c \\b354 \\c990\\ac81\\ac8c! ''\\d558\\b8e8''\\ac00... (666)"; SQL statement:
+INSERT INTO "PUBLIC"."CLUB_EVENT_COPY_3_0"("ID", "CATEGORY", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE") OVERRIDING SYSTEM VALUE SELECT "ID", "CATEGORY", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE" FROM "PUBLIC"."CLUB_EVENT" [22001-232]
+2025-05-31 16:44:25.709681+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "NOTICE CHARACTER VARYING(255)": "U&'\\c548\\b155\\d558\\c138\\c694, IT\\b300\\d559 \\d559\\c0dd\\d68c LIGHT\\c785\\b2c8\\b2e4!... (299)"; SQL statement:
+INSERT INTO "PUBLIC"."DEPARTMENT_EVENT_COPY_3_1"("ID", "CATEGORY", "COLLEGE", "DEPARTMENT", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE") OVERRIDING SYSTEM VALUE SELECT "ID", "CATEGORY", "COLLEGE", "DEPARTMENT", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE" FROM "PUBLIC"."DEPARTMENT_EVENT" [22001-232]
+2025-05-31 16:44:25.713971+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "NOTICE CHARACTER VARYING(255)": "U&'''\\d638\\bc18\\c6b0\\b97c \\afb8\\ba70\\c918'' \\c774\\bca4\\d2b8\\c5d0 \\b9ce\\c740 \\ad0... (352)"; SQL statement:
+INSERT INTO "PUBLIC"."OFFICIAL_EVENT_COPY_3_2"("ID", "CATEGORY", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE") OVERRIDING SYSTEM VALUE SELECT "ID", "CATEGORY", "DURATION", "IMAGE_PATH", "NOTICE", "POST_URL", "TARGET", "TITLE" FROM "PUBLIC"."OFFICIAL_EVENT" [22001-232]
