@@ -5,9 +5,11 @@ import org.example.crawlingappserver.dto.res.FavoriteWholeResponseDTO;
 import org.example.crawlingappserver.service.FavoriteService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+@RestController
 public class FavoritesController {
 
     private final FavoriteService favoriteService;

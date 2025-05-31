@@ -5,7 +5,7 @@ import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 
 /* 학과 관련 이벤트 */
 @Entity
@@ -34,14 +34,14 @@ public class DepartmentEvent {
     private String category;
 
     @Column(name = "duration", nullable = false)
-    private LocalDateTime duration;
+    private Date duration;
 
     @Column(name = "college", nullable = false)
     private String college;
 
-    @Column(name = "department", nullable = false)
+    @Column(name = "department", nullable = true)
     private String department;
 
-    @Column(name = "notice", nullable = false)
+    @Column(name = "notice", nullable = true)
     private String notice;
 }

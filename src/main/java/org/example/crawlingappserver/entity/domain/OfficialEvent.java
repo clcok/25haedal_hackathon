@@ -5,7 +5,7 @@ import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 
 /* 공식계정 이벤트 */
 @Entity
@@ -34,9 +34,9 @@ public class OfficialEvent {
     private String category;
 
     @Column(name = "duration", nullable = false)
-    private LocalDateTime duration;
+    private Date duration;
 
-    @Column(name = "notice", nullable = false)
+    @Column(name = "notice", nullable = true)
     private String notice;
 }
 

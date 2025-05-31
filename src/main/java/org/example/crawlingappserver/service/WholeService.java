@@ -7,8 +7,9 @@ import org.example.crawlingappserver.entity.repository.DepartmentEventRepository
 import org.example.crawlingappserver.entity.repository.OfficialEventRepository;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.stream.Collectors;
 
 @Service
@@ -21,7 +22,9 @@ public class WholeService {
     private final ImageService imageService;
 
     public List<EventWholeResponseDTO> getOfficialImages() {
-        return officialEventRepository.findTop5ByDurationAfterOrderByDurationAsc(LocalDateTime.now())
+        Date now = new Date();
+        List<EventWholeResponseDTO> result = officialEventRepository
+                .findTop5ByDurationAfterOrderByDurationAsc(now)
                 .stream()
                 .map(e -> new EventWholeResponseDTO(
                         e.getId(),
@@ -29,10 +32,16 @@ public class WholeService {
                         imageService.getFirstImageBase64(e.getImagePath())
                 ))
                 .collect(Collectors.toList());
+        if (result.isEmpty()) {
+            throw new NoSuchElementException("공식 이벤트가 없습니다.");
+        }
+        return result;
     }
 
     public List<EventWholeResponseDTO> getDepartmentImages() {
-        return departmentEventRepository.findTop5ByDurationAfterOrderByDurationAsc(LocalDateTime.now())
+        Date now = new Date();
+        List<EventWholeResponseDTO> result = departmentEventRepository
+                .findTop5ByDurationAfterOrderByDurationAsc(now)
                 .stream()
                 .map(e -> new EventWholeResponseDTO(
                         e.getId(),
@@ -40,10 +49,16 @@ public class WholeService {
                         imageService.getFirstImageBase64(e.getImagePath())
                 ))
                 .collect(Collectors.toList());
+        if (result.isEmpty()) {
+            throw new NoSuchElementException("공식 이벤트가 없습니다.");
+        }
+        return result;
     }
 
     public List<EventWholeResponseDTO> getClubImages() {
-        return clubEventRepository.findTop5ByDurationAfterOrderByDurationAsc(LocalDateTime.now())
+        Date now = new Date();
+        List<EventWholeResponseDTO> result = clubEventRepository
+                .findTop5ByDurationAfterOrderByDurationAsc(now)
                 .stream()
                 .map(e -> new EventWholeResponseDTO(
                         e.getId(),
@@ -51,14 +66,17 @@ public class WholeService {
                         imageService.getFirstImageBase64(e.getImagePath())
                 ))
                 .collect(Collectors.toList());
+        if (result.isEmpty()) {
+            throw new NoSuchElementException("공식 이벤트가 없습니다.");
+        }
+        return result;
     }
 
     public List<EventWholeResponseDTO> getEventsByCategoryAndType(String category, String requestType) {
-        LocalDateTime now = LocalDateTime.now();
-
-        return switch (requestType) {
+        Date now = new Date();
+        List<EventWholeResponseDTO> result = switch (requestType.toLowerCase()) {
             case "official" -> officialEventRepository.findAll().stream()
-                    .filter(e -> category.equals(e.getCategory()) && e.getDuration().isAfter(now))
+                    .filter(e -> category.equals(e.getCategory()) && e.getDuration().after(now))
                     .sorted((e1, e2) -> e1.getDuration().compareTo(e2.getDuration()))
                     .limit(5)
                     .map(e -> new EventWholeResponseDTO(
@@ -68,7 +86,7 @@ public class WholeService {
                     ))
                     .collect(Collectors.toList());
             case "department" -> departmentEventRepository.findAll().stream()
-                    .filter(e -> category.equals(e.getCategory()) && e.getDuration().isAfter(now))
+                    .filter(e -> category.equals(e.getCategory()) && e.getDuration().after(now))
                     .sorted((e1, e2) -> e1.getDuration().compareTo(e2.getDuration()))
                     .limit(5)
                     .map(e -> new EventWholeResponseDTO(
@@ -78,7 +96,7 @@ public class WholeService {
                     ))
                     .collect(Collectors.toList());
             case "club" -> clubEventRepository.findAll().stream()
-                    .filter(e -> category.equals(e.getCategory()) && e.getDuration().isAfter(now))
+                    .filter(e -> category.equals(e.getCategory()) && e.getDuration().after(now))
                     .sorted((e1, e2) -> e1.getDuration().compareTo(e2.getDuration()))
                     .limit(5)
                     .map(e -> new EventWholeResponseDTO(
@@ -89,18 +107,20 @@ public class WholeService {
                     .collect(Collectors.toList());
             default -> List.of();
         };
+        if (result.isEmpty()) {
+            throw new NoSuchElementException("해당 카테고리/타입의 이벤트가 없습니다.");
+        }
+        return result;
     }
 
     public List<EventWholeResponseDTO> getDepartmentImagesByCollegeDepartmentCategory(
             String college, String department, String category) {
-        LocalDateTime now = LocalDateTime.now();
+        Date now = new Date();
 
-        return departmentEventRepository.findAll().stream()
-                .filter(e -> college.equals(e.getCollege()))
-                .filter(e -> department.equals(e.getDepartment()))
-                .filter(e -> category.equals(e.getCategory()))
-                .filter(e -> e.getDuration().isAfter(now))
-                .sorted((e1, e2) -> e1.getDuration().compareTo(e2.getDuration()))
+        List<EventWholeResponseDTO> result = departmentEventRepository
+                .findByCollegeAndDepartmentAndCategoryAndDurationAfterOrderByDurationAsc(
+                        college, department, category, now)
+                .stream()
                 .limit(5)
                 .map(e -> new EventWholeResponseDTO(
                         e.getId(),
@@ -108,5 +128,11 @@ public class WholeService {
                         imageService.getFirstImageBase64(e.getImagePath())
                 ))
                 .collect(Collectors.toList());
+
+        if (result.isEmpty()) {
+            throw new NoSuchElementException("해당 조건의 학과 이벤트가 없습니다.");
+        }
+
+        return result;
     }
 }

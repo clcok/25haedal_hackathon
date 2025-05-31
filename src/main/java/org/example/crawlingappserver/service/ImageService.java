@@ -11,10 +11,16 @@ import java.util.stream.Collectors;
 @Service
 public class ImageService {
     private static final List<String> SUPPORTED_EXTENSIONS = Arrays.asList("jpg", "jpeg", "png", "gif", "webp");
+    private static final String STATIC_RESOURCE_PATH = "src/main/resources/static";
 
     public String getFirstImageBase64(String imagePath) {
-        File dir = new File(imagePath);
+        // DB 경로: "/images/official/welcome2025"
+        // 실제 경로: "src/main/resources/static/images/official/welcome2025"
+        String actualPath = STATIC_RESOURCE_PATH + imagePath;
+
+        File dir = new File(actualPath);
         if (!dir.exists() || !dir.isDirectory()) return null;
+
         File[] files = dir.listFiles();
         if (files == null) return null;
 
@@ -36,8 +42,12 @@ public class ImageService {
     }
 
     public List<String> getAllImagesBase64(String imagePath) {
-        File dir = new File(imagePath);
+        // 핵심: DB 경로를 실제 파일 시스템 경로로 변환
+        String actualPath = STATIC_RESOURCE_PATH + imagePath;
+
+        File dir = new File(actualPath);
         if (!dir.exists() || !dir.isDirectory()) return List.of();
+
         File[] files = dir.listFiles();
         if (files == null) return List.of();
 
